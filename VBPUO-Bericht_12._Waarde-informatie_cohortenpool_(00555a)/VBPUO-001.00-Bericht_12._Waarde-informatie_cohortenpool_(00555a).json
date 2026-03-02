@@ -3,7 +3,7 @@
   "description": "JSON Schema SIVI 2.0",
   "//comment": {
     "functionDescription": "Bericht_12._Waarde-informatie_cohortenpool_(00555a)",
-    "afdDefinitionChangeLog": "20250701 uitlevering (AOS 001.04) - prerelease 2026"
+    "afdDefinitionChangeLog": "20250701 uitlevering (AOS 001.04) - (pre)release 2026"
   },
   "definitions": {
     "chunking": {
@@ -63,7 +63,7 @@
           "customDescription": "Versie van het JSON schema",
           "type": "string",
           "maxLength": 80,
-          "const": "001.04 (prerelease)"
+          "const": "001.04"
         },
         "originalMessageId": {
           "description": "The messageId of the original message, which is replaced by this message. (NL: MessageId van het oorspronkelijke bericht, dat wordt vervangen door dit bericht.)",
