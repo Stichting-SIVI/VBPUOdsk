@@ -6,6 +6,15 @@ Klik op **"Watch"** op de "<> Code" pagina als je deze standaard gebruikt, om up
 
 ---
 
+## 📖 Documentatie
+
+De volledige handleiding (VB-PUO Standaard Datauitwisseling) is online beschikbaar:
+
+- **Handleiding:** [stichting-sivi.github.io/VBPUOdsk-docs-prepare](https://stichting-sivi.github.io/VBPUOdsk-docs-prepare/)
+- **GitHub repo (docs):** [VBPUOdsk-docs-prepare](https://github.com/Stichting-SIVI/VBPUOdsk-docs-prepare)
+
+---
+
 ## 📦 Release-status
 
 | Release | Tag | Status |
