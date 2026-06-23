@@ -1,0 +1,80 @@
+@startuml
+autonumber
+skinparam sequenceMessageAlign center
+participant psp as "PensionServiceProvider"
+participant fm as "Fiduciary Manager"
+
+group Scenario 1: Synchronous validation: OK
+  note over psp, fm: Scenario 1: Synchronous validation: OK
+  psp -> fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -> fm : Validations
+  fm -->> psp -- : HTTPstatus 200 (approved, no response body)
+end
+
+group Scenario 2: Synchronous validation: NOK
+  note over psp, fm: Scenario 2: Synchronous validation: NOK
+  psp -> fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -> fm : Validations
+  fm -->> psp -- : HTTPstatus 400 (bad request)\\Includes VBPUO_Feedback_Message
+end
+
+group Scenario 3: Async validation: OK
+  note over psp, fm: Scenario 3: A(!)synchronous validation: OK
+  psp -> fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -> fm : Technical validation
+  fm -->> psp -- : HTTPstatus 202 Accepted
+  fm -> fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm -->> psp : Send VBPUO_Feedback_Message "Geaccepteerd"\n(STATUSTYPE)
+  psp -> psp : Validation
+  psp -->> fm : HTTPstatus 200 (OK)
+  deactivate fm
+end
+
+group Scenario 4: Async validation: NOK
+  note over psp, fm: Scenario 4: A(!)synchronous validation: NOK
+  psp -> fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -> fm : Technical validation
+  fm -->> psp -- : HTTPstatus 202 Accepted
+  fm -> fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm -->> psp : Send VBPUO_Feedback_Message "Afgewezen"\n(STATUSTYPE)
+  psp -> psp : Validation
+  psp -->> fm : HTTPstatus 200
+  deactivate fm
+end
+
+group Scenario 5: NOK + invalid feedback message
+  note over psp, fm: Scenario 5: NOK + invalid feedback message
+  psp -> fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -> fm : Technical validation
+  fm -->> psp -- : HTTPstatus 202 Accepted
+  fm -> fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm -->> psp : Send VBPUO_Feedback_Message "Afgewezen"\n(STATUSTYPE)
+  psp -> psp : Validation
+  psp -->> fm : HTTPstatus 400 (bad response)
+  deactivate fm
+  fm -> fm : Panic?
+  note over fm : Contact psp via different channel
+end
+
+group Scenario 6: OK + invalid feedback message
+  note over psp, fm: Scenario 6: OK + invalid feedback message
+  psp -> fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -> fm : Technical validation
+  fm -->> psp -- : HTTPstatus 202 Accepted
+  fm -> fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm -->> psp : Send VBPUO_Feedback_Message "Geaccepteerd"\n(STATUSTYPE)
+  psp -> psp : Validation
+  psp -->> fm : HTTPstatus 400 (bad response)
+  deactivate fm
+  fm -> fm : Panic?
+  note over fm : Contact psp via different channel
+end
+@enduml

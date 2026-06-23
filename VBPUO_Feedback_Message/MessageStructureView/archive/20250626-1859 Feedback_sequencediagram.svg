@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace" width="706px" height="2090px" viewBox="0, 0, 706, 2090" preserveAspectRatio="none" contentStyleType="text/css" zoomAndPan="magnify" style="background-attachment:initial;background-clip:initial;background-color:#FFFFFF;background-image:initial;background-origin:initial;background-position:initial;background-repeat:initial;background-size:initial;">
+  <defs />
+  <g>
+    <rect x="536.5" y="131.6641" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="304.4219" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="477.1797" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="589.2344" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="850.0469" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="962.1016" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1222.914" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1334.969" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1675.484" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1787.539" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="10" y="54.6094" width="630.5" height="158.7578" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <rect x="10" y="227.3672" width="630.5" height="158.7578" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <rect x="10" y="400.125" width="690.5" height="358.8672" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <rect x="10" y="772.9922" width="690.5" height="358.8672" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <rect x="10" y="1145.859" width="690.5" height="438.5703" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <rect x="10" y="1598.43" width="690.5" height="438.5703" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <line x1="102" y1="37.6094" x2="102" y2="2054" stroke-width="0.5" stroke-dasharray="5 5" style="stroke:#181818;" />
+    <line x1="541.5" y1="37.6094" x2="541.5" y2="2054" stroke-width="0.5" stroke-dasharray="5 5" style="stroke:#181818;" />
+    <rect x="20" y="5" width="165" height="31.6094" rx="2.5" ry="2.5" stroke-width="0.5" style="fill:#E2E2F0;stroke:#181818;" />
+    <text x="27" y="26.5332" textLength="151" lengthAdjust="spacing" font-family="sans-serif" font-size="14" style="fill:black;">PensionServiceProvider</text>
+    <rect x="20" y="2053" width="165" height="31.6094" rx="2.5" ry="2.5" stroke-width="0.5" style="fill:#E2E2F0;stroke:#181818;" />
+    <text x="27" y="2074.533" textLength="151" lengthAdjust="spacing" font-family="sans-serif" font-size="14" style="fill:black;">PensionServiceProvider</text>
+    <rect x="475.5" y="5" width="132" height="31.6094" rx="2.5" ry="2.5" stroke-width="0.5" style="fill:#E2E2F0;stroke:#181818;" />
+    <text x="482.5" y="26.5332" textLength="118" lengthAdjust="spacing" font-family="sans-serif" font-size="14" style="fill:black;">Fiduciary Manager</text>
+    <rect x="475.5" y="2053" width="132" height="31.6094" rx="2.5" ry="2.5" stroke-width="0.5" style="fill:#E2E2F0;stroke:#181818;" />
+    <text x="482.5" y="2074.533" textLength="118" lengthAdjust="spacing" font-family="sans-serif" font-size="14" style="fill:black;">Fiduciary Manager</text>
+    <rect x="536.5" y="131.6641" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="304.4219" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="477.1797" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="589.2344" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="850.0469" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="962.1016" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1222.914" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1334.969" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1675.484" width="10" height="73.7031" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <rect x="536.5" y="1787.539" width="10" height="161.7578" stroke-width="1" style="fill:white;stroke:#181818;" />
+    <path d="M10 54.6094 L307 54.6094 L307 62.9609 L297 72.9609 L10 72.9609 L10 54.6094" stroke-width="1.5" style="fill:#EEEEEE;stroke:black;" />
+    <rect x="10" y="54.6094" width="630.5" height="158.7578" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <text x="25" y="69.1045" textLength="252" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">Scenario 1: Synchronous validation: OK</text>
+    <path d="M30 77.9609 L30 103.9609 L612 103.9609 L612 87.9609 L602 77.9609 L30 77.9609" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M602 77.9609 L602 87.9609 L612 87.9609 L602 77.9609" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="201.75" y="96.4561" textLength="230" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Scenario 1: Synchronous validation: OK</text>
+    <polygon points="524.5,127.6641 534.5,131.6641 524.5,135.6641 528.5,131.6641" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <line x1="102.5" y1="131.6641" x2="530.5" y2="131.6641" stroke-width="1" style="stroke:#181818;" />
+    <text x="216.5" y="126.8076" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">1</text>
+    <text x="227.5" y="126.8076" textLength="195" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send Bericht_1.Vermogen(0001a)</text>
+    <line x1="546.5" y1="162.0156" x2="588.5" y2="162.0156" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="162.0156" x2="588.5" y2="175.0156" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="175.0156" x2="588.5" y2="175.0156" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,171.0156 547.5,175.0156 557.5,179.0156 553.5,175.0156" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="157.1592" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">2</text>
+    <text x="564.5" y="157.1592" textLength="64" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Validations</text>
+    <line x1="103.5" y1="205.3672" x2="113.5" y2="201.3672" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="205.3672" x2="113.5" y2="209.3672" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="205.3672" x2="540.5" y2="205.3672" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="183" y="200.5107" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">3</text>
+    <text x="194" y="200.5107" textLength="267" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 200 (approved, no response body)</text>
+    <path d="M10 227.3672 L316 227.3672 L316 235.7188 L306 245.7188 L10 245.7188 L10 227.3672" stroke-width="1.5" style="fill:#EEEEEE;stroke:black;" />
+    <rect x="10" y="227.3672" width="630.5" height="158.7578" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <text x="25" y="241.8623" textLength="261" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">Scenario 2: Synchronous validation: NOK</text>
+    <path d="M30 250.7188 L30 276.7188 L612 276.7188 L612 260.7188 L602 250.7188 L30 250.7188" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M602 250.7188 L602 260.7188 L612 260.7188 L602 250.7188" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="197.25" y="269.2139" textLength="239" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Scenario 2: Synchronous validation: NOK</text>
+    <polygon points="524.5,300.4219 534.5,304.4219 524.5,308.4219 528.5,304.4219" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <line x1="102.5" y1="304.4219" x2="530.5" y2="304.4219" stroke-width="1" style="stroke:#181818;" />
+    <text x="216.5" y="299.5654" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">4</text>
+    <text x="227.5" y="299.5654" textLength="195" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send Bericht_1.Vermogen(0001a)</text>
+    <line x1="546.5" y1="334.7734" x2="588.5" y2="334.7734" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="334.7734" x2="588.5" y2="347.7734" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="347.7734" x2="588.5" y2="347.7734" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,343.7734 547.5,347.7734 557.5,351.7734 553.5,347.7734" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="329.917" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">5</text>
+    <text x="564.5" y="329.917" textLength="64" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Validations</text>
+    <line x1="103.5" y1="378.125" x2="113.5" y2="374.125" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="378.125" x2="113.5" y2="382.125" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="378.125" x2="540.5" y2="378.125" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="117" y="373.2686" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">6</text>
+    <text x="128" y="373.2686" textLength="399" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 400 (bad request)\Includes VBPUO_Feedback_Message</text>
+    <path d="M10 400.125 L262 400.125 L262 408.4766 L252 418.4766 L10 418.4766 L10 400.125" stroke-width="1.5" style="fill:#EEEEEE;stroke:black;" />
+    <rect x="10" y="400.125" width="690.5" height="358.8672" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <text x="25" y="414.6201" textLength="207" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">Scenario 3: Async validation: OK</text>
+    <path d="M30 423.4766 L30 449.4766 L612 449.4766 L612 433.4766 L602 423.4766 L30 423.4766" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M602 423.4766 L602 433.4766 L612 433.4766 L602 423.4766" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="192.75" y="441.9717" textLength="248" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Scenario 3: A(!)synchronous validation: OK</text>
+    <polygon points="524.5,473.1797 534.5,477.1797 524.5,481.1797 528.5,477.1797" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <line x1="102.5" y1="477.1797" x2="530.5" y2="477.1797" stroke-width="1" style="stroke:#181818;" />
+    <text x="216.5" y="472.3232" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">7</text>
+    <text x="227.5" y="472.3232" textLength="195" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send Bericht_1.Vermogen(0001a)</text>
+    <line x1="546.5" y1="507.5313" x2="588.5" y2="507.5313" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="507.5313" x2="588.5" y2="520.5313" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="520.5313" x2="588.5" y2="520.5313" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,516.5313 547.5,520.5313 557.5,524.5313 553.5,520.5313" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="502.6748" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">8</text>
+    <text x="564.5" y="502.6748" textLength="112" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Technical validation</text>
+    <line x1="103.5" y1="550.8828" x2="113.5" y2="546.8828" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="550.8828" x2="113.5" y2="554.8828" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="550.8828" x2="540.5" y2="550.8828" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="240.5" y="546.0264" textLength="7" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">9</text>
+    <text x="251.5" y="546.0264" textLength="152" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 202 Accepted</text>
+    <line x1="541.5" y1="576.2344" x2="588.5" y2="576.2344" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="576.2344" x2="588.5" y2="589.2344" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="589.2344" x2="588.5" y2="589.2344" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,585.2344 547.5,589.2344 557.5,593.2344 553.5,589.2344" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="571.3779" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">10</text>
+    <text x="571.5" y="571.3779" textLength="117" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Functional validation</text>
+    <path d="M469 607.2344 L469 633.2344 L614 633.2344 L614 617.2344 L604 607.2344 L469 607.2344" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M604 607.2344 L604 617.2344 L614 617.2344 L604 607.2344" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="475" y="625.7295" textLength="124" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Back-Office validation</text>
+    <line x1="103.5" y1="677.2891" x2="113.5" y2="673.2891" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="677.2891" x2="113.5" y2="681.2891" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="677.2891" x2="535.5" y2="677.2891" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="161" y="664.2568" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">11</text>
+    <text x="179" y="656.0811" textLength="299" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send VBPUO_Feedback_Message "Geaccepteerd"</text>
+    <text x="282.5" y="672.4326" textLength="92" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">(STATUSTYPE)</text>
+    <line x1="102.5" y1="707.6406" x2="144.5" y2="707.6406" stroke-width="1" style="stroke:#181818;" />
+    <line x1="144.5" y1="707.6406" x2="144.5" y2="720.6406" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="720.6406" x2="144.5" y2="720.6406" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="113.5,716.6406 103.5,720.6406 113.5,724.6406 109.5,720.6406" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="109.5" y="702.7842" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">12</text>
+    <text x="127.5" y="702.7842" textLength="57" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Validation</text>
+    <line x1="539.5" y1="750.9922" x2="529.5" y2="746.9922" stroke-width="1" style="stroke:#181818;" />
+    <line x1="539.5" y1="750.9922" x2="529.5" y2="754.9922" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="750.9922" x2="540.5" y2="750.9922" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="251" y="746.1357" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">13</text>
+    <text x="269" y="746.1357" textLength="124" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 200 (OK)</text>
+    <path d="M10 772.9922 L271 772.9922 L271 781.3438 L261 791.3438 L10 791.3438 L10 772.9922" stroke-width="1.5" style="fill:#EEEEEE;stroke:black;" />
+    <rect x="10" y="772.9922" width="690.5" height="358.8672" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <text x="25" y="787.4873" textLength="216" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">Scenario 4: Async validation: NOK</text>
+    <path d="M30 796.3438 L30 822.3438 L612 822.3438 L612 806.3438 L602 796.3438 L30 796.3438" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M602 796.3438 L602 806.3438 L612 806.3438 L602 796.3438" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="188.25" y="814.8389" textLength="257" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Scenario 4: A(!)synchronous validation: NOK</text>
+    <polygon points="524.5,846.0469 534.5,850.0469 524.5,854.0469 528.5,850.0469" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <line x1="102.5" y1="850.0469" x2="530.5" y2="850.0469" stroke-width="1" style="stroke:#181818;" />
+    <text x="213" y="845.1904" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">14</text>
+    <text x="231" y="845.1904" textLength="195" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send Bericht_1.Vermogen(0001a)</text>
+    <line x1="546.5" y1="880.3984" x2="588.5" y2="880.3984" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="880.3984" x2="588.5" y2="893.3984" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="893.3984" x2="588.5" y2="893.3984" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,889.3984 547.5,893.3984 557.5,897.3984 553.5,893.3984" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="875.542" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">15</text>
+    <text x="571.5" y="875.542" textLength="112" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Technical validation</text>
+    <line x1="103.5" y1="923.75" x2="113.5" y2="919.75" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="923.75" x2="113.5" y2="927.75" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="923.75" x2="540.5" y2="923.75" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="237" y="918.8936" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">16</text>
+    <text x="255" y="918.8936" textLength="152" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 202 Accepted</text>
+    <line x1="541.5" y1="949.1016" x2="588.5" y2="949.1016" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="949.1016" x2="588.5" y2="962.1016" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="962.1016" x2="588.5" y2="962.1016" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,958.1016 547.5,962.1016 557.5,966.1016 553.5,962.1016" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="944.2451" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">17</text>
+    <text x="571.5" y="944.2451" textLength="117" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Functional validation</text>
+    <path d="M469 980.1016 L469 1006.102 L614 1006.102 L614 990.1016 L604 980.1016 L469 980.1016" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M604 980.1016 L604 990.1016 L614 990.1016 L604 980.1016" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="475" y="998.5967" textLength="124" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Back-Office validation</text>
+    <line x1="103.5" y1="1050.156" x2="113.5" y2="1046.156" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1050.156" x2="113.5" y2="1054.156" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1050.156" x2="535.5" y2="1050.156" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="170" y="1037.124" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">18</text>
+    <text x="188" y="1028.948" textLength="281" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send VBPUO_Feedback_Message "Afgewezen"</text>
+    <text x="282.5" y="1045.3" textLength="92" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">(STATUSTYPE)</text>
+    <line x1="102.5" y1="1080.508" x2="144.5" y2="1080.508" stroke-width="1" style="stroke:#181818;" />
+    <line x1="144.5" y1="1080.508" x2="144.5" y2="1093.508" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1093.508" x2="144.5" y2="1093.508" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="113.5,1089.508 103.5,1093.508 113.5,1097.508 109.5,1093.508" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="109.5" y="1075.651" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">19</text>
+    <text x="127.5" y="1075.651" textLength="57" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Validation</text>
+    <line x1="539.5" y1="1123.859" x2="529.5" y2="1119.859" stroke-width="1" style="stroke:#181818;" />
+    <line x1="539.5" y1="1123.859" x2="529.5" y2="1127.859" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1123.859" x2="540.5" y2="1123.859" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="266.5" y="1119.003" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">20</text>
+    <text x="284.5" y="1119.003" textLength="93" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 200</text>
+    <path d="M10 1145.859 L340 1145.859 L340 1154.211 L330 1164.211 L10 1164.211 L10 1145.859" stroke-width="1.5" style="fill:#EEEEEE;stroke:black;" />
+    <rect x="10" y="1145.859" width="690.5" height="438.5703" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <text x="25" y="1160.354" textLength="285" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">Scenario 5: NOK + invalid feedback message</text>
+    <path d="M30 1169.211 L30 1195.211 L612 1195.211 L612 1179.211 L602 1169.211 L30 1169.211" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M602 1169.211 L602 1179.211 L612 1179.211 L602 1169.211" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="185.75" y="1187.706" textLength="262" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Scenario 5: NOK + invalid feedback message</text>
+    <polygon points="524.5,1218.914 534.5,1222.914 524.5,1226.914 528.5,1222.914" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <line x1="102.5" y1="1222.914" x2="530.5" y2="1222.914" stroke-width="1" style="stroke:#181818;" />
+    <text x="213" y="1218.058" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">21</text>
+    <text x="231" y="1218.058" textLength="195" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send Bericht_1.Vermogen(0001a)</text>
+    <line x1="546.5" y1="1253.266" x2="588.5" y2="1253.266" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="1253.266" x2="588.5" y2="1266.266" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="1266.266" x2="588.5" y2="1266.266" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,1262.266 547.5,1266.266 557.5,1270.266 553.5,1266.266" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="1248.409" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">22</text>
+    <text x="571.5" y="1248.409" textLength="112" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Technical validation</text>
+    <line x1="103.5" y1="1296.617" x2="113.5" y2="1292.617" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1296.617" x2="113.5" y2="1300.617" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1296.617" x2="540.5" y2="1296.617" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="237" y="1291.761" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">23</text>
+    <text x="255" y="1291.761" textLength="152" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 202 Accepted</text>
+    <line x1="541.5" y1="1321.969" x2="588.5" y2="1321.969" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="1321.969" x2="588.5" y2="1334.969" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="1334.969" x2="588.5" y2="1334.969" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,1330.969 547.5,1334.969 557.5,1338.969 553.5,1334.969" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="1317.112" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">24</text>
+    <text x="571.5" y="1317.112" textLength="117" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Functional validation</text>
+    <path d="M469 1352.969 L469 1378.969 L614 1378.969 L614 1362.969 L604 1352.969 L469 1352.969" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M604 1352.969 L604 1362.969 L614 1362.969 L604 1352.969" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="475" y="1371.464" textLength="124" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Back-Office validation</text>
+    <line x1="103.5" y1="1423.023" x2="113.5" y2="1419.023" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1423.023" x2="113.5" y2="1427.023" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1423.023" x2="535.5" y2="1423.023" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="170" y="1409.991" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">25</text>
+    <text x="188" y="1401.815" textLength="281" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send VBPUO_Feedback_Message "Afgewezen"</text>
+    <text x="282.5" y="1418.167" textLength="92" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">(STATUSTYPE)</text>
+    <line x1="102.5" y1="1453.375" x2="144.5" y2="1453.375" stroke-width="1" style="stroke:#181818;" />
+    <line x1="144.5" y1="1453.375" x2="144.5" y2="1466.375" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1466.375" x2="144.5" y2="1466.375" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="113.5,1462.375 103.5,1466.375 113.5,1470.375 109.5,1466.375" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="109.5" y="1448.519" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">26</text>
+    <text x="127.5" y="1448.519" textLength="57" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Validation</text>
+    <line x1="539.5" y1="1496.727" x2="529.5" y2="1492.727" stroke-width="1" style="stroke:#181818;" />
+    <line x1="539.5" y1="1496.727" x2="529.5" y2="1500.727" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1496.727" x2="540.5" y2="1496.727" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="221.5" y="1491.87" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">27</text>
+    <text x="239.5" y="1491.87" textLength="183" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 400 (bad response)</text>
+    <line x1="541.5" y1="1527.078" x2="583.5" y2="1527.078" stroke-width="1" style="stroke:#181818;" />
+    <line x1="583.5" y1="1527.078" x2="583.5" y2="1540.078" stroke-width="1" style="stroke:#181818;" />
+    <line x1="542.5" y1="1540.078" x2="583.5" y2="1540.078" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="552.5,1536.078 542.5,1540.078 552.5,1544.078 548.5,1540.078" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="548.5" y="1522.222" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">28</text>
+    <text x="566.5" y="1522.222" textLength="40" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Panic?</text>
+    <path d="M437 1553.078 L437 1579.078 L645 1579.078 L645 1563.078 L635 1553.078 L437 1553.078" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M635 1553.078 L635 1563.078 L645 1563.078 L635 1553.078" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="443" y="1571.573" textLength="187" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Contact psp via different channel</text>
+    <path d="M10 1598.43 L331 1598.43 L331 1606.781 L321 1616.781 L10 1616.781 L10 1598.43" stroke-width="1.5" style="fill:#EEEEEE;stroke:black;" />
+    <rect x="10" y="1598.43" width="690.5" height="438.5703" stroke-width="1.5" style="fill:none;stroke:black;" />
+    <text x="25" y="1612.925" textLength="276" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">Scenario 6: OK + invalid feedback message</text>
+    <path d="M30 1621.781 L30 1647.781 L612 1647.781 L612 1631.781 L602 1621.781 L30 1621.781" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M602 1621.781 L602 1631.781 L612 1631.781 L602 1621.781" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="190.25" y="1640.276" textLength="253" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Scenario 6: OK + invalid feedback message</text>
+    <polygon points="524.5,1671.484 534.5,1675.484 524.5,1679.484 528.5,1675.484" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <line x1="102.5" y1="1675.484" x2="530.5" y2="1675.484" stroke-width="1" style="stroke:#181818;" />
+    <text x="213" y="1670.628" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">29</text>
+    <text x="231" y="1670.628" textLength="195" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send Bericht_1.Vermogen(0001a)</text>
+    <line x1="546.5" y1="1705.836" x2="588.5" y2="1705.836" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="1705.836" x2="588.5" y2="1718.836" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="1718.836" x2="588.5" y2="1718.836" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,1714.836 547.5,1718.836 557.5,1722.836 553.5,1718.836" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="1700.979" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">30</text>
+    <text x="571.5" y="1700.979" textLength="112" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Technical validation</text>
+    <line x1="103.5" y1="1749.188" x2="113.5" y2="1745.188" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1749.188" x2="113.5" y2="1753.188" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1749.188" x2="540.5" y2="1749.188" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="237" y="1744.331" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">31</text>
+    <text x="255" y="1744.331" textLength="152" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 202 Accepted</text>
+    <line x1="541.5" y1="1774.539" x2="588.5" y2="1774.539" stroke-width="1" style="stroke:#181818;" />
+    <line x1="588.5" y1="1774.539" x2="588.5" y2="1787.539" stroke-width="1" style="stroke:#181818;" />
+    <line x1="547.5" y1="1787.539" x2="588.5" y2="1787.539" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="557.5,1783.539 547.5,1787.539 557.5,1791.539 553.5,1787.539" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="553.5" y="1769.683" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">32</text>
+    <text x="571.5" y="1769.683" textLength="117" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Functional validation</text>
+    <path d="M469 1805.539 L469 1831.539 L614 1831.539 L614 1815.539 L604 1805.539 L469 1805.539" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M604 1805.539 L604 1815.539 L614 1815.539 L604 1805.539" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="475" y="1824.034" textLength="124" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Back-Office validation</text>
+    <line x1="103.5" y1="1875.594" x2="113.5" y2="1871.594" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1875.594" x2="113.5" y2="1879.594" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1875.594" x2="535.5" y2="1875.594" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="161" y="1862.562" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">33</text>
+    <text x="179" y="1854.386" textLength="299" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Send VBPUO_Feedback_Message "Geaccepteerd"</text>
+    <text x="282.5" y="1870.737" textLength="92" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">(STATUSTYPE)</text>
+    <line x1="102.5" y1="1905.945" x2="144.5" y2="1905.945" stroke-width="1" style="stroke:#181818;" />
+    <line x1="144.5" y1="1905.945" x2="144.5" y2="1918.945" stroke-width="1" style="stroke:#181818;" />
+    <line x1="103.5" y1="1918.945" x2="144.5" y2="1918.945" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="113.5,1914.945 103.5,1918.945 113.5,1922.945 109.5,1918.945" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="109.5" y="1901.089" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">34</text>
+    <text x="127.5" y="1901.089" textLength="57" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Validation</text>
+    <line x1="539.5" y1="1949.297" x2="529.5" y2="1945.297" stroke-width="1" style="stroke:#181818;" />
+    <line x1="539.5" y1="1949.297" x2="529.5" y2="1953.297" stroke-width="1" style="stroke:#181818;" />
+    <line x1="102.5" y1="1949.297" x2="540.5" y2="1949.297" stroke-width="1" stroke-dasharray="2 2" style="stroke:#181818;" />
+    <text x="221.5" y="1944.44" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">35</text>
+    <text x="239.5" y="1944.44" textLength="183" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">HTTPstatus 400 (bad response)</text>
+    <line x1="541.5" y1="1979.648" x2="583.5" y2="1979.648" stroke-width="1" style="stroke:#181818;" />
+    <line x1="583.5" y1="1979.648" x2="583.5" y2="1992.648" stroke-width="1" style="stroke:#181818;" />
+    <line x1="542.5" y1="1992.648" x2="583.5" y2="1992.648" stroke-width="1" style="stroke:#181818;" />
+    <polygon points="552.5,1988.648 542.5,1992.648 552.5,1996.648 548.5,1992.648" stroke-width="1" style="fill:#181818;stroke:#181818;" />
+    <text x="548.5" y="1974.792" textLength="14" lengthAdjust="spacing" font-family="sans-serif" font-size="13" font-weight="bold" style="fill:black;">36</text>
+    <text x="566.5" y="1974.792" textLength="40" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Panic?</text>
+    <path d="M437 2005.648 L437 2031.648 L645 2031.648 L645 2015.648 L635 2005.648 L437 2005.648" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <path d="M635 2005.648 L635 2015.648 L645 2015.648 L635 2005.648" stroke-width="0.5" style="fill:#FEFFDD;stroke:#181818;" />
+    <text x="443" y="2024.144" textLength="187" lengthAdjust="spacing" font-family="sans-serif" font-size="13" style="fill:black;">Contact psp via different channel</text>
+  </g>
+  <title>2025mmdd Feedback_sequencediagram</title>
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:puv="https://github.com/Fruchtzwerg94/PlantUmlViewer">
+      <puv:product>PlantUML Viewer by Philipp Schmidt</puv:product>
+      <puv:version>1.7.0.11</puv:version>
+      <puv:plantumlviewer>1.2024.3</puv:plantumlviewer>
+      <rdf:Description>
+        <dc:creator>MINISFORUMNAB6\daman</dc:creator>
+        <dc:date>2025-06-26T16:55:56.9624587Z</dc:date>
+        <dc:source>2025mmdd Feedback_sequencediagram.puml</dc:source>
+        <dc:title>2025mmdd Feedback_sequencediagram</dc:title>
+        <dc:format>image/svg</dc:format>
+        <puv:diagram>1</puv:diagram>
+        <puv:page>1</puv:page>
+      </rdf:Description>
+    </rdf:RDF>
+  </metadata>
+  <desc>@startuml
+autonumber
+skinparam sequenceMessageAlign center
+participant psp as "PensionServiceProvider"
+participant fm as "Fiduciary Manager"
+
+group Scenario 1: Synchronous validation: OK
+  note over psp, fm: Scenario 1: Synchronous validation: OK
+  psp -&gt; fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -&gt; fm : Validations
+  fm --&gt;&gt; psp -- : HTTPstatus 200 (approved, no response body)
+end
+
+group Scenario 2: Synchronous validation: NOK
+  note over psp, fm: Scenario 2: Synchronous validation: NOK
+  psp -&gt; fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -&gt; fm : Validations
+  fm --&gt;&gt; psp -- : HTTPstatus 400 (bad request)\\Includes VBPUO_Feedback_Message
+end
+
+group Scenario 3: Async validation: OK
+  note over psp, fm: Scenario 3: A(!)synchronous validation: OK
+  psp -&gt; fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -&gt; fm : Technical validation
+  fm --&gt;&gt; psp -- : HTTPstatus 202 Accepted
+  fm -&gt; fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm --&gt;&gt; psp : Send VBPUO_Feedback_Message "Geaccepteerd"\n(STATUSTYPE)
+  psp -&gt; psp : Validation
+  psp --&gt;&gt; fm : HTTPstatus 200 (OK)
+  deactivate fm
+end
+
+group Scenario 4: Async validation: NOK
+  note over psp, fm: Scenario 4: A(!)synchronous validation: NOK
+  psp -&gt; fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -&gt; fm : Technical validation
+  fm --&gt;&gt; psp -- : HTTPstatus 202 Accepted
+  fm -&gt; fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm --&gt;&gt; psp : Send VBPUO_Feedback_Message "Afgewezen"\n(STATUSTYPE)
+  psp -&gt; psp : Validation
+  psp --&gt;&gt; fm : HTTPstatus 200
+  deactivate fm
+end
+
+group Scenario 5: NOK + invalid feedback message
+  note over psp, fm: Scenario 5: NOK + invalid feedback message
+  psp -&gt; fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -&gt; fm : Technical validation
+  fm --&gt;&gt; psp -- : HTTPstatus 202 Accepted
+  fm -&gt; fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm --&gt;&gt; psp : Send VBPUO_Feedback_Message "Afgewezen"\n(STATUSTYPE)
+  psp -&gt; psp : Validation
+  psp --&gt;&gt; fm : HTTPstatus 400 (bad response)
+  deactivate fm
+  fm -&gt; fm : Panic?
+  note over fm : Contact psp via different channel
+end
+
+group Scenario 6: OK + invalid feedback message
+  note over psp, fm: Scenario 6: OK + invalid feedback message
+  psp -&gt; fm ++ : Send Bericht_1.Vermogen(0001a)
+  fm -&gt; fm : Technical validation
+  fm --&gt;&gt; psp -- : HTTPstatus 202 Accepted
+  fm -&gt; fm : Functional validation
+  note over fm : Back-Office validation
+  activate fm
+  fm --&gt;&gt; psp : Send VBPUO_Feedback_Message "Geaccepteerd"\n(STATUSTYPE)
+  psp -&gt; psp : Validation
+  psp --&gt;&gt; fm : HTTPstatus 400 (bad response)
+  deactivate fm
+  fm -&gt; fm : Panic?
+  note over fm : Contact psp via different channel
+end
+@enduml
+</desc>
+</svg>

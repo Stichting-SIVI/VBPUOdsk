@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace" width="1253px" height="692px" viewBox="0, 0, 1253, 692" preserveAspectRatio="none" contentStyleType="text/css" zoomAndPan="magnify" style="background-attachment:initial;background-clip:initial;background-color:#FFFFFF;background-image:initial;background-origin:initial;background-position:initial;background-repeat:initial;background-size:initial;">
+  <defs />
+  <g>
+    <rect x="12" y="12" width="474" height="129.5898" rx="7.5" ry="7.5" id="_legend" stroke-width="1" style="fill:#DDDDDD;stroke:black;" />
+    <text x="17" y="36.0869" textLength="89" lengthAdjust="spacing" font-family="Arial" font-size="20" font-weight="bold" style="fill:black;">LEGEND:</text>
+    <text x="112" y="36.0869" textLength="6" lengthAdjust="spacing" font-family="Arial" font-size="20" style="fill:black;"> </text>
+    <text x="118" y="36.0869" textLength="181" lengthAdjust="spacing" font-family="Arial" font-size="20" font-weight="bold" style="fill:red;">Feedback message</text>
+    <text x="17" y="53.3589" textLength="12" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;">1.</text>
+    <text x="33" y="53.3589" textLength="32" lengthAdjust="spacing" font-family="Arial" font-size="14" font-weight="bold" style="fill:black;">Bold</text>
+    <text x="69" y="53.3589" textLength="116" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;">= Mandatory fields</text>
+    <text x="17" y="69.4575" textLength="12" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;">2.</text>
+    <text x="33" y="69.4575" textLength="29" lengthAdjust="spacing" font-family="Arial" font-size="14" font-style="italic" style="fill:black;">Italic</text>
+    <text x="66" y="69.4575" textLength="102" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;">= Optional fields</text>
+    <text x="17" y="85.5562" textLength="371" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;">3. ..       = incomplete list (complete values on afdCodelists)</text>
+    <text x="17" y="101.6548" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;"> </text>
+    <text x="17" y="117.7534" textLength="464" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;">For description of codes ADNFUN, ADNDNS, AFDIDP, AFDRES a.s.o. see</text>
+    <text x="17" y="133.8521" textLength="442" lengthAdjust="spacing" font-family="Arial" font-size="14" style="fill:black;">https://www.sivi.org/sivi-afs/online-diensten/afd-2-0-online-raadplegen/</text>
+    <g id="elem_ADNFUN">
+      <rect x="7" y="544.0898" width="112" height="51.7988" rx="2.5" ry="2.5" id="ADNFUN" stroke-width="0.5" codeLine="38" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="35.4" cy="559.0898" rx="10" ry="10" stroke-width="1" style="fill:#EB937F;stroke:#181818;" />
+      <path d="M35.275 560.1211 L35.275 561.8867 L38.3375 561.8867 L38.3375 561.2305 Q38.3375 560.8086 38.5016 560.6211 Q38.6656 560.4336 38.9313 560.4336 Q39.1969 560.4336 39.3688 560.6211 Q39.5406 560.8086 39.5406 561.2305 L39.5406 563.0898 L33.8844 563.0898 Q33.4469 563.0898 33.2594 562.9258 Q33.0719 562.7617 33.0719 562.4805 Q33.0719 562.2148 33.2594 562.0508 Q33.4469 561.8867 33.8844 561.8867 L34.0719 561.8867 L34.0719 557.1836 L33.8844 557.1836 Q33.4469 557.1836 33.2594 557.0195 Q33.0719 556.8555 33.0719 556.5898 Q33.0719 556.3086 33.2594 556.1445 Q33.4469 555.9805 33.8844 555.9805 L39.275 555.9805 L39.275 557.8086 Q39.275 558.2461 39.1109 558.4258 Q38.9469 558.6055 38.6656 558.6055 Q38.4 558.6055 38.2359 558.4258 Q38.0719 558.2461 38.0719 557.8086 L38.0719 557.1836 L35.275 557.1836 L35.275 558.918 L36.3219 558.918 Q36.3219 558.4492 36.4156 558.3242 Q36.5875 558.0273 36.9313 558.0273 Q37.1969 558.0273 37.3609 558.2148 Q37.525 558.4023 37.525 558.8398 L37.525 560.2148 Q37.525 560.6055 37.4313 560.7461 Q37.2438 561.0273 36.9313 561.0273 Q36.5875 561.0273 36.4156 560.7305 Q36.3219 560.6055 36.3219 560.1211 L35.275 560.1211 Z" style="fill:black;" />
+      <text x="51.6" y="563.6426" textLength="50" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">ADNFUN</text>
+      <line x1="8" y1="574.0898" x2="118" y2="574.0898" stroke-width="0.5" style="stroke:black;" />
+      <text x="13" y="589.542" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">23</text>
+      <text x="27" y="589.542" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="30" y="589.542" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="33" y="589.542" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="36" y="589.542" textLength="40" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Melden</text>
+      <text x="76" y="589.542" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="79" y="589.542" textLength="34" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">status</text>
+    </g>
+    <g id="elem_ADNSTS">
+      <rect x="154.5" y="537.0898" width="105" height="65.5977" rx="2.5" ry="2.5" id="ADNSTS" stroke-width="0.5" codeLine="42" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="180.65" cy="552.0898" rx="10" ry="10" stroke-width="1" style="fill:#EB937F;stroke:#181818;" />
+      <path d="M180.525 553.1211 L180.525 554.8867 L183.5875 554.8867 L183.5875 554.2305 Q183.5875 553.8086 183.7516 553.6211 Q183.9156 553.4336 184.1813 553.4336 Q184.4469 553.4336 184.6188 553.6211 Q184.7906 553.8086 184.7906 554.2305 L184.7906 556.0898 L179.1344 556.0898 Q178.6969 556.0898 178.5094 555.9258 Q178.3219 555.7617 178.3219 555.4805 Q178.3219 555.2148 178.5094 555.0508 Q178.6969 554.8867 179.1344 554.8867 L179.3219 554.8867 L179.3219 550.1836 L179.1344 550.1836 Q178.6969 550.1836 178.5094 550.0195 Q178.3219 549.8555 178.3219 549.5898 Q178.3219 549.3086 178.5094 549.1445 Q178.6969 548.9805 179.1344 548.9805 L184.525 548.9805 L184.525 550.8086 Q184.525 551.2461 184.3609 551.4258 Q184.1969 551.6055 183.9156 551.6055 Q183.65 551.6055 183.4859 551.4258 Q183.3219 551.2461 183.3219 550.8086 L183.3219 550.1836 L180.525 550.1836 L180.525 551.918 L181.5719 551.918 Q181.5719 551.4492 181.6656 551.3242 Q181.8375 551.0273 182.1813 551.0273 Q182.4469 551.0273 182.6109 551.2148 Q182.775 551.4023 182.775 551.8398 L182.775 553.2148 Q182.775 553.6055 182.6813 553.7461 Q182.4938 554.0273 182.1813 554.0273 Q181.8375 554.0273 181.6656 553.7305 Q181.5719 553.6055 181.5719 553.1211 L180.525 553.1211 Z" style="fill:black;" />
+      <text x="196.35" y="556.6426" textLength="48" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">ADNSTS</text>
+      <line x1="155.5" y1="567.0898" x2="258.5" y2="567.0898" stroke-width="0.5" style="stroke:black;" />
+      <text x="160.5" y="582.542" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">0</text>
+      <text x="167.5" y="582.542" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="170.5" y="582.542" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="173.5" y="582.542" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="176.5" y="582.542" textLength="59" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Afgewezen</text>
+      <text x="160.5" y="596.3408" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">8</text>
+      <text x="167.5" y="596.3408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="170.5" y="596.3408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="173.5" y="596.3408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="176.5" y="596.3408" textLength="77" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Geaccepteerd</text>
+    </g>
+    <g id="elem_ADNFTM">
+      <rect x="664.5" y="502.5898" width="175" height="134.5918" rx="2.5" ry="2.5" id="ADNFTM" stroke-width="0.5" codeLine="47" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="724" cy="517.5898" rx="10" ry="10" stroke-width="1" style="fill:#EB937F;stroke:#181818;" />
+      <path d="M723.875 518.6211 L723.875 520.3867 L726.9375 520.3867 L726.9375 519.7305 Q726.9375 519.3086 727.1016 519.1211 Q727.2656 518.9336 727.5313 518.9336 Q727.7969 518.9336 727.9688 519.1211 Q728.1406 519.3086 728.1406 519.7305 L728.1406 521.5898 L722.4844 521.5898 Q722.0469 521.5898 721.8594 521.4258 Q721.6719 521.2617 721.6719 520.9805 Q721.6719 520.7148 721.8594 520.5508 Q722.0469 520.3867 722.4844 520.3867 L722.6719 520.3867 L722.6719 515.6836 L722.4844 515.6836 Q722.0469 515.6836 721.8594 515.5195 Q721.6719 515.3555 721.6719 515.0898 Q721.6719 514.8086 721.8594 514.6445 Q722.0469 514.4805 722.4844 514.4805 L727.875 514.4805 L727.875 516.3086 Q727.875 516.7461 727.7109 516.9258 Q727.5469 517.1055 727.2656 517.1055 Q727 517.1055 726.8359 516.9258 Q726.6719 516.7461 726.6719 516.3086 L726.6719 515.6836 L723.875 515.6836 L723.875 517.418 L724.9219 517.418 Q724.9219 516.9492 725.0156 516.8242 Q725.1875 516.5273 725.5313 516.5273 Q725.7969 516.5273 725.9609 516.7148 Q726.125 516.9023 726.125 517.3398 L726.125 518.7148 Q726.125 519.1055 726.0313 519.2461 Q725.8438 519.5273 725.5313 519.5273 Q725.1875 519.5273 725.0156 519.2305 Q724.9219 519.1055 724.9219 518.6211 L723.875 518.6211 Z" style="fill:black;" />
+      <text x="743" y="522.1426" textLength="48" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">ADNFTM</text>
+      <line x1="665.5" y1="532.5898" x2="838.5" y2="532.5898" stroke-width="0.5" style="stroke:black;" />
+      <text x="670.5" y="548.042" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">09</text>
+      <text x="684.5" y="548.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="687.5" y="548.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="690.5" y="548.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="693.5" y="548.042" textLength="64" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Zoeksleutel</text>
+      <text x="757.5" y="548.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="760.5" y="548.042" textLength="55" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">onbekend</text>
+      <text x="670.5" y="561.8408" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">11</text>
+      <text x="684.5" y="561.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="687.5" y="561.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="690.5" y="561.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="693.5" y="561.8408" textLength="64" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Technische</text>
+      <text x="757.5" y="561.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="760.5" y="561.8408" textLength="20" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">fout</text>
+      <text x="670.5" y="575.6396" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">12</text>
+      <text x="684.5" y="575.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="687.5" y="575.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="690.5" y="575.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="693.5" y="575.6396" textLength="67" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Inhoudelijke</text>
+      <text x="760.5" y="575.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="763.5" y="575.6396" textLength="20" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">fout</text>
+      <text x="670.5" y="589.4385" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">13</text>
+      <text x="684.5" y="589.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="687.5" y="589.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="690.5" y="589.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="693.5" y="589.4385" textLength="71" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Volgordelijke</text>
+      <text x="764.5" y="589.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="767.5" y="589.4385" textLength="20" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">fout</text>
+      <text x="670.5" y="603.2373" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">14</text>
+      <text x="684.5" y="603.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="687.5" y="603.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="690.5" y="603.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="693.5" y="603.2373" textLength="26" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Data</text>
+      <text x="719.5" y="603.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="722.5" y="603.2373" textLength="37" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">zender</text>
+      <text x="759.5" y="603.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="762.5" y="603.2373" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">en</text>
+      <text x="776.5" y="603.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="779.5" y="603.2373" textLength="54" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">ontvanger</text>
+      <text x="670.5" y="617.0361" textLength="48" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">matchen</text>
+      <text x="718.5" y="617.0361" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="721.5" y="617.0361" textLength="20" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">niet</text>
+      <text x="670.5" y="630.835" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">99</text>
+      <text x="684.5" y="630.835" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="687.5" y="630.835" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">:</text>
+      <text x="690.5" y="630.835" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;"> </text>
+      <text x="693.5" y="630.835" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Overig</text>
+    </g>
+    <g id="elem_AFDIDP">
+      <rect x="908.5" y="530.5898" width="73" height="79.3965" rx="2.5" ry="2.5" id="AFDIDP" stroke-width="0.5" codeLine="56" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="922.5" cy="545.5898" rx="10" ry="10" stroke-width="1" style="fill:#EB937F;stroke:#181818;" />
+      <path d="M922.375 546.6211 L922.375 548.3867 L925.4375 548.3867 L925.4375 547.7305 Q925.4375 547.3086 925.6016 547.1211 Q925.7656 546.9336 926.0313 546.9336 Q926.2969 546.9336 926.4688 547.1211 Q926.6406 547.3086 926.6406 547.7305 L926.6406 549.5898 L920.9844 549.5898 Q920.5469 549.5898 920.3594 549.4258 Q920.1719 549.2617 920.1719 548.9805 Q920.1719 548.7148 920.3594 548.5508 Q920.5469 548.3867 920.9844 548.3867 L921.1719 548.3867 L921.1719 543.6836 L920.9844 543.6836 Q920.5469 543.6836 920.3594 543.5195 Q920.1719 543.3555 920.1719 543.0898 Q920.1719 542.8086 920.3594 542.6445 Q920.5469 542.4805 920.9844 542.4805 L926.375 542.4805 L926.375 544.3086 Q926.375 544.7461 926.2109 544.9258 Q926.0469 545.1055 925.7656 545.1055 Q925.5 545.1055 925.3359 544.9258 Q925.1719 544.7461 925.1719 544.3086 L925.1719 543.6836 L922.375 543.6836 L922.375 545.418 L923.4219 545.418 Q923.4219 544.9492 923.5156 544.8242 Q923.6875 544.5273 924.0313 544.5273 Q924.2969 544.5273 924.4609 544.7148 Q924.625 544.9023 924.625 545.3398 L924.625 546.7148 Q924.625 547.1055 924.5313 547.2461 Q924.3438 547.5273 924.0313 547.5273 Q923.6875 547.5273 923.5156 547.2305 Q923.4219 547.1055 923.4219 546.6211 L922.375 546.6211 Z" style="fill:black;" />
+      <text x="935.5" y="550.1426" textLength="43" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">AFDIDP</text>
+      <line x1="909.5" y1="560.5898" x2="980.5" y2="560.5898" stroke-width="0.5" style="stroke:black;" />
+      <text x="914.5" y="576.042" textLength="37" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">U0003</text>
+      <text x="914.5" y="589.8408" textLength="9" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">...</text>
+      <text x="914.5" y="603.6396" textLength="37" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">U0765</text>
+    </g>
+    <g id="elem_msgTypes">
+      <rect x="295" y="454.5898" width="88" height="231.1836" rx="2.5" ry="2.5" id="msgTypes" stroke-width="0.5" codeLine="62" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="309" cy="469.5898" rx="10" ry="10" stroke-width="1" style="fill:#EB937F;stroke:#181818;" />
+      <path d="M308.875 470.6211 L308.875 472.3867 L311.9375 472.3867 L311.9375 471.7305 Q311.9375 471.3086 312.1016 471.1211 Q312.2656 470.9336 312.5313 470.9336 Q312.7969 470.9336 312.9688 471.1211 Q313.1406 471.3086 313.1406 471.7305 L313.1406 473.5898 L307.4844 473.5898 Q307.0469 473.5898 306.8594 473.4258 Q306.6719 473.2617 306.6719 472.9805 Q306.6719 472.7148 306.8594 472.5508 Q307.0469 472.3867 307.4844 472.3867 L307.6719 472.3867 L307.6719 467.6836 L307.4844 467.6836 Q307.0469 467.6836 306.8594 467.5195 Q306.6719 467.3555 306.6719 467.0898 Q306.6719 466.8086 306.8594 466.6445 Q307.0469 466.4805 307.4844 466.4805 L312.875 466.4805 L312.875 468.3086 Q312.875 468.7461 312.7109 468.9258 Q312.5469 469.1055 312.2656 469.1055 Q312 469.1055 311.8359 468.9258 Q311.6719 468.7461 311.6719 468.3086 L311.6719 467.6836 L308.875 467.6836 L308.875 469.418 L309.9219 469.418 Q309.9219 468.9492 310.0156 468.8242 Q310.1875 468.5273 310.5313 468.5273 Q310.7969 468.5273 310.9609 468.7148 Q311.125 468.9023 311.125 469.3398 L311.125 470.7148 Q311.125 471.1055 311.0313 471.2461 Q310.8438 471.5273 310.5313 471.5273 Q310.1875 471.5273 310.0156 471.2305 Q309.9219 471.1055 309.9219 470.6211 L308.875 470.6211 Z" style="fill:black;" />
+      <text x="322" y="474.1426" textLength="58" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">msgTypes</text>
+      <line x1="296" y1="484.5898" x2="382" y2="484.5898" stroke-width="0.5" style="stroke:black;" />
+      <text x="301" y="500.042" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">0001a</text>
+      <text x="301" y="513.8408" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">0001b</text>
+      <text x="301" y="527.6396" textLength="34" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">0001c</text>
+      <text x="301" y="541.4385" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00002</text>
+      <text x="301" y="555.2373" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00541</text>
+      <text x="301" y="569.0361" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00542</text>
+      <text x="301" y="582.835" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00551</text>
+      <text x="301" y="596.6338" textLength="42" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00552a</text>
+      <text x="301" y="610.4326" textLength="42" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00552b</text>
+      <text x="301" y="624.2314" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00553</text>
+      <text x="301" y="638.0303" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00554</text>
+      <text x="301" y="651.8291" textLength="42" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00555a</text>
+      <text x="301" y="665.6279" textLength="42" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00555b</text>
+      <text x="301" y="679.4268" textLength="35" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">00556</text>
+    </g>
+    <g id="elem_commonFunctional">
+      <rect x="241.5" y="259.5898" width="195" height="134.5918" rx="2.5" ry="2.5" id="commonFunctional" stroke-width="0.5" codeLine="79" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="282.05" cy="274.5898" rx="10" ry="10" stroke-width="1" style="fill:#ADD1B2;stroke:#181818;" />
+      <path d="M283.5344 271.793 Q283.6438 271.6367 283.7766 271.5586 Q283.9094 271.4805 284.0656 271.4805 Q284.3313 271.4805 284.4953 271.668 Q284.6594 271.8555 284.6594 272.2773 L284.6594 273.3086 Q284.6594 273.7305 284.4953 273.918 Q284.3313 274.1055 284.0656 274.1055 Q283.8156 274.1055 283.675 273.9648 Q283.5344 273.8398 283.4563 273.4648 Q283.425 273.2148 283.3 273.0898 Q283.05 272.8242 282.6203 272.668 Q282.1906 272.5117 281.7531 272.5117 Q281.2219 272.5117 280.7688 272.7461 Q280.3156 272.9805 279.9719 273.5039 Q279.6281 274.0273 279.6281 274.7617 L279.6281 275.543 Q279.6281 276.4023 280.2609 276.9805 Q280.8938 277.5586 282.0031 277.5586 Q282.675 277.5586 283.1438 277.3867 Q283.4094 277.2773 283.7063 276.9648 Q283.8938 276.7773 284.0031 276.7227 Q284.1125 276.668 284.2375 276.668 Q284.4875 276.668 284.6672 276.8477 Q284.8469 277.0273 284.8469 277.2773 Q284.8469 277.5273 284.5969 277.8086 Q284.2375 278.2148 283.675 278.4492 Q282.925 278.7617 282.0188 278.7617 Q280.9406 278.7617 280.0969 278.3242 Q279.3938 277.9805 278.9094 277.2148 Q278.425 276.4492 278.425 275.5586 L278.425 274.7461 Q278.425 273.8086 278.8625 272.9961 Q279.3 272.1836 280.0734 271.7461 Q280.8469 271.3086 281.7063 271.3086 Q282.2375 271.3086 282.6906 271.4258 Q283.1438 271.543 283.5344 271.793 Z" style="fill:black;" />
+      <text x="300.95" y="279.1426" textLength="106" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">commonFunctional</text>
+      <line x1="242.5" y1="289.5898" x2="435.5" y2="289.5898" stroke-width="0.5" style="stroke:black;" />
+      <text x="247.5" y="305.042" textLength="58" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">entityType</text>
+      <text x="305.5" y="305.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="308.5" y="305.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">:</text>
+      <text x="311.5" y="305.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="314.5" y="305.042" textLength="33" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">string</text>
+      <text x="347.5" y="305.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="350.5" y="305.042" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">=</text>
+      <text x="357.5" y="305.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="360.5" y="305.042" textLength="51" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">"default"</text>
+      <text x="247.5" y="318.8408" textLength="46" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">function</text>
+      <text x="293.5" y="318.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="296.5" y="318.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="299.5" y="318.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="302.5" y="318.8408" textLength="46" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">ADNFUN</text>
+      <text x="348.5" y="318.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="351.5" y="318.8408" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">=</text>
+      <text x="358.5" y="318.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="361.5" y="318.8408" textLength="26" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">"23"</text>
+      <text x="247.5" y="332.6396" textLength="63" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">statusType</text>
+      <text x="310.5" y="332.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="313.5" y="332.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="316.5" y="332.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="319.5" y="332.6396" textLength="47" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">ADNSTS</text>
+      <text x="247.5" y="346.4385" textLength="104" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">afdDefinitionName</text>
+      <text x="351.5" y="346.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="354.5" y="346.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="357.5" y="346.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="360.5" y="346.4385" textLength="55" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">string(80)</text>
+      <text x="247.5" y="360.2373" textLength="115" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">afdDefinitionVersion</text>
+      <text x="362.5" y="360.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="365.5" y="360.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="368.5" y="360.2373" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="371.5" y="360.2373" textLength="55" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">string(80)</text>
+      <text x="247.5" y="374.0361" textLength="104" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">originalMessageId</text>
+      <text x="351.5" y="374.0361" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="354.5" y="374.0361" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="357.5" y="374.0361" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="360.5" y="374.0361" textLength="55" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">string(70)</text>
+      <text x="247.5" y="387.835" textLength="117" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;">originalMessageType</text>
+      <text x="364.5" y="387.835" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;"> </text>
+      <text x="367.5" y="387.835" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;">:</text>
+      <text x="370.5" y="387.835" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;"> </text>
+      <text x="373.5" y="387.835" textLength="57" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;">msgTypes</text>
+    </g>
+    <g id="elem_commonTechnical">
+      <rect x="1070" y="280.5898" width="176" height="93.1953" rx="2.5" ry="2.5" id="commonTechnical" stroke-width="0.5" codeLine="89" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="1103.8" cy="295.5898" rx="10" ry="10" stroke-width="1" style="fill:#ADD1B2;stroke:#181818;" />
+      <path d="M1105.284 292.793 Q1105.394 292.6367 1105.527 292.5586 Q1105.659 292.4805 1105.816 292.4805 Q1106.081 292.4805 1106.245 292.668 Q1106.409 292.8555 1106.409 293.2773 L1106.409 294.3086 Q1106.409 294.7305 1106.245 294.918 Q1106.081 295.1055 1105.816 295.1055 Q1105.566 295.1055 1105.425 294.9648 Q1105.284 294.8398 1105.206 294.4648 Q1105.175 294.2148 1105.05 294.0898 Q1104.8 293.8242 1104.37 293.668 Q1103.941 293.5117 1103.503 293.5117 Q1102.972 293.5117 1102.519 293.7461 Q1102.066 293.9805 1101.722 294.5039 Q1101.378 295.0273 1101.378 295.7617 L1101.378 296.543 Q1101.378 297.4023 1102.011 297.9805 Q1102.644 298.5586 1103.753 298.5586 Q1104.425 298.5586 1104.894 298.3867 Q1105.159 298.2773 1105.456 297.9648 Q1105.644 297.7773 1105.753 297.7227 Q1105.863 297.668 1105.988 297.668 Q1106.238 297.668 1106.417 297.8477 Q1106.597 298.0273 1106.597 298.2773 Q1106.597 298.5273 1106.347 298.8086 Q1105.988 299.2148 1105.425 299.4492 Q1104.675 299.7617 1103.769 299.7617 Q1102.691 299.7617 1101.847 299.3242 Q1101.144 298.9805 1100.659 298.2148 Q1100.175 297.4492 1100.175 296.5586 L1100.175 295.7461 Q1100.175 294.8086 1100.613 293.9961 Q1101.05 293.1836 1101.823 292.7461 Q1102.597 292.3086 1103.456 292.3086 Q1103.988 292.3086 1104.441 292.4258 Q1104.894 292.543 1105.284 292.793 Z" style="fill:black;" />
+      <text x="1121.2" y="300.1426" textLength="102" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">commonTechnical</text>
+      <line x1="1071" y1="310.5898" x2="1245" y2="310.5898" stroke-width="0.5" style="stroke:black;" />
+      <text x="1076" y="326.042" textLength="58" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">entityType</text>
+      <text x="1134" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="1137" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">:</text>
+      <text x="1140" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="1143" y="326.042" textLength="33" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">string</text>
+      <text x="1176" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="1179" y="326.042" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">=</text>
+      <text x="1186" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="1189" y="326.042" textLength="51" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">"default"</text>
+      <text x="1076" y="339.8408" textLength="101" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">creationDateTime</text>
+      <text x="1177" y="339.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="1180" y="339.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="1183" y="339.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="1186" y="339.8408" textLength="50" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">datetime</text>
+      <text x="1076" y="353.6396" textLength="63" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">messageId</text>
+      <text x="1139" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="1142" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="1145" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="1148" y="353.6396" textLength="55" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">string(70)</text>
+      <text x="1076" y="367.4385" textLength="68" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;">testMessage</text>
+      <text x="1144" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;"> </text>
+      <text x="1147" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;">:</text>
+      <text x="1150" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;"> </text>
+      <text x="1153" y="367.4385" textLength="46" lengthAdjust="spacing" font-family="Arial" font-size="12" font-style="italic" style="fill:black;">boolean</text>
+    </g>
+    <g id="elem_error">
+      <rect x="613.5" y="280.5898" width="207" height="93.1953" rx="2.5" ry="2.5" id="error" stroke-width="0.5" codeLine="97" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="700" cy="295.5898" rx="10" ry="10" stroke-width="1" style="fill:#ADD1B2;stroke:#181818;" />
+      <path d="M701.4844 292.793 Q701.5938 292.6367 701.7266 292.5586 Q701.8594 292.4805 702.0156 292.4805 Q702.2813 292.4805 702.4453 292.668 Q702.6094 292.8555 702.6094 293.2773 L702.6094 294.3086 Q702.6094 294.7305 702.4453 294.918 Q702.2813 295.1055 702.0156 295.1055 Q701.7656 295.1055 701.625 294.9648 Q701.4844 294.8398 701.4063 294.4648 Q701.375 294.2148 701.25 294.0898 Q701 293.8242 700.5703 293.668 Q700.1406 293.5117 699.7031 293.5117 Q699.1719 293.5117 698.7188 293.7461 Q698.2656 293.9805 697.9219 294.5039 Q697.5781 295.0273 697.5781 295.7617 L697.5781 296.543 Q697.5781 297.4023 698.2109 297.9805 Q698.8438 298.5586 699.9531 298.5586 Q700.625 298.5586 701.0938 298.3867 Q701.3594 298.2773 701.6563 297.9648 Q701.8438 297.7773 701.9531 297.7227 Q702.0625 297.668 702.1875 297.668 Q702.4375 297.668 702.6172 297.8477 Q702.7969 298.0273 702.7969 298.2773 Q702.7969 298.5273 702.5469 298.8086 Q702.1875 299.2148 701.625 299.4492 Q700.875 299.7617 699.9688 299.7617 Q698.8906 299.7617 698.0469 299.3242 Q697.3438 298.9805 696.8594 298.2148 Q696.375 297.4492 696.375 296.5586 L696.375 295.7461 Q696.375 294.8086 696.8125 293.9961 Q697.25 293.1836 698.0234 292.7461 Q698.7969 292.3086 699.6563 292.3086 Q700.1875 292.3086 700.6406 292.4258 Q701.0938 292.543 701.4844 292.793 Z" style="fill:black;" />
+      <text x="719" y="300.1426" textLength="26" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">error</text>
+      <line x1="614.5" y1="310.5898" x2="819.5" y2="310.5898" stroke-width="0.5" style="stroke:black;" />
+      <text x="619.5" y="326.042" textLength="58" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">entityType</text>
+      <text x="677.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="680.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">:</text>
+      <text x="683.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="686.5" y="326.042" textLength="33" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">string</text>
+      <text x="719.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="722.5" y="326.042" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">=</text>
+      <text x="729.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="732.5" y="326.042" textLength="51" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">"default"</text>
+      <text x="619.5" y="339.8408" textLength="58" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">errorCode</text>
+      <text x="677.5" y="339.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="680.5" y="339.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="683.5" y="339.8408" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="686.5" y="339.8408" textLength="47" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">ADNFTM</text>
+      <text x="619.5" y="353.6396" textLength="124" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">errorCodeExplanation</text>
+      <text x="743.5" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="746.5" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="749.5" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="752.5" y="353.6396" textLength="62" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">string(300)</text>
+      <text x="619.5" y="367.4385" textLength="37" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">refKey</text>
+      <text x="656.5" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="659.5" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="662.5" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="665.5" y="367.4385" textLength="55" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">string(70)</text>
+    </g>
+    <g id="elem_party.pensionProvider">
+      <rect x="855.5" y="280.5898" width="179" height="93.1953" rx="2.5" ry="2.5" id="party.pensionProvider" stroke-width="0.5" codeLine="107" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="883" cy="295.5898" rx="10" ry="10" stroke-width="1" style="fill:#ADD1B2;stroke:#181818;" />
+      <path d="M884.4844 292.793 Q884.5938 292.6367 884.7266 292.5586 Q884.8594 292.4805 885.0156 292.4805 Q885.2813 292.4805 885.4453 292.668 Q885.6094 292.8555 885.6094 293.2773 L885.6094 294.3086 Q885.6094 294.7305 885.4453 294.918 Q885.2813 295.1055 885.0156 295.1055 Q884.7656 295.1055 884.625 294.9648 Q884.4844 294.8398 884.4063 294.4648 Q884.375 294.2148 884.25 294.0898 Q884 293.8242 883.5703 293.668 Q883.1406 293.5117 882.7031 293.5117 Q882.1719 293.5117 881.7188 293.7461 Q881.2656 293.9805 880.9219 294.5039 Q880.5781 295.0273 880.5781 295.7617 L880.5781 296.543 Q880.5781 297.4023 881.2109 297.9805 Q881.8438 298.5586 882.9531 298.5586 Q883.625 298.5586 884.0938 298.3867 Q884.3594 298.2773 884.6563 297.9648 Q884.8438 297.7773 884.9531 297.7227 Q885.0625 297.668 885.1875 297.668 Q885.4375 297.668 885.6172 297.8477 Q885.7969 298.0273 885.7969 298.2773 Q885.7969 298.5273 885.5469 298.8086 Q885.1875 299.2148 884.625 299.4492 Q883.875 299.7617 882.9688 299.7617 Q881.8906 299.7617 881.0469 299.3242 Q880.3438 298.9805 879.8594 298.2148 Q879.375 297.4492 879.375 296.5586 L879.375 295.7461 Q879.375 294.8086 879.8125 293.9961 Q880.25 293.1836 881.0234 292.7461 Q881.7969 292.3086 882.6563 292.3086 Q883.1875 292.3086 883.6406 292.4258 Q884.0938 292.543 884.4844 292.793 Z" style="fill:black;" />
+      <text x="899" y="300.1426" textLength="119" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">party.pensionProvider</text>
+      <line x1="856.5" y1="310.5898" x2="1033.5" y2="310.5898" stroke-width="0.5" style="stroke:black;" />
+      <text x="861.5" y="326.042" textLength="58" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">entityType</text>
+      <text x="919.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="922.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">:</text>
+      <text x="925.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="928.5" y="326.042" textLength="33" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">string</text>
+      <text x="961.5" y="326.042" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;"> </text>
+      <text x="964.5" y="326.042" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">=</text>
+      <text x="861.5" y="339.8408" textLength="105" lengthAdjust="spacing" font-family="Arial" font-size="12" text-decoration="underline" font-weight="bold" style="fill:black;">"pensionProvider"</text>
+      <text x="861.5" y="353.6396" textLength="49" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">puvCode</text>
+      <text x="910.5" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="913.5" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="916.5" y="353.6396" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="919.5" y="353.6396" textLength="41" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">AFDIDP</text>
+      <text x="861.5" y="367.4385" textLength="103" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">organizationName</text>
+      <text x="964.5" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="967.5" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">:</text>
+      <text x="970.5" y="367.4385" textLength="3" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;"> </text>
+      <text x="973.5" y="367.4385" textLength="55" lengthAdjust="spacing" font-family="Arial" font-size="12" font-weight="bold" style="fill:black;">string(60)</text>
+    </g>
+    <g id="elem_Feedback">
+      <rect x="789" y="161.5898" width="84" height="38" rx="2.5" ry="2.5" id="Feedback" stroke-width="0.5" style="fill:whitesmoke;stroke:black;" />
+      <ellipse cx="803" cy="176.5898" rx="10" ry="10" stroke-width="1" style="fill:#ADD1B2;stroke:#181818;" />
+      <path d="M804.4844 173.793 Q804.5938 173.6367 804.7266 173.5586 Q804.8594 173.4805 805.0156 173.4805 Q805.2813 173.4805 805.4453 173.668 Q805.6094 173.8555 805.6094 174.2773 L805.6094 175.3086 Q805.6094 175.7305 805.4453 175.918 Q805.2813 176.1055 805.0156 176.1055 Q804.7656 176.1055 804.625 175.9648 Q804.4844 175.8398 804.4063 175.4648 Q804.375 175.2148 804.25 175.0898 Q804 174.8242 803.5703 174.668 Q803.1406 174.5117 802.7031 174.5117 Q802.1719 174.5117 801.7188 174.7461 Q801.2656 174.9805 800.9219 175.5039 Q800.5781 176.0273 800.5781 176.7617 L800.5781 177.543 Q800.5781 178.4023 801.2109 178.9805 Q801.8438 179.5586 802.9531 179.5586 Q803.625 179.5586 804.0938 179.3867 Q804.3594 179.2773 804.6563 178.9648 Q804.8438 178.7773 804.9531 178.7227 Q805.0625 178.668 805.1875 178.668 Q805.4375 178.668 805.6172 178.8477 Q805.7969 179.0273 805.7969 179.2773 Q805.7969 179.5273 805.5469 179.8086 Q805.1875 180.2148 804.625 180.4492 Q803.875 180.7617 802.9688 180.7617 Q801.8906 180.7617 801.0469 180.3242 Q800.3438 179.9805 799.8594 179.2148 Q799.375 178.4492 799.375 177.5586 L799.375 176.7461 Q799.375 175.8086 799.8125 174.9961 Q800.25 174.1836 801.0234 173.7461 Q801.7969 173.3086 802.6563 173.3086 Q803.1875 173.3086 803.6406 173.4258 Q804.0938 173.543 804.4844 173.793 Z" style="fill:black;" />
+      <text x="816" y="181.1426" textLength="54" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">Feedback</text>
+      <line x1="790" y1="191.5898" x2="872" y2="191.5898" stroke-width="0.5" style="stroke:black;" />
+    </g>
+    <g id="elem_GMN26">
+      <path d="M418.5 470.0898 L418.5 669.8237 A0 0 0 0 0 418.5 669.8237 L629.5 669.8237 A0 0 0 0 0 629.5 669.8237 L629.5 480.0898 L619.5 470.0898 L451.66 470.0898 L390.29 394.8998 L443.66 470.0898 L418.5 470.0898 A0 0 0 0 0 418.5 470.0898" stroke-width="0.5" style="fill:#FFFFDD;stroke:gray;" />
+      <path d="M619.5 470.0898 L619.5 480.0898 L629.5 480.0898 L619.5 470.0898" stroke-width="0.5" style="fill:#FFFFDD;stroke:gray;" />
+      <text x="424.5" y="489.405" textLength="31" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">Field</text>
+      <text x="455.5" y="489.405" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="459.5" y="489.405" textLength="130" lengthAdjust="spacing" font-family="Arial" font-size="15" font-weight="bold" style="fill:black;">originalMessageId</text>
+      <text x="589.5" y="489.405" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">:</text>
+      <text x="424.5" y="506.6536" textLength="45" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">Should</text>
+      <text x="469.5" y="506.6536" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="473.5" y="506.6536" textLength="40" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">reflect</text>
+      <text x="513.5" y="506.6536" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="517.5" y="506.6536" textLength="20" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">the</text>
+      <text x="537.5" y="506.6536" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="541.5" y="506.6536" textLength="72" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">messageId</text>
+      <text x="424.5" y="523.9021" textLength="12" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">of</text>
+      <text x="436.5" y="523.9021" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="440.5" y="523.9021" textLength="20" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">the</text>
+      <text x="460.5" y="523.9021" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="464.5" y="523.9021" textLength="32" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">initial</text>
+      <text x="496.5" y="523.9021" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="500.5" y="523.9021" textLength="53" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">request.</text>
+      <text x="424.5" y="541.1506" textLength="25" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">The</text>
+      <text x="449.5" y="541.1506" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="453.5" y="541.1506" textLength="26" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">field</text>
+      <text x="424.5" y="558.3992" textLength="149" lengthAdjust="spacing" font-family="Arial" font-size="15" font-style="italic" font-weight="bold" style="fill:black;">originalMessageType</text>
+      <text x="424.5" y="575.6477" textLength="24" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">can</text>
+      <text x="448.5" y="575.6477" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="452.5" y="575.6477" textLength="60" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">optionally</text>
+      <text x="512.5" y="575.6477" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="516.5" y="575.6477" textLength="16" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">be</text>
+      <text x="532.5" y="575.6477" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="536.5" y="575.6477" textLength="58" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">included.</text>
+      <text x="424.5" y="592.8962" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="424.5" y="610.1448" textLength="25" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">The</text>
+      <text x="449.5" y="610.1448" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="453.5" y="610.1448" textLength="76" lengthAdjust="spacing" font-family="Arial" font-size="15" font-weight="bold" style="fill:black;">messageId</text>
+      <text x="529.5" y="610.1448" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="533.5" y="610.1448" textLength="11" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">in</text>
+      <text x="424.5" y="627.3933" textLength="121" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">commonTechnical</text>
+      <text x="545.5" y="627.3933" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="549.5" y="627.3933" textLength="33" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">must</text>
+      <text x="582.5" y="627.3933" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="586.5" y="627.3933" textLength="16" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">be</text>
+      <text x="602.5" y="627.3933" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="606.5" y="627.3933" textLength="8" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">a</text>
+      <text x="424.5" y="644.6418" textLength="31" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">new,</text>
+      <text x="455.5" y="644.6418" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="459.5" y="644.6418" textLength="43" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">unique</text>
+      <text x="502.5" y="644.6418" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="506.5" y="644.6418" textLength="14" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">ID</text>
+      <text x="520.5" y="644.6418" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="524.5" y="644.6418" textLength="17" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">for</text>
+      <text x="541.5" y="644.6418" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="545.5" y="644.6418" textLength="20" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">the</text>
+      <text x="424.5" y="661.8904" textLength="59" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">feedback</text>
+      <text x="483.5" y="661.8904" textLength="4" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;"> </text>
+      <text x="487.5" y="661.8904" textLength="65" lengthAdjust="spacing" font-family="Arial" font-size="15" style="fill:black;">message.</text>
+    </g>
+    <g id="link_Feedback_commonTechnical">
+      <path d="M884.7461 196.857 C930.0661 210.277 992.09 230.6698 1052 259.5898 C1064.72 265.7298 1077.81 273.0398 1090.27 280.5298" id="Feedback-backto-commonTechnical" stroke-width="1" codeLine="114" style="fill:none;stroke:#181818;" />
+      <polygon points="873.24,193.4498 877.8574,198.9888 884.7461,196.857 880.1288,191.318 873.24,193.4498" stroke-width="1" style="fill:none;stroke:#181818;" />
+      <text x="881.1016" y="193.0638" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">1</text>
+      <text x="1071.473" y="270.2439" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">1</text>
+    </g>
+    <g id="link_Feedback_commonFunctional">
+      <path d="M777.116 197.4205 C699.496 220.2105 544.16 265.8398 436.98 297.3098" id="Feedback-backto-commonFunctional" stroke-width="1" codeLine="115" style="fill:none;stroke:#181818;" />
+      <polygon points="788.63,194.0398 781.7461,191.8922 777.116,197.4205 783.9999,199.5681 788.63,194.0398" stroke-width="1" style="fill:none;stroke:#181818;" />
+      <text x="774.0328" y="193.7092" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">1</text>
+      <text x="444.4324" y="293.142" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">1</text>
+    </g>
+    <g id="link_Feedback_party.pensionProvider">
+      <path d="M852.6416 209.0217 C868.5116 229.1417 887.4 253.0798 909.02 280.4898" id="Feedback-backto-party.pensionProvider" stroke-width="1" codeLine="116" style="fill:none;stroke:#181818;" />
+      <polygon points="845.21,199.5998 845.7852,206.788 852.6416,209.0217 852.0664,201.8335 845.21,199.5998" stroke-width="1" style="fill:none;stroke:#181818;" />
+      <text x="841.4899" y="218.9868" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">1</text>
+      <text x="895.4811" y="270.1973" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">1</text>
+    </g>
+    <g id="link_Feedback_error">
+      <path d="M809.3584 209.0217 C793.4884 229.1417 779.5544 246.7986 757.9344 274.2086" id="Feedback-error" stroke-width="1" codeLine="117" style="fill:none;stroke:#181818;" />
+      <polygon points="816.79,199.5998 809.9336,201.8335 809.3584,209.0217 816.2148,206.788 816.79,199.5998" stroke-width="1" style="fill:none;stroke:#181818;" />
+      <line x1="757.9344" y1="274.2086" x2="759.2612" y2="280.4898" stroke-width="1" style="stroke:#181818;" />
+      <line x1="757.9344" y1="274.2086" x2="746.6988" y2="280.4898" stroke-width="1" style="stroke:#181818;" />
+      <line x1="757.9344" y1="274.2086" x2="752.98" y2="280.4898" stroke-width="1" style="stroke:#181818;" />
+      <text x="804.3663" y="218.9868" textLength="7" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">1</text>
+      <text x="722.1236" y="270.1973" textLength="34" lengthAdjust="spacing" font-family="Arial" font-size="12" style="fill:black;">0..999</text>
+    </g>
+    <g id="link_party.pensionProvider_AFDIDP">
+      <path d="M945 373.6998 C945 419.0098 945 487.7098 945 530.4198" id="party.pensionProvider-AFDIDP" stroke-width="1" codeLine="119" style="fill:none;stroke:#181818;" />
+    </g>
+    <g id="link_error_ADNFTM">
+      <path d="M723.62 373.6998 C728.9 409.9998 736.35 461.3198 742.29 502.2598" id="error-ADNFTM" stroke-width="1" codeLine="120" style="fill:none;stroke:#181818;" />
+    </g>
+    <g id="link_commonFunctional_ADNFUN">
+      <path d="M241.31 377.5698 C205.98 398.3498 167.35 424.6698 137 454.5898 C110.03 481.1798 87.87 519.2598 75.04 544.0798" id="commonFunctional-ADNFUN" stroke-width="1" codeLine="121" style="fill:none;stroke:#181818;" />
+    </g>
+    <g id="link_commonFunctional_ADNSTS">
+      <path d="M302.41 394.8998 C277.07 441.1498 244.48 500.6598 224.69 536.7898" id="commonFunctional-ADNSTS" stroke-width="1" codeLine="122" style="fill:none;stroke:#181818;" />
+    </g>
+    <g id="link_commonFunctional_msgTypes">
+      <path d="M339 394.8998 C339 413.4298 339 434.0798 339 454.5098" id="commonFunctional-msgTypes" stroke-width="1" codeLine="123" style="fill:none;stroke:#181818;" />
+    </g>
+  </g>
+  <title>20250624 Feedback_message</title>
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:puv="https://github.com/Fruchtzwerg94/PlantUmlViewer">
+      <puv:product>PlantUML Viewer by Philipp Schmidt</puv:product>
+      <puv:version>1.7.0.11</puv:version>
+      <puv:plantumlviewer>1.2024.3</puv:plantumlviewer>
+      <rdf:Description>
+        <dc:creator>MINISFORUMNAB6\daman</dc:creator>
+        <dc:date>2025-06-24T17:00:31.0440085Z</dc:date>
+        <dc:source>20250624 Feedback_message.puml</dc:source>
+        <dc:title>20250624 Feedback_message</dc:title>
+        <dc:format>image/svg</dc:format>
+        <puv:diagram>1</puv:diagram>
+        <puv:page>1</puv:page>
+      </rdf:Description>
+    </rdf:RDF>
+  </metadata>
+  <desc>@startuml sivi_bericht
+set separator none
+hide empty methods
+
+' --- Lettertype-instellingen ---
+
+
+
+skinparam defaultFontName "Arial"
+skinparam defaultFontSize 12
+skinparam classFontName "Arial"
+skinparam noteFontName "Arial"
+skinparam noteFontSize 15                     ' Specifiek: grotere tekst in notes (duidelijker zichtbaar)
+skinparam monospacedFontName "Courier New"    ' Voor &lt;code&gt; of monospaced notatie
+
+' --- Kleuren en layout ---
+skinparam classBorderColor black
+skinparam classBackgroundColor #F5F5F5
+skinparam noteBackgroundColor #FFFFDD
+skinparam noteBorderColor gray
+skinparam shadowing false
+
+' --- Tekstopmaak ---
+skinparam wrapWidth 200
+skinparam maxMessageSize 120
+
+
+
+legend top left
+ &lt;size:20&gt;&lt;b&gt;LEGEND: &lt;/b&gt; &lt;color:red&gt;&lt;b&gt;Feedback message&lt;/b&gt;&lt;/color&gt;&lt;/size&gt;
+ 1. &lt;b&gt;Bold&lt;/b&gt; = Mandatory fields
+ 2. &lt;i&gt;Italic&lt;/i&gt; = Optional fields
+ 3. ..       = incomplete list (complete values on afdCodelists)
+
+For description of codes ADNFUN, ADNDNS, AFDIDP, AFDRES a.s.o. see
+https://www.sivi.org/sivi-afs/online-diensten/afd-2-0-online-raadplegen/
+end legend
+
+ enum ADNFUN {
+     23 : Melden status
+ }
+
+ enum ADNSTS {
+     0 : Afgewezen
+     8 : Geaccepteerd
+ }
+ 
+ enum ADNFTM {
+     09 : Zoeksleutel onbekend
+     11 : Technische fout
+     12 : Inhoudelijke fout
+     13 : Volgordelijke fout
+     14 : Data zender en ontvanger matchen niet
+     99 : Overig
+ }
+ 
+ enum AFDIDP {
+     U0003
+     ...
+     U0765
+ }
+ 
+ enum msgTypes {
+    0001a
+	0001b
+	0001c
+	00002
+	00541
+	00542
+	00551
+	00552a
+	00552b
+	00553
+	00554
+	00555a
+	00555b
+	00556
+ }
+
+class commonFunctional {
+    {static} **entityType : string = "default"**
+    {field} **function : ADNFUN = "23"**
+	{field} **statusType : ADNSTS**
+    {field} **afdDefinitionName : string(80)**
+    {field} **afdDefinitionVersion : string(80)**
+    {field} **originalMessageId : string(70)**
+	 {field} &lt;i&gt;originalMessageType : msgTypes&lt;/i&gt;
+}
+
+class commonTechnical {
+    {static} **entityType : string = "default"**
+    {field} **creationDateTime : datetime**
+    {field} **messageId : string(70)**
+    {field} &lt;i&gt;testMessage : boolean&lt;/i&gt;
+}
+
+
+class error {
+    {static} **entityType : string = "default"**
+    **errorCode : ADNFTM**
+    {field} **errorCodeExplanation : string(300)**
+    {field} **refKey : string(70)**
+}
+
+
+
+
+class party.pensionProvider  {
+    {static} **entityType : string = "pensionProvider"**
+    **puvCode : AFDIDP**
+    {field} **organizationName : string(60)**
+}
+
+
+Feedback "1" o-- "1" commonTechnical
+Feedback "1" o-- "1" commonFunctional
+Feedback "1" o-- "1" party.pensionProvider
+Feedback "1" o--{ "0..999" error
+
+AFDIDP -up- party.pensionProvider
+ADNFTM -up- error 
+ADNFUN -u- commonFunctional
+ADNSTS -u- commonFunctional
+msgTypes -u- commonFunctional
+
+note bottom of commonFunctional
+Field &lt;b&gt;originalMessageId&lt;/b&gt;:
+Should reflect the messageId
+of the initial request.
+The field &lt;b&gt;&lt;i&gt;originalMessageType&lt;/i&gt;&lt;/b&gt;
+can optionally be included.
+
+The &lt;b&gt;messageId&lt;/b&gt; in commonTechnical must be a new, unique ID for the feedback message.
+end note
+
+@enduml
+</desc>
+</svg>

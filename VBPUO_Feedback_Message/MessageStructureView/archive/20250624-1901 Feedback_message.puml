@@ -1,0 +1,136 @@
+@startuml sivi_bericht
+set separator none
+hide empty methods
+
+' --- Lettertype-instellingen ---
+
+
+
+skinparam defaultFontName "Arial"
+skinparam defaultFontSize 12
+skinparam classFontName "Arial"
+skinparam noteFontName "Arial"
+skinparam noteFontSize 15                     ' Specifiek: grotere tekst in notes (duidelijker zichtbaar)
+skinparam monospacedFontName "Courier New"    ' Voor <code> of monospaced notatie
+
+' --- Kleuren en layout ---
+skinparam classBorderColor black
+skinparam classBackgroundColor #F5F5F5
+skinparam noteBackgroundColor #FFFFDD
+skinparam noteBorderColor gray
+skinparam shadowing false
+
+' --- Tekstopmaak ---
+skinparam wrapWidth 200
+skinparam maxMessageSize 120
+
+
+
+legend top left
+ <size:20><b>LEGEND: </b> <color:red><b>Feedback message</b></color></size>
+ 1. <b>Bold</b> = Mandatory fields
+ 2. <i>Italic</i> = Optional fields
+ 3. ..       = incomplete list (complete values on afdCodelists)
+
+For description of codes ADNFUN, ADNDNS, AFDIDP, AFDRES a.s.o. see
+https://www.sivi.org/sivi-afs/online-diensten/afd-2-0-online-raadplegen/
+end legend
+
+ enum ADNFUN {
+     23 : Melden status
+ }
+
+ enum ADNSTS {
+     0 : Afgewezen
+     8 : Geaccepteerd
+ }
+ 
+ enum ADNFTM {
+     09 : Zoeksleutel onbekend
+     11 : Technische fout
+     12 : Inhoudelijke fout
+     13 : Volgordelijke fout
+     14 : Data zender en ontvanger matchen niet
+     99 : Overig
+ }
+ 
+ enum AFDIDP {
+     U0003
+     ...
+     U0765
+ }
+ 
+ enum msgTypes {
+    0001a
+	0001b
+	0001c
+	00002
+	00541
+	00542
+	00551
+	00552a
+	00552b
+	00553
+	00554
+	00555a
+	00555b
+	00556
+ }
+
+class commonFunctional {
+    {static} **entityType : string = "default"**
+    {field} **function : ADNFUN = "23"**
+	{field} **statusType : ADNSTS**
+    {field} **afdDefinitionName : string(80)**
+    {field} **afdDefinitionVersion : string(80)**
+    {field} **originalMessageId : string(70)**
+	 {field} <i>originalMessageType : msgTypes</i>
+}
+
+class commonTechnical {
+    {static} **entityType : string = "default"**
+    {field} **creationDateTime : datetime**
+    {field} **messageId : string(70)**
+    {field} <i>testMessage : boolean</i>
+}
+
+
+class error {
+    {static} **entityType : string = "default"**
+    **errorCode : ADNFTM**
+    {field} **errorCodeExplanation : string(300)**
+    {field} **refKey : string(70)**
+}
+
+
+
+
+class party.pensionProvider  {
+    {static} **entityType : string = "pensionProvider"**
+    **puvCode : AFDIDP**
+    {field} **organizationName : string(60)**
+}
+
+
+Feedback "1" o-- "1" commonTechnical
+Feedback "1" o-- "1" commonFunctional
+Feedback "1" o-- "1" party.pensionProvider
+Feedback "1" o--{ "0..999" error
+
+AFDIDP -up- party.pensionProvider
+ADNFTM -up- error 
+ADNFUN -u- commonFunctional
+ADNSTS -u- commonFunctional
+msgTypes -u- commonFunctional
+
+note bottom of commonFunctional
+Field <b>originalMessageId</b>:
+Should reflect the messageId
+of the initial request.
+The field <b><i>originalMessageType</i></b>
+can optionally be included.
+
+The <b>messageId</b> in commonTechnical must be a new, unique ID for the feedback message.
+end note
+
+@enduml
