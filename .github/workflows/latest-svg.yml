@@ -111,7 +111,7 @@ jobs:
 
           date = "$DATE"
           version = "$VERSION"
-          marker = "## Feedback Message (extra)"
+          marker = "## Feedback Message"
           tag_line = f"_Gewijzigd op: {date} | versie: {version}_"
 
           with open("wiki/Berichtenoverzicht.md", "r") as f:
