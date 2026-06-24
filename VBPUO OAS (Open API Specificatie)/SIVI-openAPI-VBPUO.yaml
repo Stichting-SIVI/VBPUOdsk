@@ -575,7 +575,7 @@ components:
     Trade:
       $ref: 'VBPUO-Bericht_5._Orderopdracht_(00541)/VBPUO-001.00-Bericht_5._Orderopdracht_(00541).json'
     OrderConfirmation:
-      $ref: 'VBPUO-Bericht_6._Orderconfirmation_(00542)/VBPUO-001.03-Bericht_6._Orderconfirmation_(00542).json'
+      $ref: 'VBPUO-Bericht_6._Orderconfirmation_(00542)/VBPUO-001.00-Bericht_6._Orderconfirmation_(00542).json'
     BalanceAdjustments:
       $ref: 'VBPUO-Bericht_7._Mutatiesaldi_(00551)/VBPUO-001.00-Bericht_7._Mutatiesaldi_(00551).json'
     InvestmentDetails:
