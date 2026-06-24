@@ -51,7 +51,6 @@ jobs:
             fi
 
             # --- GENERIEKE CASE: kies nieuwste .svg in de map ---
-            # verzamel alle .svg behalve latest.svg (en negeer submappen zoals archive/)
             mapfile -t svgs < <(find "$dir" -maxdepth 1 -type f -name '*.svg' ! -name 'latest.svg' -printf '%p\n')
             [ ${#svgs[@]} -eq 0 ] && { echo "Geen SVG's in $dir, sla over."; continue; }
 
@@ -95,12 +94,12 @@ jobs:
           set -euo pipefail
 
           VERSION=$(python3 - <<'PYEOF'
-import json
-with open('VBPUO_Feedback_Message/VBPUO_Feedback_Message-001.00-VBPUO_Feedback_Message.json') as f:
-    schema = json.load(f)
-cf = schema['$defs']['commonFunctional']['properties']
-print(cf['afdDefinitionVersion'].get('const', 'onbekend'))
-PYEOF
+          import json
+          with open('VBPUO_Feedback_Message/VBPUO_Feedback_Message-001.00-VBPUO_Feedback_Message.json') as f:
+              schema = json.load(f)
+          cf = schema['$defs']['commonFunctional']['properties']
+          print(cf['afdDefinitionVersion'].get('const', 'onbekend'))
+          PYEOF
           )
           DATE=$(date +%Y-%m-%d)
           echo "Versie: $VERSION | Datum: $DATE"
@@ -108,30 +107,24 @@ PYEOF
           git clone "https://x-access-token:${GH_TOKEN}@github.com/Stichting-SIVI/VBPUOdsk.wiki.git" wiki
 
           python3 - <<PYEOF
-import re
+          import re
 
-date = "$DATE"
-version = "$VERSION"
-marker = "## Feedback Message (extra)"
-tag_line = f"_Gewijzigd op: {date} | versie: {version}_"
+          date = "$DATE"
+          version = "$VERSION"
+          marker = "## Feedback Message (extra)"
+          tag_line = f"_Gewijzigd op: {date} | versie: {version}_"
 
-with open("wiki/Berichtenoverzicht.md", "r") as f:
-    content = f.read()
+          with open("wiki/Berichtenoverzicht.md", "r") as f:
+              content = f.read()
 
-# Verwijder bestaande tag-regel indien aanwezig
-content = re.sub(r"_Gewijzigd op: [^\n]+ versie: [^\n]+_\n\n", "", content)
+          content = re.sub(r"_Gewijzigd op: [^\n]+ versie: [^\n]+_\n\n", "", content)
+          content = content.replace(marker + "\n", marker + "\n" + tag_line + "\n\n")
 
-# Voeg nieuwe tag-regel in direct na de sectie-header
-content = content.replace(
-    marker + "\n",
-    marker + "\n" + tag_line + "\n\n"
-)
+          with open("wiki/Berichtenoverzicht.md", "w") as f:
+              f.write(content)
 
-with open("wiki/Berichtenoverzicht.md", "w") as f:
-    f.write(content)
-
-print(f"Wiki bijgewerkt: {date} | versie {version}")
-PYEOF
+          print(f"Wiki bijgewerkt: {date} | versie {version}")
+          PYEOF
 
           cd wiki
           git config user.name  "github-actions[bot]"
