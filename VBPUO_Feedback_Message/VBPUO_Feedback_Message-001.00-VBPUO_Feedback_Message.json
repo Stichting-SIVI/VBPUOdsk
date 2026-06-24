@@ -1,11 +1,11 @@
 {
-  "$schema": "http://json-schema.org/draft/2019-09/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "JSON Schema SIVI 2.0",
   "//comment": {
     "functionDescription": "VBPUO_Feedback_Message",
-    "afdDefinitionChangeLog": "20250701 uitlevering (AOS 001.01) - prerelease 2026 (feedback message)"
+    "afdDefinitionChangeLog": "20260701 uitlevering (AOS 001.02) - (pre)release 2027 (feedback message)"
   },
-  "definitions": {
+  "$defs": {
     "commonFunctional": {
       "type": "object",
       "additionalProperties": false,
@@ -19,13 +19,13 @@
           "description": "Name of the AFD-definition. (NL: De AFD definitienaam van o.a. webservices en verzekeringsproducten.)",
           "customDescription": "Name of the AFD-definition, refers to the Feedback message itself.",
           "type": "string",
-          "const": "VBPUO_Feedback_Message-001.01-VBPUO_Feedback_Message"
+          "const": "VBPUO_Feedback_Message-001.02-VBPUO_Feedback_Message"
         },
         "afdDefinitionVersion": {
           "description": "Version of the AFD-definition. (NL: Met AFD definitieversienummer wordt aangegeven over welke versie van de (product)definitie wordt gecommuniceerd.)",
           "customDescription": "Version of the AFD-definition, refers to the Feedback message itself.",
           "type": "string",
-          "const": "001.01"
+          "const": "001.02"
         },
         "originalMessageId": {
           "description": "The messageId of the original message, which is replaced by this message. (NL: MessageId van het oorspronkelijke bericht, dat wordt vervangen door dit bericht.)",
@@ -77,6 +77,9 @@
               "const": "00541"
             },
             {
+              "const": "00542"
+            },
+            {
               "const": "00551"
             },
             {
@@ -122,7 +125,7 @@
           "const": "default"
         },
         "creationDateTime": {
-          "description": "Creation date and time (as timestamp) of the (for example) message, system or file. (AFD 2.0 only)",
+          "description": "Date and time (as timestamp) when the message was created. (NL: Datum en tijd van het aanmaken van het bericht.)",
           "customDescription": "Creation datetime of the Feedback message itself.",
           "type": "string",
           "format": "date-time"
@@ -135,12 +138,145 @@
         "testMessage": {
           "description": "Indication whether the message is a test message. (NL: Indicatie of sprake is van een testbericht.)",
           "type": "boolean"
+        },
+        "party": {
+          "type": "array",
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "minContains": 0,
+              "maxContains": 1,
+              "contains": {
+                "$ref": "#/$defs/partyReceiver"
+              }
+            },
+            {
+              "minContains": 0,
+              "maxContains": 1,
+              "contains": {
+                "$ref": "#/$defs/partySender"
+              }
+            }
+          ]
         }
       },
       "required": [
         "entityType",
         "creationDateTime",
         "messageId"
+      ]
+    },
+    "partyReceiver": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "receiver"
+        },
+        "organizationName": {
+          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
+          "customDescription": "Naam van de ontvanger(s) (organisatie (s))",
+          "type": "string",
+          "maxLength": 60
+        },
+        "refKey": {
+          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
+          "type": "string",
+          "maxLength": 70
+        },
+        "rsinNumber": {
+          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)",
+          "type": "string",
+          "maxLength": 9
+        }
+      },
+      "required": [
+        "entityType",
+        "organizationName",
+        "refKey"
+      ]
+    },
+    "partySender": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "sender"
+        },
+        "refKey": {
+          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
+          "type": "string",
+          "maxLength": 70
+        },
+        "applicationSenderName": {
+          "description": "Name of the application that sends the data. (NL: Naam van de applicatie die de gegevens verzendt.)",
+          "customDescription": "Naam van de applicatie die het bericht heeft aangemaakt",
+          "type": "string",
+          "maxLength": 60
+        },
+        "organizationName": {
+          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
+          "customDescription": "Organisatie naam van de afzender",
+          "type": "string",
+          "maxLength": 60
+        },
+        "rsinNumber": {
+          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)",
+          "type": "string",
+          "maxLength": 9
+        },
+        "party": {
+          "type": "array",
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "minContains": 0,
+              "maxContains": 9,
+              "contains": {
+                "$ref": "#/$defs/partyContact"
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "entityType",
+        "refKey",
+        "organizationName"
+      ]
+    },
+    "partyContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "contact"
+        },
+        "workPhoneNumber": {
+          "description": "Work telephone number. (NL: Telefoonnummer werk)",
+          "customDescription": "Werk telefoonnummer",
+          "type": "string",
+          "maxLength": 60
+        },
+        "emailWork": {
+          "description": "Work email address. (NL: E-mail adres werk)",
+          "customDescription": "Werk emailadres",
+          "type": "string",
+          "maxLength": 60
+        }
+      },
+      "required": [
+        "entityType",
+        "workPhoneNumber",
+        "emailWork"
       ]
     },
     "error": {
@@ -183,7 +319,8 @@
         },
         "errorCodeExplanation": {
           "description": "Explanation of the error message. (NL: Toelichting op de soort foutmelding.)",
-          "type": "string"
+          "type": "string",
+          "maxLength": 1000
         }
       },
       "required": [
@@ -211,7 +348,7 @@
           "description": "Pension provider (NL: Pensioenuitvoerder)",
           "customDescription": "party.pensionProvider.puvCode of the original message for which the status and/or errors are being sent to the Feedback endpoint ",
           "codelistName": "AFDIDP",
-          "$ref": "https://www.sivi.org/afd-online-tool/json/AFDIDP.json#/definitions/AFDIDP",
+          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/AFDIDP.json#/$defs/AFDIDP",
           "type": "string"
         }
       },
@@ -233,7 +370,7 @@
           "minContains": 1,
           "maxContains": 1,
           "contains": {
-            "$ref": "#/definitions/commonFunctional"
+            "$ref": "#/$defs/commonFunctional"
           }
         }
       ]
@@ -246,7 +383,7 @@
           "minContains": 1,
           "maxContains": 1,
           "contains": {
-            "$ref": "#/definitions/commonTechnical"
+            "$ref": "#/$defs/commonTechnical"
           }
         }
       ]
@@ -259,7 +396,7 @@
           "minContains": 0,
           "maxContains": 999,
           "contains": {
-            "$ref": "#/definitions/error"
+            "$ref": "#/$defs/error"
           }
         }
       ]
@@ -272,7 +409,7 @@
           "minContains": 1,
           "maxContains": 1,
           "contains": {
-            "$ref": "#/definitions/partyPensionProvider"
+            "$ref": "#/$defs/partyPensionProvider"
           }
         }
       ]

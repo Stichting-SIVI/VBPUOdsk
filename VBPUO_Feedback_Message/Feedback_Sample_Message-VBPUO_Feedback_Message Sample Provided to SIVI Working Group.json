@@ -10,8 +10,8 @@
 	"commonFunctional": [
 		{
 			"entityType": "default",
-			"afdDefinitionName": "VBPUO_Feedback_Message-001.01-VBPUO_Feedback_Message",
-			"afdDefinitionVersion": "001.01",
+			"afdDefinitionName": "VBPUO_Feedback_Message-001.02-VBPUO_Feedback_Message",
+			"afdDefinitionVersion": "001.02",
 			"originalMessageId": "msg987654",
 			"originalMessageType": "0001a",
 			"function": "23",
