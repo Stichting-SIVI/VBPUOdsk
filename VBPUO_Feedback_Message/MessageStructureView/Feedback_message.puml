@@ -116,7 +116,7 @@ class party.contact {
 class error {
     {static} **entityType : string = "default"**
     **errorCode : ADNFTM**
-    {field} **errorCodeExplanation : string(300)**
+    {field} **errorCodeExplanation : string(1000)**
     {field} **refKey : string(70)**
 }
 
