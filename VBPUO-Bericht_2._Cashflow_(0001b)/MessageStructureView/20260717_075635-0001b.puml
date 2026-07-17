@@ -1,0 +1,182 @@
+@startuml
+hide methods
+set separator none
+
+legend top left
+<size:20><b>LEGEND: </b> <color:red><b>2. Cashflow (0001b)</b></color></size>
+1. <b>Bold</b> = Mandatory fields
+2. <i>Italic</i> = Optional fields
+3. ..       = incomplete list (complete values on afdCodelists)
+end legend
+
+class berichtstructuur {}
+
+class commonTechnical.default {
+    {static} **entityType : string = "default"**
+    {field} **messageId : string(70)**
+    {field} **creationDateTime : timestamp**
+    {field} <i>testMessage : boolean</i>
+}
+
+class party.sender {
+    {static} **entityType : string = "sender"**
+    {field} **refKey : string(70)**
+    {field} <i>rsinNumber : string(9)</i>
+    {field} **organizationName : string(60)**
+    {field} <i>applicationSenderName : string(60)</i>
+}
+
+class party.contact {
+    {static} **entityType : string = "contact"**
+    {field} **emailWork : string(60)**
+    {field} **workPhoneNumber : string(60)**
+}
+
+class party.receiver {
+    {static} **entityType : string = "receiver"**
+    {field} **refKey : string(70)**
+    {field} <i>rsinNumber : string(9)</i>
+    {field} **organizationName : string(60)**
+}
+
+class commonFunctional.default {
+    {static} **entityType : string = "default"**
+    {field} **function : string**
+    {field} **afdDefinitionName : string(80)**
+    {field} **afdDefinitionVersion : string(80)**
+    {field} <i>originalMessageId : string(70)</i>
+}
+
+class party.pensionProvider {
+    {static} **entityType : string = "pensionProvider"**
+    {field} **puvCode : string**
+    {field} <i>rsinNumber : string(9)</i>
+    {field} **organizationName : string(60)**
+}
+
+class pension.scheme {
+    {static} **entityType : string = "scheme"**
+    {field} **refKey : string(70)**
+    {field} **pensionSchemeName : string(60)**
+}
+
+class financialInformation.reportingPeriod {
+    {static} **entityType : string = "reportingPeriod"**
+    {field} **startDate : date**
+    {field} **endDate : date**
+}
+
+class financialTransaction.cashflow {
+    {static} **entityType : string = "cashflow"**
+    {field} <i>contributionAmount : decimal</i>
+    {field} <i>contributionDate : date</i>
+    {field} <i>withdrawalAmount : decimal</i>
+    {field} <i>withdrawalDate : date</i>
+    {field} <i>netAmount  : decimal</i>
+    {field} <i>netDate : date</i>
+}
+
+class pension.cohort {
+    {static} **entityType : string = "cohort"**
+    {field} **refKey : string(70)**
+    {field} **description : string(60)**
+    {field} <i>participationStatus : string</i>
+    {field} <i>startAge : integer</i>
+    {field} <i>endAge : integer</i>
+    {field} **reserveIndicator : boolean**
+    {field} <i>reserveType : string</i>
+    {field} <i>reserveDescription : string(60)</i>
+    {field} <i>netAmount  : decimal</i>
+    {field} <i>netDate : date</i>
+    {field} <i>contributionAmount : decimal</i>
+    {field} <i>withdrawalAmount : decimal</i>
+}
+
+class investment.portfolio {
+    {static} **entityType : string = "portfolio"**
+    {field} **refKey : string(70)**
+    {field} **description : string(60)**
+}
+
+class financialTransaction.cashflow_1 {
+    {static} **entityType : string = "cashflow"**
+    {field} **netAmount  : decimal**
+    {field} **netDate : date**
+}
+
+class document.default {
+    {static} **entityType : string = "default"**
+    {field} **refKey : string(70)**
+    {field} **fileName : string(60)**
+    {field} **fileExtension : string**
+}
+
+class chunking.default {
+    {static} **entityType : string = "default"**
+    {field} **currentChunkId : string(70)**
+    {field} **chunkSequenceNumber : integer**
+    {field} **totalNumberOfChunks : integer**
+    {field} **chunkFragmentPaths : array**
+}
+
+enum ADNDNS {
+    16 - Actief
+    20 - AO actief
+    35 - AO niet actief
+    40 - Slapend
+    70 - Bijzondere partner
+    80 - Uitkerend
+}
+
+
+enum ADNFUN {
+    01 - Nieuw
+    02 - Wijzigen
+    09 - Ter informatie
+    54 - Herzenden (inhoud niet aangepast, geen correctie)
+}
+
+
+enum AFDIDP {
+    U0003 - Fonds 1
+    U0005 - Fonds 2
+    ..
+    U0765 - Fonds xxx
+}
+
+
+enum AFDRES {
+    1 - Solidariteitsreserve
+    2 - Minimaal vereist eigen vermogen (MVEV)
+    3 - Operationele reserve
+    ..
+}
+
+
+enum cdl_fileExtension_251 {
+    pdf
+    csv
+    txt
+}
+
+
+berichtstructuur o-- "0..1" chunking.default
+berichtstructuur o-- "1..1" commonFunctional.default
+berichtstructuur o-- "1..1" commonTechnical.default
+berichtstructuur o-- "0..99" document.default
+berichtstructuur o-- "1..1" party.pensionProvider
+commonTechnical.default o-- "1..1" party.receiver
+commonTechnical.default o-- "1..1" party.sender
+investment.portfolio o-- "1..1" financialTransaction.cashflow_1
+party.pensionProvider o-- "1..999" pension.scheme
+party.sender o-- "0..9" party.contact
+pension.scheme o-- "1..1" financialInformation.reportingPeriod
+pension.scheme o-- "0..1" financialTransaction.cashflow
+pension.scheme o-- "0..99" investment.portfolio
+pension.scheme o-- "0..99999" pension.cohort
+commonFunctional.default o-- "function" ADNFUN
+document.default o-- "fileExtension" cdl_fileExtension_251
+party.pensionProvider o-- "puvCode" AFDIDP
+pension.cohort o-- "participationStatus" ADNDNS
+pension.cohort o-- "reserveType" AFDRES
+@enduml
