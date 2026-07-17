@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: OpenAPI SPEC Data-uitwisseling Vermogensbeheer en Pensioenuitvoering
-  description: "OpenAPI specification for the exchange of SIVI asset management messages (SPR + FPR). \n\n
+  description: "OpenAPI specification for the exchange of SIVI asset management messages (SPR + FPR).\n\n
   Please also refer to https://github.com/dma61/VBPUOdsk where this openAPI specification and JSON schemas and examples can be found for the various messages that are exchanged.\n\n
   Each path allows creating/reading (but not updating or deleting) a specific message type. A POST to the path will create a new message. We won't make use of PUT operations, since there's already functionality within every message to POST an update. See commonFunctional.function (value 02: Wijzigen).\n\n
   For idempotency: please use messageId as idempotency key.\n\n
@@ -10,7 +10,7 @@ info:
     - A response by the server with http code 202 indicates the client that the request is processed asynchronously, expecting the client to receive the processing result on their /feedback endpoint
     - Parties have to agree whether to support an asynchronous feedback message.\n
     "
-  version: 1.0.10
+  version: 1.0.11
   contact:
     name: SIVI API Support & Issues
     url: https://github.com/dma61/VBPUOdsk/issues
@@ -29,14 +29,10 @@ tags:
   - name: ReturnOnInvestment (SPR)
   - name: Trade (FPR)
   - name: OrderConfirmation (FPR)
-  - name: BalanceAdjustments (FPR)
-  - name: InvestmentDetails (FPR)
-  - name: InvestmentDetailsPUO (FPR)
   - name: ControlInformationInvestmentPools (FPR)
-  - name: RebalancingDetails (FPR)
-  - name: ValueAmountCohortPool (FPR)
   - name: ValueAmountInvestmentPool (FPR)
   - name: PaymentDetailsCreditor (FPR)
+  - name: CorporateActions (FPR)
 paths:
   '/v1/capital/{puvCode}/new':
     post:
@@ -248,111 +244,6 @@ paths:
           description: 'Unauthorized'
         '403':
           description: 'Forbidden'
-  '/v1/balance-adjustments/{puvCode}/new':
-    post:
-      summary: Endpoint for delivery of balance adjustments information. Flows from PUO to Administrateurs cohorten- en beleggingspools.
-      tags:
-        - BalanceAdjustments (FPR)
-      security:
-        - OneWelcomeOAuth2:
-          - https://sivi-vermogensbeheerkoppeling/balanceAdjustments.write
-      description: >-
-        verhaal
-      operationId: newBalanceAdjustments
-      parameters:
-        - $ref: "#/components/parameters/puvCode"
-        - $ref: "#/components/parameters/xJwsSignature"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/BalanceAdjustments"
-      responses:
-        '200':
-          description: 'Request succesfully received and processed (synchronously)'
-        '202':
-          description: 'Request is being processed (indicates that the request is processed asynchronously, prompting the client to check the /feedback endpoint for the result)'
-        '400':
-          description: 'Bad request'
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Feedback'
-        '401':
-          description: 'Unauthorized'
-        '403':
-          description: 'Forbidden'
-  '/v1/investment-details/{puvCode}/new':
-    post:
-      summary: Endpoint for delivery of investmentdetail information. Flows from Fiduciary Manager or Asset Service Provider to Administrateurs cohorten- en beleggingspools
-      tags:
-        - InvestmentDetails (FPR)
-      security:
-        - OneWelcomeOAuth2:
-          - https://sivi-vermogensbeheerkoppeling/investmentDetails.write
-      description: >-
-        verhaal
-      operationId: newInvestmentDetails
-      parameters:
-        - $ref: "#/components/parameters/puvCode"
-        - $ref: "#/components/parameters/xJwsSignature"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/InvestmentDetails"
-      responses:
-        '200':
-          description: 'Request succesfully received and processed (synchronously)'
-        '202':
-          description: 'Request is being processed (indicates that the request is processed asynchronously, prompting the client to check the /feedback endpoint for the result)'
-        '400':
-          description: 'Bad request'
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Feedback'
-        '401':
-          description: 'Unauthorized'
-        '403':
-          description: 'Forbidden'
-  '/v1/investment-details-puo/{puvCode}/new':
-    post:
-      summary: Endpoint for delivery of investmentdetail information. Flows from PUO to Administrateurs cohorten- en beleggingspools
-      tags:
-        - InvestmentDetailsPUO (FPR)
-      security:
-        - OneWelcomeOAuth2:
-          - https://sivi-vermogensbeheerkoppeling/investmentDetailsPuo.write
-      description: >-
-        verhaal
-      operationId: newInvestmentDetailsPUO
-      parameters:
-        - $ref: "#/components/parameters/puvCode"
-        - $ref: "#/components/parameters/xJwsSignature"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/InvestmentDetailsPUO"
-      responses:
-        '200':
-          description: 'Request succesfully received and processed (synchronously)'
-        '202':
-          description: 'Request is being processed (indicates that the request is processed asynchronously, prompting the client to check the /feedback endpoint for the result)'
-        '400':
-          description: 'Bad request'
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Feedback'
-        '401':
-          description: 'Unauthorized'
-        '403':
-          description: 'Forbidden'
   '/v1/control-information-investment-pools/{puvCode}/new':
     post:
       summary: Endpoint for delivery of control information investment pools. Flows from Administrateurs cohorten- en beleggingspools to Fiduciary Manager
@@ -373,76 +264,6 @@ paths:
           application/json:
             schema:
               $ref: "#/components/schemas/ControlInformationInvestmentPools"
-      responses:
-        '200':
-          description: 'Request succesfully received and processed (synchronously)'
-        '202':
-          description: 'Request is being processed (indicates that the request is processed asynchronously, prompting the client to check the /feedback endpoint for the result)'
-        '400':
-          description: 'Bad request'
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Feedback'
-        '401':
-          description: 'Unauthorized'
-        '403':
-          description: 'Forbidden'
-  '/v1/rebalancing-details/{puvCode}/new':
-    post:
-      summary: Endpoint for delivery of rebalancing details. Flows from Fiduciairy Manager to  Administrateurs cohorten- en beleggingspools
-      tags:
-        - RebalancingDetails (FPR)
-      security:
-        - OneWelcomeOAuth2:
-          - https://sivi-vermogensbeheerkoppeling/rebalancingDetails.write
-      description: >-
-        verhaal
-      operationId: newRebalancingDetails
-      parameters:
-        - $ref: "#/components/parameters/puvCode"
-        - $ref: "#/components/parameters/xJwsSignature"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/RebalancingDetails"
-      responses:
-        '200':
-          description: 'Request succesfully received and processed (synchronously)'
-        '202':
-          description: 'Request is being processed (indicates that the request is processed asynchronously, prompting the client to check the /feedback endpoint for the result)'
-        '400':
-          description: 'Bad request'
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Feedback'
-        '401':
-          description: 'Unauthorized'
-        '403':
-          description: 'Forbidden'
-  '/v1/value-amount-cohort-pool/{puvCode}/new':
-    post:
-      summary: Endpoint for delivery of value amounts of cohort pools. Flows from PUO or Administrateurs cohorten- en beleggingspools to Fiduciairy Manager
-      tags:
-        - ValueAmountCohortPool (FPR)
-      security:
-        - OneWelcomeOAuth2:
-          - https://sivi-vermogensbeheerkoppeling/valueAmountCohortPool.write
-      description: >-
-        verhaal
-      operationId: newValueAmountCohortPool
-      parameters:
-        - $ref: "#/components/parameters/puvCode"
-        - $ref: "#/components/parameters/xJwsSignature"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/ValueAmountCohortPool"
       responses:
         '200':
           description: 'Request succesfully received and processed (synchronously)'
@@ -528,6 +349,41 @@ paths:
           description: 'Unauthorized'
         '403':
           description: 'Forbidden'
+  '/v1/corporate-actions/{puvCode}/new':
+    post:
+      summary: Endpoint for delivery of corporate actions. Flows from Fiduciary Manager and/or Investment Administrator to PUO.
+      tags:
+        - CorporateActions (FPR)
+      security:
+        - OneWelcomeOAuth2:
+          - https://sivi-vermogensbeheerkoppeling/corporateActions.write
+      description: >-
+        "Betreft Bericht 15. Corporate Actions (00557). Deze operatie betreft de aanlevering van corporate-action gebeurtenissen op beleggingsproductniveau van de vermogensbeheerketen naar de PUO. Het bericht is bedoeld voor gebeurtenissen die niet vanzelf synchroon in de PUO-administratie zichtbaar worden, terwijl zij wel effect hebben op geldbedragen, aantallen units of productgegevens. Met dit bericht kunnen onder meer cash dividend, stock dividend, rebate, productwijzigingen en correcties op eerdere corporate actions worden gemeld."
+      operationId: newCorporateActions
+      parameters:
+        - $ref: "#/components/parameters/puvCode"
+        - $ref: "#/components/parameters/xJwsSignature"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CorporateActions"
+      responses:
+        '200':
+          description: 'Request succesfully received and processed (synchronously)'
+        '202':
+          description: 'Request is being processed (indicates that the request is processed asynchronously, prompting the client to check the /feedback endpoint for the result)'
+        '400':
+          description: 'Bad request'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Feedback'
+        '401':
+          description: 'Unauthorized'
+        '403':
+          description: 'Forbidden'
   '/v1/feedback/{messageType}/{puvCode}/new':
     post:
       summary: For the delivery of an asynchronous feedback message
@@ -576,22 +432,14 @@ components:
       $ref: 'VBPUO-Bericht_5._Orderopdracht_(00541)/VBPUO-001.00-Bericht_5._Orderopdracht_(00541).json'
     OrderConfirmation:
       $ref: 'VBPUO-Bericht_6._Orderconfirmation_(00542)/VBPUO-001.00-Bericht_6._Orderconfirmation_(00542).json'
-    BalanceAdjustments:
-      $ref: 'VBPUO-Bericht_7._Mutatiesaldi_(00551)/VBPUO-001.00-Bericht_7._Mutatiesaldi_(00551).json'
-    InvestmentDetails:
-      $ref: 'VBPUO-Bericht_8._Reconciliatie-informatie_(00552a)/VBPUO-001.00-Bericht_8._Reconciliatie-informatie_(00552a).json'
-    InvestmentDetailsPUO:
-      $ref: 'VBPUO-Bericht_9._PUO-reconciliatie-informatie_(00552b)/VBPUO-001.00-Bericht_9._PUO-reconciliatie-informatie_(00552b).json'
     ControlInformationInvestmentPools :
       $ref: 'VBPUO-Bericht_10._Stuurinformatiebeleggingspools_(00553)/VBPUO-001.00-Bericht_10._Stuurinformatiebeleggingspools_(00553).json'
-    RebalancingDetails:
-      $ref: 'VBPUO-Bericht_11._Rebalancinginformatie_(00554)/VBPUO-001.00-Bericht_11._Rebalancinginformatie_(00554).json'
-    ValueAmountCohortPool:
-      $ref: 'VBPUO-Bericht_12._Waarde-informatie_cohortenpool_(00555a)/VBPUO-001.00-Bericht_12._Waarde-informatie_cohortenpool_(00555a).json'
     ValueAmountInvestmentPool:
       $ref: 'VBPUO-Bericht_13._Waarde-informatie_beleggingspool_(00555b)/VBPUO-001.00-Bericht_13._Waarde-informatie_beleggingspool_(00555b).json'
     PaymentDetailsCreditor:
       $ref: 'VBPUO-Bericht_14._Betaalinformatie_(00556)/VBPUO-001.00-Bericht_14._Betaalinformatie_(00556).json'
+    CorporateActions:
+      $ref: 'VBPUO-Bericht_15._Corporate_Actions_(00557)/VBPUO_1.05_main-001.05-Bericht_15._Corporate_Actions_(00557).json'
     Feedback:
       $ref: 'VBPUO_Feedback_Message/VBPUO_Feedback_Message-VBPUO_Feedback_Message.json'
   parameters:
@@ -633,14 +481,10 @@ components:
             https://sivi-vermogensbeheerkoppeling/pensionProjection.write: Write pensionProjection information
             https://sivi-vermogensbeheerkoppeling/returnOnInvestment.write: Write returnOnInvestment information
             https://sivi-vermogensbeheerkoppeling/trade.write: Write trade information
-            https://sivi-vermogensbeheerkoppeling/balanceAdjustments.write: Write balanceAdjustments information
-            https://sivi-vermogensbeheerkoppeling/investmentDetails.write: Write investmentDetails information
-            https://sivi-vermogensbeheerkoppeling/investmentDetailsPuo.write: Write investmentDetailsPuo information
             https://sivi-vermogensbeheerkoppeling/controlInformationInvestmentPools.write: Write controlInformationInvestmentPools information
-            https://sivi-vermogensbeheerkoppeling/rebalancingDetails.write: Write rebalancingDetails information
-            https://sivi-vermogensbeheerkoppeling/valueAmountCohortPool.write: Write valueAmountCohortPool information
-            https://sivi-vermogensbeheerkoppeling/valueAmountInvestmentPool.write: Write orderConfirmation information
+            https://sivi-vermogensbeheerkoppeling/valueAmountInvestmentPool.write: Write valueAmountInvestmentPool information
             https://sivi-vermogensbeheerkoppeling/paymentDetailsCreditor.write: Write paymentDetailsCreditor information
+            https://sivi-vermogensbeheerkoppeling/corporateActions.write: Write corporateActions information
             https://sivi-vermogensbeheerkoppeling/feedback.write: Write processingReport information
   links: {}
   callbacks: {}
