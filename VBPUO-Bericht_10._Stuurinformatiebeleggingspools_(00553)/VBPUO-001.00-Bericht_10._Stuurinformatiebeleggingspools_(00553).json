@@ -1,11 +1,11 @@
 {
-  "$schema": "http://json-schema.org/draft/2019-09/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "JSON Schema SIVI 2.0",
   "//comment": {
     "functionDescription": "Bericht_10._Stuurinformatiebeleggingspools_(00553)",
-    "afdDefinitionChangeLog": "20250701 uitlevering (AOS 001.04) - (pre)release 2026"
+    "afdDefinitionChangeLog": "20260715 concept uitlevering (AOS 001.05) - release 2027"
   },
-  "definitions": {
+  "$defs": {
     "chunking": {
       "type": "object",
       "additionalProperties": false,
@@ -52,28 +52,24 @@
           "type": "string",
           "const": "default"
         },
-        "afdDefinitionName": {
-          "description": "Name of the AFD-definition. (NL: De AFD definitienaam van o.a. webservices en verzekeringsproducten.)",
-          "customDescription": "Soort bericht",
+        "afdDefinitionVersion": {
+          "const": "001.05",
+          "description": "Version of the AFD-definition. (NL: Met AFD definitieversienummer wordt aangegeven over welke versie van de (product)definitie wordt gecommuniceerd.)",
           "type": "string",
           "maxLength": 80
         },
-        "afdDefinitionVersion": {
-          "description": "Version of the AFD-definition. (NL: Met AFD definitieversienummer wordt aangegeven over welke versie van de (product)definitie wordt gecommuniceerd.)",
-          "customDescription": "Versie van het JSON schema",
+        "afdDefinitionName": {
+          "description": "Name of the AFD-definition. (NL: De AFD definitienaam van o.a. webservices en verzekeringsproducten.)",
           "type": "string",
-          "maxLength": 80,
-          "const": "001.04"
+          "maxLength": 80
         },
         "originalMessageId": {
           "description": "The messageId of the original message, which is replaced by this message. (NL: MessageId van het oorspronkelijke bericht, dat wordt vervangen door dit bericht.)",
-          "customDescription": "Het oorspronkelijke messageId van het bericht dat wordt vervangen door dit bericht",
           "type": "string",
           "maxLength": 70
         },
         "function": {
           "description": "Message function (NL: Berichtfunctie)",
-          "customDescription": "Message function code. (NL: Code waarmee de functie van het bericht wordt aangegeven.)",
           "codelistName": "ADNFUN",
           "type": "string",
           "oneOf": [
@@ -94,8 +90,8 @@
       },
       "required": [
         "entityType",
-        "afdDefinitionName",
         "afdDefinitionVersion",
+        "afdDefinitionName",
         "function"
       ]
     },
@@ -109,20 +105,17 @@
           "const": "default"
         },
         "creationDateTime": {
-          "description": "Creation date and time (as timestamp) of the (for example) message, system or file. (AFD 2.0 only)",
-          "customDescription": "Aanmaakdatum en tijd Date",
+          "description": "Date and time (as timestamp) when the message was created. (NL: Datum en tijd van het aanmaken van het bericht.)",
           "type": "string",
           "format": "date-time"
         },
         "messageId": {
           "description": "Unique identification of the message. (AFD 2.0 only)",
-          "customDescription": "Unieke berichtidentificatie",
           "type": "string",
           "maxLength": 70
         },
         "testMessage": {
           "description": "Indication whether the message is a test message. (NL: Indicatie of sprake is van een testbericht.)",
-          "customDescription": "Indicatie testbericht",
           "type": "boolean"
         },
         "party": {
@@ -133,14 +126,14 @@
               "minContains": 1,
               "maxContains": 1,
               "contains": {
-                "$ref": "#/definitions/partyReceiver"
+                "$ref": "#/$defs/partyReceiver"
               }
             },
             {
               "minContains": 1,
               "maxContains": 1,
               "contains": {
-                "$ref": "#/definitions/partySender"
+                "$ref": "#/$defs/partySender"
               }
             }
           ]
@@ -164,19 +157,16 @@
         },
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
           "maxLength": 70
         },
         "organizationName": {
           "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
-          "customDescription": "Naam van de ontvanger(s) (organisatie (s))",
           "type": "string",
           "maxLength": 60
         },
         "rsinNumber": {
           "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
-          "customDescription": "Governmental identification number for legal entities and associations (RSIN)",
           "type": "string",
           "maxLength": 9
         }
@@ -198,25 +188,21 @@
         },
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
           "maxLength": 70
         },
         "applicationSenderName": {
           "description": "Name of the application that sends the data. (NL: Naam van de applicatie die de gegevens verzendt.)",
-          "customDescription": "Naam van de applicatie die het bericht heeft aangemaakt",
           "type": "string",
           "maxLength": 60
         },
         "organizationName": {
           "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
-          "customDescription": "Organisatie naam van de afzender",
           "type": "string",
           "maxLength": 60
         },
         "rsinNumber": {
           "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
-          "customDescription": "Governmental identification number for legal entities and associations (RSIN)",
           "type": "string",
           "maxLength": 9
         },
@@ -228,7 +214,7 @@
               "minContains": 0,
               "maxContains": 9,
               "contains": {
-                "$ref": "#/definitions/partyContact"
+                "$ref": "#/$defs/partyContact"
               }
             }
           ]
@@ -251,13 +237,11 @@
         },
         "workPhoneNumber": {
           "description": "Work telephone number. (NL: Telefoonnummer werk)",
-          "customDescription": "Werk telefoonnummer ",
           "type": "string",
           "maxLength": 60
         },
         "emailWork": {
           "description": "Work email address. (NL: E-mail adres werk)",
-          "customDescription": "Werk emailadres ",
           "type": "string",
           "maxLength": 60
         }
@@ -279,19 +263,11 @@
         },
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
           "maxLength": 70
         },
-        "fileName": {
-          "description": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)",
-          "customDescription": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)",
-          "type": "string",
-          "maxLength": 60
-        },
         "fileExtension": {
           "description": "Extension of the file under which the attachment can be saved. For example &quot;pdf&quot;, &quot;doc&quot;, etc. (NL: Extensienaam van het bestand waaronder de bijlage kan worden opgeslagen. Bijvoorbeeld &quot;PDF&quot;, &quot;DOC&quot;, etc.)",
-          "customDescription": "Extension of the file under which the attachment can be saved. For example \"pdf\", \"doc\", etc. (NL: Extensienaam van het bestand waaronder de bijlage kan worden opgeslagen. Bijvoorbeeld \"PDF\", \"DOC\", etc.)",
           "type": "string",
           "oneOf": [
             {
@@ -304,13 +280,18 @@
               "const": "txt"
             }
           ]
+        },
+        "fileName": {
+          "description": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)",
+          "type": "string",
+          "maxLength": 60
         }
       },
       "required": [
         "entityType",
         "refKey",
-        "fileName",
-        "fileExtension"
+        "fileExtension",
+        "fileName"
       ]
     },
     "partyPensionProvider": {
@@ -324,20 +305,18 @@
         },
         "organizationName": {
           "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
-          "customDescription": "Naam van de pensioenuitvoerder",
           "type": "string",
           "maxLength": 60
         },
         "rsinNumber": {
           "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
-          "customDescription": "Governmental identification number for legal entities and associations (RSIN)",
           "type": "string",
           "maxLength": 9
         },
         "puvCode": {
           "description": "Pension provider (NL: Pensioenuitvoerder)",
           "codelistName": "AFDIDP",
-          "$ref": "https://www.sivi.org/afd-online-tool/json/AFDIDP.json#/definitions/AFDIDP",
+          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/AFDIDP.json#/$defs/AFDIDP",
           "type": "string"
         },
         "pension": {
@@ -348,7 +327,7 @@
               "minContains": 1,
               "maxContains": 999,
               "contains": {
-                "$ref": "#/definitions/pensionScheme"
+                "$ref": "#/$defs/pensionScheme"
               }
             }
           ]
@@ -372,13 +351,11 @@
         },
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "customDescription": "ID van de pensioenregeling / (Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.))",
           "type": "string",
           "maxLength": 70
         },
         "pensionSchemeName": {
           "description": "Name of the pension scheme. (NL: Naam van de pensioenregeling.)",
-          "customDescription": "Naam van de pensioenregeling",
           "type": "string",
           "maxLength": 60
         },
@@ -390,12 +367,12 @@
               "minContains": 1,
               "maxContains": 1,
               "contains": {
-                "$ref": "#/definitions/financialInformationReportingPeriod"
+                "$ref": "#/$defs/financialInformationReportingPeriod"
               }
             }
           ]
         },
-        "pension": {
+        "investment": {
           "type": "array",
           "uniqueItems": true,
           "allOf": [
@@ -403,7 +380,7 @@
               "minContains": 1,
               "maxContains": 99,
               "contains": {
-                "$ref": "#/definitions/pensionCohortPool"
+                "$ref": "#/$defs/investmentPool"
               }
             }
           ]
@@ -414,7 +391,7 @@
         "refKey",
         "pensionSchemeName",
         "financialInformation",
-        "pension"
+        "investment"
       ]
     },
     "financialInformationReportingPeriod": {
@@ -428,13 +405,11 @@
         },
         "investmentOrderSettlementDate": {
           "description": "Date on which the complete cycle of the investment order must be settled. (NL: Datum waarop de volledige cyclus van de beleggingsorder afgewikkeld moet zijn.)",
-          "customDescription": "Datum waarop de volledige cyclus van de beleggingsorder afgewikkeld moet zijn",
           "type": "string",
           "format": "date"
         },
         "tradeDate": {
           "description": "Desired trade date. (NL: Gewenste handelsdatum.)",
-          "customDescription": "Gewenste handelsdatum",
           "type": "string",
           "format": "date"
         }
@@ -443,62 +418,6 @@
         "entityType",
         "investmentOrderSettlementDate",
         "tradeDate"
-      ]
-    },
-    "pensionCohortPool": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "cohortPool"
-        },
-        "refKey": {
-          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "customDescription": "ID van de cohortpool",
-          "type": "string",
-          "maxLength": 70
-        },
-        "description": {
-          "description": "Description. (NL: Omschrijving)",
-          "customDescription": "Beschrijving",
-          "type": "string",
-          "maxLength": 60
-        },
-        "currencyType": {
-          "description": "Currency (NL: ISO valutacodetabel (ISO 4217))",
-          "customDescription": "Valuta van de cohortgegevens",
-          "codelistName": "ISOVAL",
-          "$ref": "https://www.sivi.org/afd-online-tool/json/ISOVAL.json#/definitions/ISOVAL",
-          "type": "string"
-        },
-        "cohortRef": {
-          "description": "Unique referral to the refKey of one or more pension entities with entityType cohort. (AFD 2.0 only)",
-          "customDescription": "Geeft aan op welk cohort in de regeling de cohortpool-gegevens betrekking hebben",
-          "type": "string",
-          "maxLength": 70
-        },
-        "investment": {
-          "type": "array",
-          "uniqueItems": true,
-          "allOf": [
-            {
-              "minContains": 1,
-              "maxContains": 99,
-              "contains": {
-                "$ref": "#/definitions/investmentPool"
-              }
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "refKey",
-        "description",
-        "currencyType",
-        "investment"
       ]
     },
     "investmentPool": {
@@ -512,32 +431,22 @@
         },
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "customDescription": "ID van de beleggingspool per regeling",
           "type": "string",
           "maxLength": 70
         },
+        "currencyType": {
+          "description": "Currency (NL: ISO valutacodetabel (ISO 4217))",
+          "codelistName": "ISOVAL",
+          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/ISOVAL.json#/$defs/ISOVAL",
+          "type": "string"
+        },
         "description": {
           "description": "Description. (NL: Omschrijving)",
-          "customDescription": "Beschrijving",
           "type": "string",
           "maxLength": 60
         },
-        "currencyType": {
-          "description": "Currency (NL: ISO valutacodetabel (ISO 4217))",
-          "customDescription": "Valuta van de pool",
-          "codelistName": "ISOVAL",
-          "$ref": "https://www.sivi.org/afd-online-tool/json/ISOVAL.json#/definitions/ISOVAL",
-          "type": "string"
-        },
-        "currencyExchangeRate": {
-          "description": "Exchange rate for the currency. (NL: Wisselkoers voor valuta.)",
-          "customDescription": "FX rate per beleggingspool per regeling per cohort",
-          "type": "number",
-          "multipleOf": 0.01
-        },
         "buySellId": {
           "description": "Purchase/sales indicator. (NL: Aan- en verkoopindicator.)",
-          "customDescription": "Aan- verkoopindicator; ID voor aan-/verkoop per beleggingspool per regeling per cohort",
           "type": "string",
           "oneOf": [
             {
@@ -550,38 +459,17 @@
         },
         "tradeValueAmount": {
           "description": "Economical value. (NL: Bedrag waarde in het economisch verkeer)",
-          "customDescription": "Waarde transactie per beleggingspool per regeling (gesommeerd over cohorten)",
           "type": "number",
           "multipleOf": 0.01
-        },
-        "dummyCashId": {
-          "description": "ID of the dummy cash instrument. (NL: ID voor dummy cash instrument.)",
-          "customDescription": "ID voor dummy cash instrument per beleggingspool per regeling per cohort(pool)",
-          "type": "string",
-          "maxLength": 10
-        },
-        "unitPrice": {
-          "description": "Price per unit. (NL: Waarde per eenheid.)",
-          "type": "number",
-          "multipleOf": 1E-06
-        },
-        "tradeQuantity": {
-          "description": "Number of trade units. (NL: Aantal eenheden van de transactie.)",
-          "type": "number",
-          "multipleOf": 1E-06
         }
       },
       "required": [
         "entityType",
         "refKey",
-        "description",
         "currencyType",
-        "currencyExchangeRate",
+        "description",
         "buySellId",
-        "tradeValueAmount",
-        "dummyCashId",
-        "unitPrice",
-        "tradeQuantity"
+        "tradeValueAmount"
       ]
     }
   },
@@ -596,7 +484,7 @@
           "minContains": 0,
           "maxContains": 1,
           "contains": {
-            "$ref": "#/definitions/chunking"
+            "$ref": "#/$defs/chunking"
           }
         }
       ]
@@ -609,7 +497,7 @@
           "minContains": 1,
           "maxContains": 1,
           "contains": {
-            "$ref": "#/definitions/commonFunctional"
+            "$ref": "#/$defs/commonFunctional"
           }
         }
       ]
@@ -622,7 +510,7 @@
           "minContains": 1,
           "maxContains": 1,
           "contains": {
-            "$ref": "#/definitions/commonTechnical"
+            "$ref": "#/$defs/commonTechnical"
           }
         }
       ]
@@ -635,7 +523,7 @@
           "minContains": 0,
           "maxContains": 99,
           "contains": {
-            "$ref": "#/definitions/document"
+            "$ref": "#/$defs/document"
           }
         }
       ]
@@ -648,7 +536,7 @@
           "minContains": 1,
           "maxContains": 1,
           "contains": {
-            "$ref": "#/definitions/partyPensionProvider"
+            "$ref": "#/$defs/partyPensionProvider"
           }
         }
       ]
@@ -660,4 +548,3 @@
     "party"
   ]
 }
-

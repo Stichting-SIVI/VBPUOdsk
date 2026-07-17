@@ -5,7 +5,7 @@
 			"function": "01",
 			
 			"afdDefinitionName": "VBPUO-001.00-Bericht_5._Orderopdracht_(00541)",
-			"afdDefinitionVersion": "001.04 (prerelease)",
+			"afdDefinitionVersion": "001.05",
 			"originalMessageId": "20240529 1532"
 		}
 	],
@@ -99,9 +99,9 @@
 								{
 									"entityType": "trade",
 									"refKey": "trade125",
-									"buySellId": "switch",
+									"buySellId": "switchfrom",
 									"tradeDate": "2024-01-06",
-									"tradeAmount": -2000.00,
+									"tradeAmount": 2000.00,
 									"switchType": "1",
 									"financialInformationRef": [
 										"trade126",
@@ -119,7 +119,8 @@
 								{
 									"entityType": "trade",
 									"refKey": "trade126",
-									"buySellId": "switch",
+									"buySellId": "switchto",
+									"tradeDate": "2024-01-06",
 									"financialInformationRef": [
 										"trade125",
 										"inv002"

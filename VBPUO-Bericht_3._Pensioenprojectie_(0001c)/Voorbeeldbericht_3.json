@@ -26,7 +26,7 @@
 		{
 			"entityType": "default",
 			"afdDefinitionName": "VBPUO-001.00-Bericht_3._Pensioenprojectie_(0001c)",
-			"afdDefinitionVersion":"001.04 (prerelease)" ,
+			"afdDefinitionVersion":"001.05" ,
 			"function": "01",
 			"originalMessageId": "orig123456"
 		}
@@ -90,12 +90,14 @@
 								{
 									"entityType": "payment",
 									"refKey": "pay010",
+									"hedgedExpectedPensionPaymentAmount": 48000.00,
 									"expectedPensionPaymentDate": "2060-01-01",
 									"amount": 100000.00
 								},
 								{
 									"entityType": "payment",
 									"refKey": "pay020",
+									"hedgedExpectedPensionPaymentAmount": 135000.00,
 									"expectedPensionPaymentDate": "2050-01-01",
 									"amount": 300000.00
 								}

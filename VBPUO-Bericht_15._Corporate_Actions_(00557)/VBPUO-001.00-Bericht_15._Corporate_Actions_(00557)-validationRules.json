@@ -1,0 +1,16 @@
+{
+  "commonFunctional": {
+    "productName": "VBPUO_1.05_main",
+    "definitionVersion": "001.05",
+    "startDate": "20270101",
+    "functionDescription": "Bericht_15._Corporate_Actions_(00557)",
+    "tag": "VBPUO",
+    "afdDefinitionChangeLog": ""
+  },
+  "rule": [
+    {
+      "id": "BR1",
+      "test": ""
+    }
+  ]
+}

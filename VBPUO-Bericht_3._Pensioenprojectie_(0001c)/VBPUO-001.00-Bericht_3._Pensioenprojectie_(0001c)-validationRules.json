@@ -1,17 +1,8 @@
 {
   "commonFunctional": {
-    "productName": "VBPUO",
-    "definitionVersion": "001.04",
-    "startDate": "20260101",
+    "productName": "zzz5",
     "functionDescription": "Bericht_3._Pensioenprojectie_(0001c)",
-    "tag": "VBPUO",
-    "afdDefinitionChangeLog": "20250701 uitlevering (AOS 001.04) - (pre)release 2026"
+    "afdDefinitionChangeLog": "20260715 concept uitlevering (AOS 001.05) - release 2027"
   },
-  "rule": [
-    {
-      "id": "BR1",
-      "test": ""
-    }
-  ]
+  "rule": []
 }
-

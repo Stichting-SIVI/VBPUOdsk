@@ -1,7 +1,49 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "AFD 2.0 codelists",
-  "definitions": {
+  "$defs": {
+    "ADNFUN": {
+      "description": "ADNFUN codelist",
+      "codelistName": "ADNFUN",
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "01"
+        },
+        {
+          "const": "02"
+        },
+        {
+          "const": "09"
+        },
+        {
+          "const": "54"
+        }
+      ]
+    },
+    "AFDCAE": {
+      "codelistName": "AFDCAE",
+      "type": "string",
+      "description": "Corporate action type (NL: Type corporate action)",
+      "oneOf": [
+        {
+          "const": "cashDividend",
+          "description": "Cash dividend (NL: Contant dividend)"
+        },
+        {
+          "const": "productChange",
+          "description": "Product change (NL: Productwijziging)"
+        },
+        {
+          "const": "rebate",
+          "description": "Rebate (NL: Retourprovisie / rebate)"
+        },
+        {
+          "const": "stockDividend",
+          "description": "Stock dividend (NL: Stockdividend)"
+        }
+      ]
+    },
     "AFDIDP": {
       "description": "Pension provider (NL: Pensioenuitvoerder)",
       "codelistName": "AFDIDP",
@@ -1633,6 +1675,10 @@
         {
           "description": "Oost-Caribische dollar",
           "const": "XCD"
+        },
+        {
+          "description": "Caribische gulden",
+          "const": "XCG"
         },
         {
           "description": "Jemenitische rial",

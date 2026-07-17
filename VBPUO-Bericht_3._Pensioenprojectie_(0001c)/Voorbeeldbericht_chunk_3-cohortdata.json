@@ -22,7 +22,7 @@
     {
       "entityType": "default",
       "afdDefinitionName": "Pensioenprojectie_0001c",
-      "afdDefinitionVersion":"001.04 (prerelease)" ,
+      "afdDefinitionVersion":"001.05" ,
       "function": "01"
     }
   ],
@@ -93,12 +93,14 @@
                 {
                   "entityType": "payment",
                   "refKey": "PAYMENT-COHORT2-001",
+                  "hedgedExpectedPensionPaymentAmount": 320.00,
                   "expectedPensionPaymentDate": "2050-05-20",
                   "amount": 350.00
                 },
                 {
                   "entityType": "payment",
                   "refKey": "PAYMENT-COHORT2-002",
+                  "hedgedExpectedPensionPaymentAmount": 325.00,
                   "expectedPensionPaymentDate": "2050-06-20",
                   "amount": 350.00
                 }

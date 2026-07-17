@@ -32,7 +32,7 @@
 		{
 			"entityType": "default",
 			"afdDefinitionName": "VBPUO-001.00-Bericht_1._Vermogen_(0001a)",
-			"afdDefinitionVersion":"001.04 (prerelease)" ,
+			"afdDefinitionVersion":"001.05" ,
 			"function": "01",
 			"originalMessageId": "987654321"
 		}
@@ -74,7 +74,7 @@
 							"reserveIndicator": false,
 							"startAge": 540,
 							"endAge": 780,
-							"participationStatus": "12"
+							"participationStatus": "20"
 						}
 					]
 				},

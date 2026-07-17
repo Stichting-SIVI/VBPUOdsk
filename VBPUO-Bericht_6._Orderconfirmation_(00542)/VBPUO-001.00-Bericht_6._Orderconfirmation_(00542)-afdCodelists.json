@@ -1,7 +1,7 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "AFD 2.0 codelists",
-  "definitions": {
+  "$defs": {
     "AFDIDP": {
       "description": "Pension provider (NL: Pensioenuitvoerder)",
       "codelistName": "AFDIDP",
@@ -1635,6 +1635,10 @@
           "const": "XCD"
         },
         {
+          "description": "Caribische gulden",
+          "const": "XCG"
+        },
+        {
           "description": "Jemenitische rial",
           "const": "YER"
         },
@@ -1649,6 +1653,21 @@
         {
           "description": "Anders",
           "const": "ZZZ"
+        }
+      ]
+    },
+    "AFDSWI": {
+      "description": "Switch type (NL: Switchsoort)",
+      "codelistName": "AFDSWI",
+      "type": "string",
+      "oneOf": [
+        {
+          "description": "Sequential",
+          "const": "1"
+        },
+        {
+          "description": "One-day",
+          "const": "2"
         }
       ]
     }
