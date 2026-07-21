@@ -32,7 +32,7 @@
 		{
 			"entityType": "default",
 			"afdDefinitionName": "VBPUO-001.00-Bericht_1._Vermogen_(0001a)",
-			"afdDefinitionVersion":"001.04 (prerelease)" ,
+			"afdDefinitionVersion":"001.04" ,
 			"function": "01",
 			"originalMessageId": "987654321"
 		}

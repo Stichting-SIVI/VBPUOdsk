@@ -26,7 +26,7 @@
 		{
 			"entityType": "default",
 			"afdDefinitionName": "VBPUO-001.00-Bericht_3._Pensioenprojectie_(0001c)",
-			"afdDefinitionVersion":"001.04 (prerelease)" ,
+			"afdDefinitionVersion":"001.04" ,
 			"function": "01",
 			"originalMessageId": "orig123456"
 		}
