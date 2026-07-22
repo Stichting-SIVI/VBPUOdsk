@@ -19,7 +19,8 @@ De volledige handleiding (VB-PUO Standaard Datauitwisseling) is online beschikba
 
 | Release | Tag | Status |
 |----------|-----|--------|
-| **Release 2026** | [v1.3.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.3.0) | ✅ **Actueel** |
+| **Release 2026** | [v1.3.1](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.1) | ✅ **Actueel** |
+| **Release 2026** (oorspronkelijk) | [v1.3.0](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.0) | 🔁 **Vervangen door v1.3.1** — zie [#138](https://github.com/Stichting-SIVI/VBPUOdsk/issues/138) |
 | **2024 November** | [v1.2.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.2.0) | 🟡 **Beschikbaar** |
 | **2024 Juli** | [v1.1.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.1.0) | 🟡 **Beschikbaar** |
 | **2024 Mei** | [v1.0.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.0.0) | ⚠️ **Archief – buiten gebruik** |
