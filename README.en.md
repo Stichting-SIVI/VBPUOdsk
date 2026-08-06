@@ -13,7 +13,7 @@ Please **"Watch"** this project if you are using it → click the **Watch** butt
 | Release | Tag | Status |
 |----------|-----|--------|
 | **Release 2026** | [v1.3.1](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.1) | ✅ **Actual** |
-| **Release 2026** (oorspronkelijk) | [v1.3.0](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.0) | 🔁 **Replace by v1.3.1** — zie [#138](https://github.com/Stichting-SIVI/VBPUOdsk/issues/138) |
+| **Release 2026** (oorspronkelijk) | [v1.3.0](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.0) | 🔁 **Replaced by v1.3.1** — zie [#138](https://github.com/Stichting-SIVI/VBPUOdsk/issues/138) |
 | **2024 November** | [v1.2.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.2.0) | 🟡 **Available** |
 | **2024 July** | [v1.1.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.1.0) | 🟡 **Available** |
 | **2024 May** | [v1.0.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.0.0) | ⚠️ **Archived – not operational** |
