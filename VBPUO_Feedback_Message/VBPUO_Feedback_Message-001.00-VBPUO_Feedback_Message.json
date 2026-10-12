@@ -19,7 +19,7 @@
           "description": "Name of the AFD-definition. (NL: De AFD definitienaam van o.a. webservices en verzekeringsproducten.)",
           "customDescription": "Name of the AFD-definition, refers to the Feedback message itself.",
           "type": "string",
-          "const": "VBPUO_Feedback_Message-001.02-VBPUO_Feedback_Message"
+          "const": "VBPUO_Feedback_Message-001.00-VBPUO_Feedback_Message"
         },
         "afdDefinitionVersion": {
           "description": "Version of the AFD-definition. (NL: Met AFD definitieversienummer wordt aangegeven over welke versie van de (product)definitie wordt gecommuniceerd.)",
@@ -80,28 +80,16 @@
               "const": "00542"
             },
             {
-              "const": "00551"
-            },
-            {
-              "const": "00552a"
-            },
-            {
-              "const": "00552b"
-            },
-            {
               "const": "00553"
-            },
-            {
-              "const": "00554"
-            },
-            {
-              "const": "00555a"
             },
             {
               "const": "00555b"
             },
             {
               "const": "00556"
+            },
+            {
+              "const": "00557"
             }
           ]
         }

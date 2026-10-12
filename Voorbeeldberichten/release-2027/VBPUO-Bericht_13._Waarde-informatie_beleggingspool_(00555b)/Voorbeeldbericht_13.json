@@ -1,0 +1,80 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:00:00+01:00",
+      "messageId": "VB-00555B-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "BA01",
+          "organizationName": "Beleggingsadministrateur Voorbeeld",
+          "applicationSenderName": "VoorbeeldApplicatie"
+        },
+        {
+          "entityType": "receiver",
+          "refKey": "PUO01",
+          "organizationName": "Pensioenuitvoerder Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_13._Waarde-informatie_beleggingspool_(00555b)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0393",
+      "organizationName": "Pensioenfonds Metaal en Techniek",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "REG-01",
+          "pensionSchemeName": "Flexibele regeling Voorbeeld",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "participationValuationDate": "2027-02-26"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "pool",
+              "refKey": "POOL-MATCH",
+              "description": "Matchingpool",
+              "currencyType": "EUR",
+              "numberOfUnits": 356968.172112,
+              "preliminaryUnitValueAmount": 103.7903,
+              "unitsSummedValueAmount": 37049833.67
+            },
+            {
+              "entityType": "pool",
+              "refKey": "POOL-REND",
+              "description": "Rendementspool",
+              "currencyType": "EUR",
+              "numberOfUnits": 281186.218314,
+              "preliminaryUnitValueAmount": 108.1778,
+              "unitsSummedValueAmount": 30418106.49
+            },
+            {
+              "entityType": "pool",
+              "refKey": "POOL-RENTE",
+              "description": "Rentepool",
+              "currencyType": "EUR",
+              "numberOfUnits": 1649532.890637,
+              "preliminaryUnitValueAmount": 120.4195,
+              "unitsSummedValueAmount": 198635925.92
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:00:00+01:00",
+      "messageId": "VB-00556-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "BA01",
+          "organizationName": "Beleggingsadministrateur Voorbeeld",
+          "applicationSenderName": "VoorbeeldApplicatie"
+        },
+        {
+          "entityType": "receiver",
+          "refKey": "PUO01",
+          "organizationName": "Pensioenuitvoerder Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_14._Betaalinformatie_(00556)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0202",
+      "organizationName": "Stichting Pensioenfonds ABP",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "REG-01",
+          "pensionSchemeName": "Basisregeling Voorbeeld",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "valueDate": "2027-03-25"
+            }
+          ],
+          "financialTransaction": [
+            {
+              "entityType": "payment",
+              "amount": 334684.54,
+              "description": "Uitkeringen ouderdomspensioen maart 2027",
+              "currencyType": "EUR",
+              "collectionAccountIban": "NL86ABNA9711164294",
+              "party": [
+                {
+                  "entityType": "creditor",
+                  "refKey": "CRED-01",
+                  "collectionAccountIban": "NL94INGB3692677651",
+                  "collectionAccountBic": "INGBNL2A",
+                  "collectionAccountInNameOf": "Stichting Uitkeringen Voorbeeld"
+                }
+              ]
+            },
+            {
+              "entityType": "payment",
+              "amount": 1400556.36,
+              "description": "Uitkeringen partnerpensioen maart 2027",
+              "currencyType": "EUR",
+              "collectionAccountIban": "NL70ABNA6742218167",
+              "party": [
+                {
+                  "entityType": "creditor",
+                  "refKey": "CRED-02",
+                  "collectionAccountIban": "NL07INGB1059682214",
+                  "collectionAccountBic": "INGBNL2A",
+                  "collectionAccountInNameOf": "Stichting Uitkeringen Voorbeeld"
+                }
+              ]
+            },
+            {
+              "entityType": "payment",
+              "amount": 208144.59,
+              "description": "Afdracht loonheffing februari 2027",
+              "currencyType": "EUR",
+              "collectionAccountIban": "NL61ABNA7993076009",
+              "party": [
+                {
+                  "entityType": "creditor",
+                  "refKey": "CRED-03",
+                  "collectionAccountIban": "NL18RABO8020886857",
+                  "collectionAccountBic": "RABONL2U",
+                  "collectionAccountInNameOf": "Ontvanger Loonheffing Voorbeeld"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

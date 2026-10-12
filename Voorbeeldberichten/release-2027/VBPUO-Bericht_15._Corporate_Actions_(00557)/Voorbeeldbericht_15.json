@@ -1,0 +1,106 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:00:00+01:00",
+      "messageId": "VB-00557-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "BA01",
+          "organizationName": "Beleggingsadministrateur Voorbeeld",
+          "applicationSenderName": "VoorbeeldApplicatie"
+        },
+        {
+          "entityType": "receiver",
+          "refKey": "PUO01",
+          "organizationName": "Pensioenuitvoerder Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_15._Corporate_Actions_(00557)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0130",
+      "organizationName": "Bpf. Bouw",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "REG-01",
+          "pensionSchemeName": "Basisregeling Voorbeeld",
+          "investment": [
+            {
+              "entityType": "investmentDetails",
+              "refKey": "QZ00000010034",
+              "description": "Aandelenfonds Wereld Voorbeeld",
+              "investment": [
+                {
+                  "entityType": "corporateAction",
+                  "refKey": "CA-0001",
+                  "corporateActionType": "1",
+                  "description": "Cash dividend Q4 2026",
+                  "tradeDate": "2027-03-10",
+                  "instructionDate": "2027-03-08",
+                  "paymentDate": "2027-03-15",
+                  "currencyType": "EUR",
+                  "cashDividendPerUnitAmount": 0.42,
+                  "cashDividendTotalAmount": 525000.0
+                },
+                {
+                  "entityType": "corporateAction",
+                  "refKey": "CA-0002",
+                  "corporateActionType": "2",
+                  "description": "Stockdividend 2026",
+                  "tradeDate": "2027-03-10",
+                  "instructionDate": "2027-03-08",
+                  "paymentDate": "2027-03-15",
+                  "stockDividendPerUnitNumber": 0.02,
+                  "stockDividendTotalNumber": 25000.0
+                },
+                {
+                  "entityType": "corporateAction",
+                  "refKey": "CA-0003",
+                  "corporateActionType": "99",
+                  "description": "Rebate beheervergoeding Q4 2026",
+                  "tradeDate": "2027-03-12",
+                  "instructionDate": "2027-03-11",
+                  "paymentDate": "2027-03-17",
+                  "currencyType": "EUR",
+                  "cashDividendTotalAmount": 18375.4
+                }
+              ]
+            },
+            {
+              "entityType": "investmentDetails",
+              "refKey": "QZ00000010117",
+              "description": "Obligatiefonds Voorbeeld",
+              "investment": [
+                {
+                  "entityType": "corporateAction",
+                  "refKey": "CA-0004",
+                  "corporateActionType": "3",
+                  "description": "Naamswijziging en nieuwe identificatie",
+                  "tradeDate": "2027-03-20",
+                  "instructionDate": "2027-03-18",
+                  "paymentDate": "2027-03-20",
+                  "newProductName": "Obligatiefonds Duurzaam Voorbeeld",
+                  "newProductIdentifier": "QZ00000020272"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

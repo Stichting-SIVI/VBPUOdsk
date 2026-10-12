@@ -1,0 +1,78 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:00:00+01:00",
+      "messageId": "VB-00553-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "BA01",
+          "organizationName": "Beleggingsadministrateur Voorbeeld",
+          "applicationSenderName": "VoorbeeldApplicatie"
+        },
+        {
+          "entityType": "receiver",
+          "refKey": "FM01",
+          "organizationName": "Fiduciair Manager Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_10._Stuurinformatiebeleggingspools_(00553)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0393",
+      "organizationName": "Pensioenfonds Metaal en Techniek",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "REG-01",
+          "pensionSchemeName": "Flexibele regeling Voorbeeld",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "tradeDate": "2027-03-26",
+              "investmentOrderSettlementDate": "2027-03-30"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "pool",
+              "refKey": "POOL-REND",
+              "description": "Rendementspool",
+              "currencyType": "EUR",
+              "buySellId": "buy",
+              "tradeValueAmount": 1218373.59
+            },
+            {
+              "entityType": "pool",
+              "refKey": "POOL-MATCH",
+              "description": "Matchingpool",
+              "currencyType": "EUR",
+              "buySellId": "sell",
+              "tradeValueAmount": 1421216.76
+            },
+            {
+              "entityType": "pool",
+              "refKey": "POOL-RENTE",
+              "description": "Rentepool",
+              "currencyType": "EUR",
+              "buySellId": "buy",
+              "tradeValueAmount": 1054178.85
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

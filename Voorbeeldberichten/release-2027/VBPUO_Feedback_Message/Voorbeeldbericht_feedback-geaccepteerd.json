@@ -1,0 +1,35 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:05:00+01:00",
+      "messageId": "FB-VB-00541-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "receiver",
+          "refKey": "PUO01",
+          "organizationName": "Pensioenuitvoerder Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO_Feedback_Message-001.00-VBPUO_Feedback_Message",
+      "afdDefinitionVersion": "001.02",
+      "originalMessageId": "VB-00541-0001",
+      "function": "23",
+      "statusType": "8",
+      "originalMessageType": "00541"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0393",
+      "organizationName": "Pensioenfonds Metaal en Techniek"
+    }
+  ]
+}

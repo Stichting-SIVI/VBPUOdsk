@@ -12,7 +12,9 @@ Please **"Watch"** this project if you are using it → click the **Watch** butt
 
 | Release | Tag | Status |
 |----------|-----|--------|
-| **Release 2026** | [v1.3.1](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.1) | ✅ **Actual** |
+| **Release 2027** | [v1.4.0](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.4.0) | ✅ **Actual** |
+| **Release 2026** (patch) | [v1.3.2](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.2) | 🟡 **Available** |
+| **Release 2026** | [v1.3.1](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.1) | 🔁 **Replaced by v1.3.2** |
 | **Release 2026** (oorspronkelijk) | [v1.3.0](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.0) | 🔁 **Replaced by v1.3.1** — zie [#138](https://github.com/Stichting-SIVI/VBPUOdsk/issues/138) |
 | **2024 November** | [v1.2.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.2.0) | 🟡 **Available** |
 | **2024 July** | [v1.1.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.1.0) | 🟡 **Available** |
@@ -33,6 +35,7 @@ Please **"Watch"** this project if you are using it → click the **Watch** butt
   👉 [SIVI – Standard Data Exchange for Asset Management and Pension Administration](https://www.sivi.org/pensioen/standaard-data-uitwisseling-vermogensbeheer-en-pensioenuitvoering)
 - **UML class diagrams** (from prerelease 2026 onward):  
   `<code> MessageStructureView </code>`
+- **Sample messages** (from release 2027 onward): folder [`Voorbeeldberichten/`](Voorbeeldberichten/), per release; main is leading.
 - Additional background information: [Wiki](https://github.com/dma61/VBPUOdsk/wiki)
 - Comments or feedback: [Issues page](https://github.com/dma61/VBPUOdsk/issues)
 
@@ -72,7 +75,7 @@ provided that the standard’s contents are **not altered** outside the formal g
 ---
 
 ![status](https://img.shields.io/badge/status-current-success)
-![release](https://img.shields.io/badge/latest_release-2026-blue)
+![release](https://img.shields.io/badge/latest_release-2027-blue)
 ![license](https://img.shields.io/badge/license-SIVI_Governance-blue)
 
 ---

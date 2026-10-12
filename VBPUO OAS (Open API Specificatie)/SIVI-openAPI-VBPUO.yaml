@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: OpenAPI SPEC Data-uitwisseling Vermogensbeheer en Pensioenuitvoering
   description: "OpenAPI specification for the exchange of SIVI asset management messages (SPR + FPR).\n\n
-  Please also refer to https://github.com/dma61/VBPUOdsk where this openAPI specification and JSON schemas and examples can be found for the various messages that are exchanged.\n\n
+  Please also refer to https://github.com/Stichting-SIVI/VBPUOdsk where this openAPI specification and JSON schemas and examples can be found for the various messages that are exchanged.\n\n
   Each path allows creating/reading (but not updating or deleting) a specific message type. A POST to the path will create a new message. We won't make use of PUT operations, since there's already functionality within every message to POST an update. See commonFunctional.function (value 02: Wijzigen).\n\n
   For idempotency: please use messageId as idempotency key.\n\n
     For support, change requests or other issues, please refer to GitHub.\n\n
@@ -13,13 +13,13 @@ info:
   version: 1.0.11
   contact:
     name: SIVI API Support & Issues
-    url: https://github.com/dma61/VBPUOdsk/issues
+    url: https://github.com/Stichting-SIVI/VBPUOdsk/issues
   license:
     name: Apache 2.0
     url: "https://www.apache.org/licenses/LICENSE-2.0"
 externalDocs:
   description: API Documentation
-  url: https://github.com/dma61/VBPUOdsk
+  url: https://github.com/Stichting-SIVI/VBPUOdsk
 servers:
   - url: http://localhost:8080
 tags:
@@ -421,27 +421,27 @@ paths:
 components:
   schemas:
     Capital:
-      $ref: 'VBPUO-Bericht_1._Vermogen_(0001a)/VBPUO-001.00-Bericht_1._Vermogen_(0001a).json'
+      $ref: '../VBPUO-Bericht_1._Vermogen_(0001a)/VBPUO-001.00-Bericht_1._Vermogen_(0001a).json'
     Cashflow:
-      $ref: 'VBPUO-Bericht_2._Cashflow_(0001b)/VBPUO-001.00-Bericht_2._Cashflow_(0001b).json'
+      $ref: '../VBPUO-Bericht_2._Cashflow_(0001b)/VBPUO-001.00-Bericht_2._Cashflow_(0001b).json'
     PensionProjection:
-      $ref: 'VBPUO-Bericht_3._Pensioenprojectie_(0001c)/VBPUO-001.00-Bericht_3._Pensioenprojectie_(0001c).json'
+      $ref: '../VBPUO-Bericht_3._Pensioenprojectie_(0001c)/VBPUO-001.00-Bericht_3._Pensioenprojectie_(0001c).json'
     ReturnOnInvestment:
-      $ref: 'VBPUO-Bericht_4._Rendementsinformatie_(00002)/VBPUO-001.00-Bericht_4._Rendementsinformatie_(00002).json'
+      $ref: '../VBPUO-Bericht_4._Rendementsinformatie_(00002)/VBPUO-001.00-Bericht_4._Rendementsinformatie_(00002).json'
     Trade:
-      $ref: 'VBPUO-Bericht_5._Orderopdracht_(00541)/VBPUO-001.00-Bericht_5._Orderopdracht_(00541).json'
+      $ref: '../VBPUO-Bericht_5._Orderopdracht_(00541)/VBPUO-001.00-Bericht_5._Orderopdracht_(00541).json'
     OrderConfirmation:
-      $ref: 'VBPUO-Bericht_6._Orderconfirmation_(00542)/VBPUO-001.00-Bericht_6._Orderconfirmation_(00542).json'
+      $ref: '../VBPUO-Bericht_6._Orderconfirmation_(00542)/VBPUO-001.00-Bericht_6._Orderconfirmation_(00542).json'
     ControlInformationInvestmentPools :
-      $ref: 'VBPUO-Bericht_10._Stuurinformatiebeleggingspools_(00553)/VBPUO-001.00-Bericht_10._Stuurinformatiebeleggingspools_(00553).json'
+      $ref: '../VBPUO-Bericht_10._Stuurinformatiebeleggingspools_(00553)/VBPUO-001.00-Bericht_10._Stuurinformatiebeleggingspools_(00553).json'
     ValueAmountInvestmentPool:
-      $ref: 'VBPUO-Bericht_13._Waarde-informatie_beleggingspool_(00555b)/VBPUO-001.00-Bericht_13._Waarde-informatie_beleggingspool_(00555b).json'
+      $ref: '../VBPUO-Bericht_13._Waarde-informatie_beleggingspool_(00555b)/VBPUO-001.00-Bericht_13._Waarde-informatie_beleggingspool_(00555b).json'
     PaymentDetailsCreditor:
-      $ref: 'VBPUO-Bericht_14._Betaalinformatie_(00556)/VBPUO-001.00-Bericht_14._Betaalinformatie_(00556).json'
+      $ref: '../VBPUO-Bericht_14._Betaalinformatie_(00556)/VBPUO-001.00-Bericht_14._Betaalinformatie_(00556).json'
     CorporateActions:
-      $ref: 'VBPUO-Bericht_15._Corporate_Actions_(00557)/VBPUO_1.05_main-001.05-Bericht_15._Corporate_Actions_(00557).json'
+      $ref: '../VBPUO-Bericht_15._Corporate_Actions_(00557)/VBPUO-001.00-Bericht_15._Corporate_Actions_(00557).json'
     Feedback:
-      $ref: 'VBPUO_Feedback_Message/VBPUO_Feedback_Message-VBPUO_Feedback_Message.json'
+      $ref: '../VBPUO_Feedback_Message/VBPUO_Feedback_Message-001.00-VBPUO_Feedback_Message.json'
   parameters:
     puvCode:
       name: puvCode
@@ -481,6 +481,7 @@ components:
             https://sivi-vermogensbeheerkoppeling/pensionProjection.write: Write pensionProjection information
             https://sivi-vermogensbeheerkoppeling/returnOnInvestment.write: Write returnOnInvestment information
             https://sivi-vermogensbeheerkoppeling/trade.write: Write trade information
+            https://sivi-vermogensbeheerkoppeling/orderConfirmation.write: Write orderConfirmation information
             https://sivi-vermogensbeheerkoppeling/controlInformationInvestmentPools.write: Write controlInformationInvestmentPools information
             https://sivi-vermogensbeheerkoppeling/valueAmountInvestmentPool.write: Write valueAmountInvestmentPool information
             https://sivi-vermogensbeheerkoppeling/paymentDetailsCreditor.write: Write paymentDetailsCreditor information

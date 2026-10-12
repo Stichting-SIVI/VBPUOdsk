@@ -1,0 +1,321 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:00:00+01:00",
+      "messageId": "VB-0001C-FPR-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "PUO01",
+          "organizationName": "Pensioenuitvoerder Voorbeeld",
+          "applicationSenderName": "VoorbeeldApplicatie"
+        },
+        {
+          "entityType": "receiver",
+          "refKey": "LDI01",
+          "organizationName": "LDI-manager Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_3._Pensioenprojectie_(0001c)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0393",
+      "organizationName": "Pensioenfonds Metaal en Techniek",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "REG-01",
+          "pensionSchemeName": "Flexibele regeling Voorbeeld",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "projectionDate": "2027-03-01"
+            }
+          ],
+          "financialTransaction": [
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-04",
+              "expectedPensionPaymentDate": "2027-04-01",
+              "amount": 3514918.77,
+              "hedgedExpectedPensionPaymentAmount": 2108951.26
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-05",
+              "expectedPensionPaymentDate": "2027-05-01",
+              "amount": 3490318.75,
+              "hedgedExpectedPensionPaymentAmount": 2094191.25
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-06",
+              "expectedPensionPaymentDate": "2027-06-01",
+              "amount": 3508812.51,
+              "hedgedExpectedPensionPaymentAmount": 2105287.51
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-07",
+              "expectedPensionPaymentDate": "2027-07-01",
+              "amount": 3527160.16,
+              "hedgedExpectedPensionPaymentAmount": 2116296.1
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-08",
+              "expectedPensionPaymentDate": "2027-08-01",
+              "amount": 3512499.96,
+              "hedgedExpectedPensionPaymentAmount": 2107499.97
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-09",
+              "expectedPensionPaymentDate": "2027-09-01",
+              "amount": 3573552.94,
+              "hedgedExpectedPensionPaymentAmount": 2144131.77
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-10",
+              "expectedPensionPaymentDate": "2027-10-01",
+              "amount": 3540532.54,
+              "hedgedExpectedPensionPaymentAmount": 2124319.52
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-11",
+              "expectedPensionPaymentDate": "2027-11-01",
+              "amount": 3568188.56,
+              "hedgedExpectedPensionPaymentAmount": 2140913.13
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2027-12",
+              "expectedPensionPaymentDate": "2027-12-01",
+              "amount": 3565981.08,
+              "hedgedExpectedPensionPaymentAmount": 2139588.65
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2028-01",
+              "expectedPensionPaymentDate": "2028-01-01",
+              "amount": 3574616.56,
+              "hedgedExpectedPensionPaymentAmount": 2144769.94
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2028-02",
+              "expectedPensionPaymentDate": "2028-02-01",
+              "amount": 3570675.04,
+              "hedgedExpectedPensionPaymentAmount": 2142405.02
+            },
+            {
+              "entityType": "payment",
+              "refKey": "REG-2028-03",
+              "expectedPensionPaymentDate": "2028-03-01",
+              "amount": 3611398.32,
+              "hedgedExpectedPensionPaymentAmount": 2166838.99
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "portfolio",
+              "refKey": "PF-01",
+              "description": "Matchingportefeuille",
+              "financialTransaction": [
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-04",
+                  "expectedPensionPaymentDate": "2027-04-01",
+                  "amount": 2097703.73,
+                  "hedgedExpectedPensionPaymentAmount": 1258622.24
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-05",
+                  "expectedPensionPaymentDate": "2027-05-01",
+                  "amount": 2102245.02,
+                  "hedgedExpectedPensionPaymentAmount": 1261347.01
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-06",
+                  "expectedPensionPaymentDate": "2027-06-01",
+                  "amount": 2101379.16,
+                  "hedgedExpectedPensionPaymentAmount": 1260827.5
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-07",
+                  "expectedPensionPaymentDate": "2027-07-01",
+                  "amount": 2114954.28,
+                  "hedgedExpectedPensionPaymentAmount": 1268972.57
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-08",
+                  "expectedPensionPaymentDate": "2027-08-01",
+                  "amount": 2107560.54,
+                  "hedgedExpectedPensionPaymentAmount": 1264536.32
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-09",
+                  "expectedPensionPaymentDate": "2027-09-01",
+                  "amount": 2136854.33,
+                  "hedgedExpectedPensionPaymentAmount": 1282112.6
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-10",
+                  "expectedPensionPaymentDate": "2027-10-01",
+                  "amount": 2124354.82,
+                  "hedgedExpectedPensionPaymentAmount": 1274612.89
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-11",
+                  "expectedPensionPaymentDate": "2027-11-01",
+                  "amount": 2143068.14,
+                  "hedgedExpectedPensionPaymentAmount": 1285840.88
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2027-12",
+                  "expectedPensionPaymentDate": "2027-12-01",
+                  "amount": 2130407.18,
+                  "hedgedExpectedPensionPaymentAmount": 1278244.31
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2028-01",
+                  "expectedPensionPaymentDate": "2028-01-01",
+                  "amount": 2155702.41,
+                  "hedgedExpectedPensionPaymentAmount": 1293421.45
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2028-02",
+                  "expectedPensionPaymentDate": "2028-02-01",
+                  "amount": 2156983.7,
+                  "hedgedExpectedPensionPaymentAmount": 1294190.22
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-01-2028-03",
+                  "expectedPensionPaymentDate": "2028-03-01",
+                  "amount": 2165678.29,
+                  "hedgedExpectedPensionPaymentAmount": 1299406.97
+                }
+              ]
+            },
+            {
+              "entityType": "portfolio",
+              "refKey": "PF-02",
+              "description": "Renteportefeuille",
+              "financialTransaction": [
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-04",
+                  "expectedPensionPaymentDate": "2027-04-01",
+                  "amount": 1417215.04,
+                  "hedgedExpectedPensionPaymentAmount": 850329.02
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-05",
+                  "expectedPensionPaymentDate": "2027-05-01",
+                  "amount": 1388073.73,
+                  "hedgedExpectedPensionPaymentAmount": 832844.24
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-06",
+                  "expectedPensionPaymentDate": "2027-06-01",
+                  "amount": 1407433.35,
+                  "hedgedExpectedPensionPaymentAmount": 844460.01
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-07",
+                  "expectedPensionPaymentDate": "2027-07-01",
+                  "amount": 1412205.88,
+                  "hedgedExpectedPensionPaymentAmount": 847323.53
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-08",
+                  "expectedPensionPaymentDate": "2027-08-01",
+                  "amount": 1404939.42,
+                  "hedgedExpectedPensionPaymentAmount": 842963.65
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-09",
+                  "expectedPensionPaymentDate": "2027-09-01",
+                  "amount": 1436698.61,
+                  "hedgedExpectedPensionPaymentAmount": 862019.17
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-10",
+                  "expectedPensionPaymentDate": "2027-10-01",
+                  "amount": 1416177.72,
+                  "hedgedExpectedPensionPaymentAmount": 849706.63
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-11",
+                  "expectedPensionPaymentDate": "2027-11-01",
+                  "amount": 1425120.42,
+                  "hedgedExpectedPensionPaymentAmount": 855072.25
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2027-12",
+                  "expectedPensionPaymentDate": "2027-12-01",
+                  "amount": 1435573.9,
+                  "hedgedExpectedPensionPaymentAmount": 861344.34
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2028-01",
+                  "expectedPensionPaymentDate": "2028-01-01",
+                  "amount": 1418914.15,
+                  "hedgedExpectedPensionPaymentAmount": 851348.49
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2028-02",
+                  "expectedPensionPaymentDate": "2028-02-01",
+                  "amount": 1413691.34,
+                  "hedgedExpectedPensionPaymentAmount": 848214.8
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PF-02-2028-03",
+                  "expectedPensionPaymentDate": "2028-03-01",
+                  "amount": 1445720.03,
+                  "hedgedExpectedPensionPaymentAmount": 867432.02
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

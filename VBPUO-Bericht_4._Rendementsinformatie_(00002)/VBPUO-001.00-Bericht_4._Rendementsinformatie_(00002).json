@@ -3,7 +3,7 @@
   "description": "JSON Schema SIVI 2.0",
   "//comment": {
     "functionDescription": "Bericht_4._Rendementsinformatie_(00002)",
-    "afdDefinitionChangeLog": "20260715 concept uitlevering (AOS 001.05) - release 2027"
+    "afdDefinitionChangeLog": "20261011 1944 uitlevering (AOS 001.05) - RELEASE 2027"
   },
   "$defs": {
     "chunking": {
@@ -17,7 +17,8 @@
         },
         "currentChunkId": {
           "description": "Unique reference (id) of the current chunk. (NL: Unieke referentie van de huidige chunk.)",
-          "type": "string"
+          "type": "string",
+          "maxLength": 70
         },
         "chunkSequenceNumber": {
           "description": "Sequence number of the current chunk. (NL: Volgnummer van de huidige chunk.)",
@@ -53,20 +54,24 @@
           "const": "default"
         },
         "afdDefinitionVersion": {
-          "const": "001.05",
           "description": "Version of the AFD-definition. (NL: Met AFD definitieversienummer wordt aangegeven over welke versie van de (product)definitie wordt gecommuniceerd.)",
           "type": "string",
-          "maxLength": 80
+          "maxLength": 80,
+          "customDescription": "Versie van het JSON schema",
+          "const": "001.05"
         },
         "afdDefinitionName": {
           "description": "Name of the AFD-definition. (NL: De AFD definitienaam van o.a. webservices en verzekeringsproducten.)",
           "type": "string",
-          "maxLength": 80
+          "maxLength": 80,
+          "customDescription": "Soort bericht",
+          "const": "VBPUO-001.00-Bericht_4._Rendementsinformatie_(00002)"
         },
         "originalMessageId": {
           "description": "The messageId of the original message, which is replaced by this message. (NL: MessageId van het oorspronkelijke bericht, dat wordt vervangen door dit bericht.)",
           "type": "string",
-          "maxLength": 70
+          "maxLength": 70,
+          "customDescription": "Het oorspronkelijke messageId van het bericht dat wordt vervangen door dit bericht"
         },
         "function": {
           "description": "Message function (NL: Berichtfunctie)",
@@ -85,7 +90,8 @@
             {
               "const": "54"
             }
-          ]
+          ],
+          "customDescription": "Message function code. (NL: Code waarmee de functie van het bericht wordt aangegeven.)"
         }
       },
       "required": [
@@ -107,16 +113,19 @@
         "creationDateTime": {
           "description": "Date and time (as timestamp) when the message was created. (NL: Datum en tijd van het aanmaken van het bericht.)",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "customDescription": "Aanmaakdatum en tijd Date"
+        },
+        "testMessage": {
+          "description": "Indication whether the message is a test message. (NL: Indicatie of sprake is van een testbericht.)",
+          "type": "boolean",
+          "customDescription": "Indicatie testbericht"
         },
         "messageId": {
           "description": "Unique identification of the message. (AFD 2.0 only)",
           "type": "string",
-          "maxLength": 70
-        },
-        "testMessage": {
-          "description": "Indication whether the message is a test message. (NL: Indicatie of sprake is van een testbericht.)",
-          "type": "boolean"
+          "maxLength": 70,
+          "customDescription": "Unieke berichtidentificatie"
         },
         "party": {
           "type": "array",
@@ -158,17 +167,20 @@
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
-          "maxLength": 70
+          "maxLength": 70,
+          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)"
         },
         "organizationName": {
           "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
           "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Naam van de ontvanger(s) (organisatie (s))"
         },
         "rsinNumber": {
           "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
           "type": "string",
-          "maxLength": 9
+          "maxLength": 9,
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)"
         }
       },
       "required": [
@@ -189,22 +201,26 @@
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
-          "maxLength": 70
+          "maxLength": 70,
+          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)"
         },
         "applicationSenderName": {
           "description": "Name of the application that sends the data. (NL: Naam van de applicatie die de gegevens verzendt.)",
           "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Naam van de applicatie die het bericht heeft aangemaakt"
         },
         "organizationName": {
           "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
           "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Organisatie naam van de afzender"
         },
         "rsinNumber": {
           "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
           "type": "string",
-          "maxLength": 9
+          "maxLength": 9,
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)"
         },
         "party": {
           "type": "array",
@@ -235,21 +251,23 @@
           "type": "string",
           "const": "contact"
         },
-        "workPhoneNumber": {
-          "description": "Work telephone number. (NL: Telefoonnummer werk)",
-          "type": "string",
-          "maxLength": 60
-        },
         "emailWork": {
           "description": "Work email address. (NL: E-mail adres werk)",
           "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Werk emailadres"
+        },
+        "workPhoneNumber": {
+          "description": "Work telephone number. (NL: Telefoonnummer werk)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Werk telefoonnummer"
         }
       },
       "required": [
         "entityType",
-        "workPhoneNumber",
-        "emailWork"
+        "emailWork",
+        "workPhoneNumber"
       ]
     },
     "document": {
@@ -264,7 +282,14 @@
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
-          "maxLength": 70
+          "maxLength": 70,
+          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)"
+        },
+        "fileName": {
+          "description": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)"
         },
         "fileExtension": {
           "description": "Extension of the file under which the attachment can be saved. For example &quot;pdf&quot;, &quot;doc&quot;, etc. (NL: Extensienaam van het bestand waaronder de bijlage kan worden opgeslagen. Bijvoorbeeld &quot;PDF&quot;, &quot;DOC&quot;, etc.)",
@@ -279,19 +304,15 @@
             {
               "const": "txt"
             }
-          ]
-        },
-        "fileName": {
-          "description": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)",
-          "type": "string",
-          "maxLength": 60
+          ],
+          "customDescription": "Extension of the file under which the attachment can be saved. For example \"pdf\", \"doc\", etc. (NL: Extensienaam van het bestand waaronder de bijlage kan worden opgeslagen. Bijvoorbeeld \"PDF\", \"DOC\", etc.)"
         }
       },
       "required": [
         "entityType",
         "refKey",
-        "fileExtension",
-        "fileName"
+        "fileName",
+        "fileExtension"
       ]
     },
     "partyPensionProvider": {
@@ -306,12 +327,14 @@
         "organizationName": {
           "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
           "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Naam van de pensioenuitvoerder"
         },
         "rsinNumber": {
           "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
           "type": "string",
-          "maxLength": 9
+          "maxLength": 9,
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)"
         },
         "puvCode": {
           "description": "Pension provider (NL: Pensioenuitvoerder)",
@@ -352,12 +375,14 @@
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
-          "maxLength": 70
+          "maxLength": 70,
+          "customDescription": "ID van de pensioenregeling / (Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.))"
         },
         "pensionSchemeName": {
           "description": "Name of the pension scheme. (NL: Naam van de pensioenregeling.)",
           "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Naam van de pensioenregeling"
         },
         "financialInformation": {
           "type": "array",
@@ -419,12 +444,14 @@
         "endDate": {
           "description": "Expiration date (to date). (NL: Vervaldatum (tot-datum).)",
           "type": "string",
-          "format": "date"
+          "format": "date",
+          "customDescription": "Einddatum van de gegevensperiode waarover rendement wordt gerapporteerd"
         },
         "startDate": {
           "description": "Start date (from date). (NL: Startdatum (vanaf-datum).)",
           "type": "string",
-          "format": "date"
+          "format": "date",
+          "customDescription": "Begindatum van de gegevensperiode waarop de aanlevering vanuit de PUO wordt gebaseerd"
         }
       },
       "required": [
@@ -445,37 +472,44 @@
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
-          "maxLength": 70
+          "maxLength": 70,
+          "customDescription": "ID Beleggingsportefeuille / Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)"
         },
         "startAmount": {
           "description": "Amount (for example of accrued capital) at the start of a period. (NL: Bedrag (bijvoorbeeld van opgebouwd kapitaal) bij aanvang van een periode.)",
           "type": "number",
-          "multipleOf": 0.01
+          "multipleOf": 0.01,
+          "customDescription": "De waarde van de Total Market Value aan het begin van de gegevensperiode"
         },
         "netAmount": {
           "description": "Net sum of contributions and withdrawals per scheme. A negative amount is a (net) withdrawal. (NL: Netto som van inleg en onttrekkingen per regeling. Een negatief bedrag is een (netto) onttrekking.)",
           "type": "number",
-          "multipleOf": 0.01
+          "multipleOf": 0.01,
+          "customDescription": "Som van inleg en onttrekkingen per regeling (net). Een negatief bedrag is een (netto) withdrawal"
         },
         "description": {
           "description": "Description. (NL: Omschrijving)",
           "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Beschrijving"
         },
         "endAmount": {
           "description": "Value (for example accrued capital) at the end of a period. (NL: Waarde (bijvoorbeeld opgebouwd kapitaal) aan het einde van een periode.)",
           "type": "number",
-          "multipleOf": 0.01
+          "multipleOf": 0.01,
+          "customDescription": "De waarde van de Total Market Value aan het eind van de gegevensperiode. Per regeling en beleggingsportefeuille"
         },
         "returnPercentage": {
           "description": "The return achieved over a period as a percentage. (NL: Het behaalde rendement als percentage, over een periode.)",
           "type": "number",
-          "multipleOf": 1e-12
+          "multipleOf": 1e-12,
+          "customDescription": "Het behaalde rendement in percentage over gegevensperiode per regeling en per beleggingsportefeuille"
         },
         "returnAmount": {
           "description": "Amount of return achieved over a period. (NL: Het behaalde rendement over een periode.)",
           "type": "number",
-          "multipleOf": 0.01
+          "multipleOf": 0.01,
+          "customDescription": "Het behaalde rendement in valuta van de regeling over gegevensperiode per regeling en per beleggingsportefeuille"
         }
       },
       "required": [
@@ -499,62 +533,74 @@
         "refKey": {
           "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
           "type": "string",
-          "maxLength": 70
+          "maxLength": 70,
+          "customDescription": "ID van het cohort"
         },
         "startAmount": {
           "description": "Amount (for example of accrued capital) at the start of a period. (NL: Bedrag (bijvoorbeeld van opgebouwd kapitaal) bij aanvang van een periode.)",
           "type": "number",
-          "multipleOf": 0.01
+          "multipleOf": 0.01,
+          "customDescription": "Pensioenvermogen van het cohort per begindatum"
         },
         "description": {
           "description": "Description. (NL: Omschrijving)",
           "type": "string",
-          "maxLength": 60
-        },
-        "excessReturnPercentage": {
-          "description": "The excess return achieved in percentage over the data period per pension scheme and per cohort. (NL: Het behaalde overrendement in percentage over gegevensperiode per regeling en per cohort.)",
-          "type": "number",
-          "multipleOf": 1e-12
-        },
-        "reserveDescription": {
-          "description": "Description of the reserve. (NL: Omschrijving van het reserve.)",
-          "type": "string",
-          "maxLength": 60
+          "maxLength": 60,
+          "customDescription": "Beschrijving van het cohort"
         },
         "reserveType": {
           "description": "Reserve type (NL: Type reserve)",
           "codelistName": "AFDRES",
           "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/AFDRES.json#/$defs/AFDRES",
-          "type": "string"
+          "type": "string",
+          "customDescription": "Keuze van het type (reserve feitelijk een) voorziening / type of provision."
+        },
+        "reserveDescription": {
+          "description": "Description of the reserve. (NL: Omschrijving van het reserve.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Beschrijving de reserve bij keuze van \"Overige\" in reserve type."
+        },
+        "excessReturnPercentage": {
+          "description": "The excess return achieved in percentage over the data period per pension scheme and per cohort. (NL: Het behaalde overrendement in percentage over gegevensperiode per regeling en per cohort.)",
+          "type": "number",
+          "multipleOf": 1e-12,
+          "customDescription": "Het behaalde overrendement in percentage over gegevensperiode per regeling en per cohort"
         },
         "reserveIndicator": {
           "description": "Indication whether a reserve is available / applies. (NL: Indicatie of een reserve aanwezig is / van toepassing is.)",
-          "type": "boolean"
+          "type": "boolean",
+          "customDescription": "Indicatie of het cohort een reserve weerspiegelt"
         },
         "startAge": {
           "description": "Start age. (NL: Beginleeftijd.)",
           "type": "number",
-          "multipleOf": 1.0
+          "multipleOf": 1.0,
+          "customDescription": "Startleeftijd in maanden"
         },
         "endAge": {
           "description": "End age. (NL: Eindleeftijd.)",
           "type": "number",
-          "multipleOf": 1.0
+          "multipleOf": 1.0,
+          "customDescription": "Eindleeftijd in maanden"
         },
         "excessReturnAmount": {
           "description": "The excess return achieved in the pension scheme currency over the data period per pension scheme and per cohort. (NL: Het behaalde overrendement in valuta van de regeling over gegevensperiode per pensioenregeling en per cohort.)",
           "type": "number",
-          "multipleOf": 0.01
+          "multipleOf": 0.01,
+          "customDescription": "Het behaalde overrendement in valuta van de regeling over gegevensperiode per regeling en per cohort"
         },
         "protectionReturnAmount": {
           "description": "The protection return achieved in the pension scheme currency over the data period per pension scheme and per cohort. (NL: Het behaalde beschermingsrendement in valuta van de regeling over gegevensperiode per pensioenregeling en per cohort.)",
           "type": "number",
-          "multipleOf": 0.01
+          "multipleOf": 0.01,
+          "customDescription": "Het behaalde beschermingsrendement in valuta van de regeling over gegevensperiode per regeling en per cohort"
         },
         "protectionReturnPercentage": {
           "description": "The protection return achieved in percentage over the data period per pension scheme and per cohort. (NL: Het behaalde beschermingsrendement in percentage over een gegevensperiode per pensioenregeling en per cohort.)",
           "type": "number",
-          "multipleOf": 1e-12
+          "multipleOf": 1e-12,
+          "customDescription": "Het behaalde beschermingsrendement in percentage over gegevensperiode per regeling en per cohort"
         },
         "participationStatus": {
           "description": "Participation type (NL: Deelname status)",
@@ -579,7 +625,8 @@
             {
               "const": "70"
             }
-          ]
+          ],
+          "customDescription": "Status van de deelnemers in een cohort"
         }
       },
       "required": [

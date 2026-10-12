@@ -1026,6 +1026,14 @@
         {
           "description": "Pensioenfonds PNO Media (DC)",
           "const": "U0765"
+        },
+        {
+          "description": "De Nationale APF, Pensioenkring MeerKeuzePensioen",
+          "const": "U0769"
+        },
+        {
+          "description": "De Nationale APF, Pens.kring SamenGeregeldPensioen",
+          "const": "U0770"
         }
       ]
     },

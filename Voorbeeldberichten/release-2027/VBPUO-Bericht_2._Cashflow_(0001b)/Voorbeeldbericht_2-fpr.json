@@ -1,0 +1,109 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:00:00+01:00",
+      "messageId": "VB-0001B-FPR-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "PUO01",
+          "organizationName": "Pensioenuitvoerder Voorbeeld",
+          "applicationSenderName": "VoorbeeldApplicatie"
+        },
+        {
+          "entityType": "receiver",
+          "refKey": "FM01",
+          "organizationName": "Fiduciair Manager Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_2._Cashflow_(0001b)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0393",
+      "organizationName": "Pensioenfonds Metaal en Techniek",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "REG-01",
+          "pensionSchemeName": "Flexibele regeling Voorbeeld",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "startDate": "2027-02-01",
+              "endDate": "2027-02-28"
+            }
+          ],
+          "financialTransaction": [
+            {
+              "entityType": "cashflow",
+              "netAmount": 2453092.12,
+              "netDate": "2027-03-05"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "portfolio",
+              "refKey": "PF-01",
+              "description": "Matchingportefeuille",
+              "financialTransaction": [
+                {
+                  "entityType": "cashflow",
+                  "contributionAmount": 1977728.18,
+                  "contributionDate": "2027-02-28",
+                  "withdrawalAmount": 1129773.18,
+                  "withdrawalDate": "2027-03-01",
+                  "netAmount": 847955.0,
+                  "netDate": "2027-03-05"
+                }
+              ]
+            },
+            {
+              "entityType": "portfolio",
+              "refKey": "PF-02",
+              "description": "Rendementsportefeuille",
+              "financialTransaction": [
+                {
+                  "entityType": "cashflow",
+                  "contributionAmount": 2200605.01,
+                  "contributionDate": "2027-02-28",
+                  "withdrawalAmount": 567819.01,
+                  "withdrawalDate": "2027-03-01",
+                  "netAmount": 1632786.0,
+                  "netDate": "2027-03-05"
+                }
+              ]
+            },
+            {
+              "entityType": "portfolio",
+              "refKey": "PF-03",
+              "description": "Liquiditeitenportefeuille",
+              "financialTransaction": [
+                {
+                  "entityType": "cashflow",
+                  "contributionAmount": 879827.97,
+                  "contributionDate": "2027-02-28",
+                  "withdrawalAmount": 907476.85,
+                  "withdrawalDate": "2027-03-01",
+                  "netAmount": -27648.88,
+                  "netDate": "2027-03-04"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

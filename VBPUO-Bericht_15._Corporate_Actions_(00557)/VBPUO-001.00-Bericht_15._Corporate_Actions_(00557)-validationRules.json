@@ -5,12 +5,7 @@
     "startDate": "20270101",
     "functionDescription": "Bericht_15._Corporate_Actions_(00557)",
     "tag": "VBPUO",
-    "afdDefinitionChangeLog": ""
+    "afdDefinitionChangeLog": "20261011 1944 uitlevering (AOS 001.05) - RELEASE 2027"
   },
-  "rule": [
-    {
-      "id": "BR1",
-      "test": ""
-    }
-  ]
+  "rule": []
 }

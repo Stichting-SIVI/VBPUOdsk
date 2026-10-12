@@ -1,0 +1,196 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2027-03-01T09:00:00+01:00",
+      "messageId": "VB-0001A-RES-0001",
+      "testMessage": true,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "PUO01",
+          "organizationName": "Pensioenuitvoerder Voorbeeld",
+          "applicationSenderName": "VoorbeeldApplicatie"
+        },
+        {
+          "entityType": "receiver",
+          "refKey": "FM01",
+          "organizationName": "Fiduciair Manager Voorbeeld"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_1._Vermogen_(0001a)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0536",
+      "organizationName": "Pensioenfonds Zorg en Welzijn",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "REG-01",
+          "pensionSchemeName": "Basisregeling Voorbeeld",
+          "startAmount": 34089489.28,
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "startDate": "2027-02-01"
+            }
+          ],
+          "pension": [
+            {
+              "entityType": "cohort",
+              "refKey": "C-16-300",
+              "startAmount": 2312498.83,
+              "description": "Actief 25 jaar",
+              "reserveIndicator": false,
+              "startAge": 300,
+              "endAge": 300,
+              "participationStatus": "16"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-80-300",
+              "startAmount": 1743136.62,
+              "description": "Slaper 25 jaar",
+              "reserveIndicator": false,
+              "startAge": 300,
+              "endAge": 300,
+              "participationStatus": "80"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-16-420",
+              "startAmount": 1601733.54,
+              "description": "Actief 35 jaar",
+              "reserveIndicator": false,
+              "startAge": 420,
+              "endAge": 420,
+              "participationStatus": "16"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-80-420",
+              "startAmount": 1371514.14,
+              "description": "Slaper 35 jaar",
+              "reserveIndicator": false,
+              "startAge": 420,
+              "endAge": 420,
+              "participationStatus": "80"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-16-540",
+              "startAmount": 4545636.64,
+              "description": "Actief 45 jaar",
+              "reserveIndicator": false,
+              "startAge": 540,
+              "endAge": 540,
+              "participationStatus": "16"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-80-540",
+              "startAmount": 2898917.9,
+              "description": "Slaper 45 jaar",
+              "reserveIndicator": false,
+              "startAge": 540,
+              "endAge": 540,
+              "participationStatus": "80"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-16-660",
+              "startAmount": 2876220.79,
+              "description": "Actief 55 jaar",
+              "reserveIndicator": false,
+              "startAge": 660,
+              "endAge": 660,
+              "participationStatus": "16"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-80-660",
+              "startAmount": 997670.06,
+              "description": "Slaper 55 jaar",
+              "reserveIndicator": false,
+              "startAge": 660,
+              "endAge": 660,
+              "participationStatus": "80"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-16-780",
+              "startAmount": 5965026.7,
+              "description": "Actief 65 jaar",
+              "reserveIndicator": false,
+              "startAge": 780,
+              "endAge": 780,
+              "participationStatus": "16"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "C-80-780",
+              "startAmount": 1251288.8,
+              "description": "Slaper 65 jaar",
+              "reserveIndicator": false,
+              "startAge": 780,
+              "endAge": 780,
+              "participationStatus": "80"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "R-01",
+              "startAmount": 2809748.75,
+              "description": "Solidariteitsreserve",
+              "reserveIndicator": true,
+              "reserveType": "1"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "R-02",
+              "startAmount": 491160.94,
+              "description": "Operationele reserve",
+              "reserveIndicator": true,
+              "reserveType": "3"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "R-03",
+              "startAmount": 2708836.85,
+              "description": "Compensatiedepot",
+              "reserveIndicator": true,
+              "reserveType": "4"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "R-04",
+              "startAmount": 1348217.95,
+              "description": "Overige reserve",
+              "reserveIndicator": true,
+              "reserveType": "99",
+              "reserveDescription": "Reserve premiekorting"
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "R-05",
+              "startAmount": 1167880.77,
+              "description": "Overige reserve",
+              "reserveIndicator": true,
+              "reserveType": "99",
+              "reserveDescription": "Reserve uitvoeringskosten"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

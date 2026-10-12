@@ -1026,6 +1026,14 @@
         {
           "description": "Pensioenfonds PNO Media (DC)",
           "const": "U0765"
+        },
+        {
+          "description": "De Nationale APF, Pensioenkring MeerKeuzePensioen",
+          "const": "U0769"
+        },
+        {
+          "description": "De Nationale APF, Pens.kring SamenGeregeldPensioen",
+          "const": "U0770"
         }
       ]
     },
@@ -1065,6 +1073,34 @@
         {
           "description": "Voorziening premievrijstelling",
           "const": "8"
+        },
+        {
+          "description": "AO-reserve",
+          "const": "9"
+        },
+        {
+          "description": "Premievrijstelling AO",
+          "const": "10"
+        },
+        {
+          "description": "Nabestaandenpensioenreserve",
+          "const": "11"
+        },
+        {
+          "description": "Overgangsrecht",
+          "const": "12"
+        },
+        {
+          "description": "Niet-opgevraagde pensioenen",
+          "const": "13"
+        },
+        {
+          "description": "Risicodelingsreserve",
+          "const": "14"
+        },
+        {
+          "description": "Weerstandsreserve",
+          "const": "15"
         },
         {
           "description": "Overige",

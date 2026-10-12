@@ -1,0 +1,172 @@
+{
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "function": "02",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_6._Orderconfirmation_(00542)",
+      "afdDefinitionVersion": "001.05",
+      "originalMessageId": "20240529 1532"
+    }
+  ],
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "messageId": "77891",
+      "creationDateTime": "2024-10-07T10:00:00Z",
+      "testMessage": false,
+      "party": [
+        {
+          "entityType": "sender",
+          "refKey": "recv001",
+          "rsinNumber": "123456789",
+          "organizationName": "Pension Fund A",
+          "applicationSenderName": "OurApp"
+        },
+        {
+          "entityType": "receiver",
+          "rsinNumber": "876543219",
+          "organizationName": "Investment Firm B",
+          "refKey": "send001"
+        }
+      ]
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0003",
+      "rsinNumber": "112233449",
+      "organizationName": "St. Pf. Openbare Bibliotheken",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "schemeXYZ",
+          "pensionSchemeName": "Investment Scheme A",
+          "tradingPortfolioId": "Trade123",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "investmentOrderSettlementDate": "2024-01-07",
+              "instructionDate": "2024-01-02"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "investmentDetails",
+              "refKey": "inv001",
+              "description": "Equity Fund",
+              "currencyType": "EUR",
+              "financialTransaction": [
+                {
+                  "entityType": "trade",
+                  "refKey": "trade123",
+                  "adjustmentIndicator": false,
+                  "buySellId": "buy",
+                  "tradeAmount": 10000.0,
+                  "tradeQuantity": 100,
+                  "tradePrice": 100.0,
+                  "commissionAmount": 50.0,
+                  "interestAmount": 0.5,
+                  "counterparty": "Counterparty XYZ",
+                  "broker": "Broker ABC",
+                  "clearingBroker": "Clearing Broker DEF",
+                  "clearingBrokerCashAccount": "CBA123456"
+                },
+                {
+                  "entityType": "trade",
+                  "refKey": "trade124",
+                  "adjustmentIndicator": false,
+                  "buySellId": "sell",
+                  "tradeDate": "2024-01-04",
+                  "tradeAmount": 5000.0,
+                  "tradeQuantity": 50,
+                  "tradePrice": 100.0,
+                  "commissionAmount": 25.0,
+                  "interestAmount": 0.25,
+                  "counterparty": "Counterparty XYZ",
+                  "broker": "Broker ABC",
+                  "clearingBroker": "Clearing Broker DEF",
+                  "clearingBrokerCashAccount": "CBA123456"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entityType": "scheme",
+          "refKey": "schemeABC",
+          "pensionSchemeName": "Retirement Plan B",
+          "tradingPortfolioId": "Trade456",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "investmentOrderSettlementDate": "2024-01-07",
+              "instructionDate": "2024-01-05"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "investmentDetails",
+              "refKey": "inv002",
+              "description": "Accumulation phase fund",
+              "currencyType": "EUR",
+              "financialTransaction": [
+                {
+                  "entityType": "trade",
+                  "refKey": "trade125",
+                  "adjustmentIndicator": false,
+                  "buySellId": "switchfrom",
+                  "tradeDate": "2024-01-06",
+                  "tradeAmount": 2000.0,
+                  "tradeQuantity": 20,
+                  "tradePrice": 100.0,
+                  "switchType": "1",
+                  "financialInformationRef": [
+                    "trade126",
+                    "inv003"
+                  ],
+                  "commissionAmount": 20.0,
+                  "interestAmount": 0.2,
+                  "counterparty": "Counterparty XYZ",
+                  "broker": "Broker ABC",
+                  "clearingBroker": "Clearing Broker DEF",
+                  "clearingBrokerCashAccount": "CBA123456"
+                }
+              ]
+            },
+            {
+              "entityType": "investmentDetails",
+              "refKey": "inv003",
+              "description": "CVP fund",
+              "currencyType": "EUR",
+              "financialTransaction": [
+                {
+                  "entityType": "trade",
+                  "refKey": "trade126",
+                  "adjustmentIndicator": false,
+                  "buySellId": "switchto",
+                  "tradeDate": "2024-01-06",
+                  "tradeAmount": 2000.0,
+                  "tradeQuantity": 50,
+                  "tradePrice": 40.0,
+                  "switchType": "1",
+                  "financialInformationRef": [
+                    "trade125",
+                    "inv002"
+                  ],
+                  "commissionAmount": 20.0,
+                  "interestAmount": 0.2,
+                  "counterparty": "Counterparty XYZ",
+                  "broker": "Broker ABC",
+                  "clearingBroker": "Clearing Broker DEF",
+                  "clearingBrokerCashAccount": "CBA123456"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "document": []
+}

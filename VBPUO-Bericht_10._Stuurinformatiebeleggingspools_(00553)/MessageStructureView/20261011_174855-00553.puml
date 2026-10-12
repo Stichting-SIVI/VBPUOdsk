@@ -1,0 +1,146 @@
+@startuml
+hide methods
+set separator none
+
+legend top left
+<size:20><b>LEGEND: </b> <color:red><b>10. Stuurinformatie beleggingspools (00553)</b></color></size>
+1. <b>Bold</b> = Mandatory fields
+2. <i>Italic</i> = Optional fields
+3. ..       = incomplete list (complete values on afdCodelists)
+end legend
+
+class berichtstructuur {}
+
+class commonTechnical.default {
+    {static} **entityType : string = "default"**
+    {field} **messageId : string(70)**
+    {field} **creationDateTime : timestamp**
+    {field} <i>testMessage : boolean</i>
+}
+
+class party.sender {
+    {static} **entityType : string = "sender"**
+    {field} **refKey : string(70)**
+    {field} <i>rsinNumber : string(9)</i>
+    {field} **organizationName : string(60)**
+    {field} <i>applicationSenderName : string(60)</i>
+}
+
+class party.contact {
+    {static} **entityType : string = "contact"**
+    {field} **emailWork : string(60)**
+    {field} **workPhoneNumber : string(60)**
+}
+
+class party.receiver {
+    {static} **entityType : string = "receiver"**
+    {field} **refKey : string(70)**
+    {field} <i>rsinNumber : string(9)</i>
+    {field} **organizationName : string(60)**
+}
+
+class commonFunctional.default {
+    {static} **entityType : string = "default"**
+    {field} **function : string**
+    {field} **afdDefinitionName : string(80)**
+    {field} **afdDefinitionVersion : string(80)**
+    {field} <i>originalMessageId : string(70)</i>
+}
+
+class party.pensionProvider {
+    {static} **entityType : string = "pensionProvider"**
+    {field} **puvCode : string**
+    {field} <i>rsinNumber : string(9)</i>
+    {field} **organizationName : string(60)**
+}
+
+class pension.scheme {
+    {static} **entityType : string = "scheme"**
+    {field} **refKey : string(70)**
+    {field} **pensionSchemeName : string(60)**
+}
+
+class financialInformation.reportingPeriod {
+    {static} **entityType : string = "reportingPeriod"**
+    {field} **tradeDate : date**
+    {field} **investmentOrderSettlementDate : date**
+}
+
+class investment.pool {
+    {static} **entityType : string = "pool"**
+    {field} **refKey : string(70)**
+    {field} **description : string(60)**
+    {field} **buySellId : string**
+    {field} **tradeValueAmount : decimal**
+    {field} **currencyType : string**
+}
+
+class document.default {
+    {static} **entityType : string = "default"**
+    {field} **refKey : string(70)**
+    {field} **fileName : string(60)**
+    {field} **fileExtension : string**
+}
+
+class chunking.default {
+    {static} **entityType : string = "default"**
+    {field} **currentChunkId : string(70)**
+    {field} **chunkSequenceNumber : integer**
+    {field} **totalNumberOfChunks : integer**
+    {field} **chunkFragmentPaths : array**
+}
+
+enum ADNFUN {
+    01 - Nieuw
+    02 - Wijzigen
+    09 - Ter informatie
+    54 - Herzenden (inhoud niet aangepast, geen correctie)
+}
+
+
+enum AFDIDP {
+    U0003 - Fonds 1
+    U0005 - Fonds 2
+    ..
+    U0765 - Fonds xxx
+}
+
+
+enum ISOVAL {
+    Afghani 
+    Albanese lek 
+    ..
+    VAE-dirham 
+}
+
+
+enum cdl_buySellId_194 {
+    sell
+    buy
+}
+
+
+enum cdl_fileExtension_251 {
+    pdf
+    csv
+    txt
+}
+
+
+berichtstructuur o-- "0..1" chunking.default
+berichtstructuur o-- "1..1" commonFunctional.default
+berichtstructuur o-- "1..1" commonTechnical.default
+berichtstructuur o-- "0..99" document.default
+berichtstructuur o-- "1..1" party.pensionProvider
+commonTechnical.default o-- "1..1" party.receiver
+commonTechnical.default o-- "1..1" party.sender
+party.pensionProvider o-- "1..999" pension.scheme
+party.sender o-- "0..9" party.contact
+pension.scheme o-- "1..1" financialInformation.reportingPeriod
+pension.scheme o-- "1..99" investment.pool
+commonFunctional.default o-- "function" ADNFUN
+document.default o-- "fileExtension" cdl_fileExtension_251
+investment.pool o-- "currencyType" ISOVAL
+investment.pool o-- "buySellId" cdl_buySellId_194
+party.pensionProvider o-- "puvCode" AFDIDP
+@enduml

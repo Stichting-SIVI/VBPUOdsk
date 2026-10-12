@@ -1,0 +1,95 @@
+{
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "messageId": "1234567890123456789012",
+      "creationDateTime": "2023-10-28T10:00:00Z",
+      "testMessage": false,
+      "party": [
+        {
+          "entityType": "receiver",
+          "refKey": "recv001",
+          "rsinNumber": "123456789",
+          "organizationName": "Pension Fund A"
+        },
+        {
+          "entityType": "sender",
+          "rsinNumber": "987654321",
+          "organizationName": "Insurance Company B",
+          "refKey": "send001",
+          "applicationSenderName": "InsurAppV3"
+        }
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "function": "54",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_4._Rendementsinformatie_(00002)",
+      "afdDefinitionVersion": "001.05",
+      "originalMessageId": "98765432109876543210"
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0003",
+      "organizationName": "St. Pf. Openbare Bibliotheken",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "SCHEME456",
+          "pensionSchemeName": "BasisPensioen",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "startDate": "2023-01-01",
+              "endDate": "2023-12-31"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "portfolio",
+              "refKey": "PORT123",
+              "description": "Aandelenfonds",
+              "startAmount": 500000.0,
+              "netAmount": 50000.0,
+              "endAmount": 575000.0,
+              "returnPercentage": 5.0,
+              "returnAmount": 25000.0
+            }
+          ],
+          "pension": [
+            {
+              "entityType": "cohort",
+              "refKey": "COHORT101",
+              "description": "Cohort 2024",
+              "startAmount": 300000.0,
+              "protectionReturnPercentage": 2.0,
+              "excessReturnPercentage": 3.0,
+              "protectionReturnAmount": 6000.0,
+              "excessReturnAmount": 9000.0,
+              "reserveIndicator": false,
+              "startAge": 300,
+              "endAge": 540
+            },
+            {
+              "entityType": "cohort",
+              "refKey": "COHORT102",
+              "description": "Cohort 2025",
+              "startAmount": 350000.0,
+              "protectionReturnPercentage": 2.5,
+              "excessReturnPercentage": 3.5,
+              "protectionReturnAmount": 8750.0,
+              "excessReturnAmount": 12250.0,
+              "reserveIndicator": false,
+              "startAge": 540,
+              "endAge": 780
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

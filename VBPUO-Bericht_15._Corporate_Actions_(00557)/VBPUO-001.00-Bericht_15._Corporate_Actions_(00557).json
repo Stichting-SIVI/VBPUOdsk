@@ -3,7 +3,551 @@
   "description": "JSON Schema SIVI 2.0",
   "//comment": {
     "functionDescription": "Bericht_15._Corporate_Actions_(00557)",
-    "afdDefinitionChangeLog": "20251212 0949 uitlevering (AOS 001.05) - MAIN: doelrelease 2027"
+    "afdDefinitionChangeLog": "20261011 1944 uitlevering (AOS 001.05) - RELEASE 2027"
+  },
+  "$defs": {
+    "chunking": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "default"
+        },
+        "currentChunkId": {
+          "description": "Unique reference (id) of the current chunk. (NL: Unieke referentie van de huidige chunk.)",
+          "type": "string",
+          "maxLength": 70
+        },
+        "chunkSequenceNumber": {
+          "description": "Sequence number of the current chunk. (NL: Volgnummer van de huidige chunk.)",
+          "type": "integer"
+        },
+        "totalNumberOfChunks": {
+          "description": "Total number of chunks the message has been split into. (NL: Totale aantal chunks waarin het bericht is opgesplitst.)",
+          "type": "integer"
+        },
+        "chunkFragmentPaths": {
+          "description": "Array of JMESPath references to the message fragments used within the current chunk. (NL: Array van JMESPath-verwijzingen naar de berichtdelen die gebruikt zijn binnen deze chunk.)",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "entityType",
+        "currentChunkId",
+        "chunkSequenceNumber",
+        "totalNumberOfChunks",
+        "chunkFragmentPaths"
+      ]
+    },
+    "commonFunctional": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "default"
+        },
+        "afdDefinitionVersion": {
+          "description": "Version of the AFD-definition. (NL: Met AFD definitieversienummer wordt aangegeven over welke versie van de (product)definitie wordt gecommuniceerd.)",
+          "type": "string",
+          "maxLength": 80,
+          "customDescription": "Versie van het JSON schema",
+          "const": "001.05"
+        },
+        "afdDefinitionName": {
+          "description": "Name of the AFD-definition. (NL: De AFD definitienaam van o.a. webservices en verzekeringsproducten.)",
+          "type": "string",
+          "maxLength": 80,
+          "customDescription": "Soort bericht",
+          "const": "VBPUO-001.00-Bericht_15._Corporate_Actions_(00557)"
+        },
+        "originalMessageId": {
+          "description": "The messageId of the original message, which is replaced by this message. (NL: MessageId van het oorspronkelijke bericht, dat wordt vervangen door dit bericht.)",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "Het oorspronkelijke messageId van het bericht dat wordt vervangen door dit bericht"
+        },
+        "function": {
+          "description": "Message function (NL: Berichtfunctie)",
+          "codelistName": "ADNFUN",
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "01"
+            },
+            {
+              "const": "02"
+            },
+            {
+              "const": "09"
+            },
+            {
+              "const": "54"
+            }
+          ],
+          "customDescription": "Message function code. (NL: Code waarmee de functie van het bericht wordt aangegeven.)"
+        }
+      },
+      "required": [
+        "entityType",
+        "afdDefinitionVersion",
+        "afdDefinitionName",
+        "function"
+      ]
+    },
+    "commonTechnical": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "default"
+        },
+        "creationDateTime": {
+          "description": "Date and time (as timestamp) when the message was created. (NL: Datum en tijd van het aanmaken van het bericht.)",
+          "type": "string",
+          "format": "date-time",
+          "customDescription": "Aanmaakdatum en tijd Date"
+        },
+        "testMessage": {
+          "description": "Indication whether the message is a test message. (NL: Indicatie of sprake is van een testbericht.)",
+          "type": "boolean",
+          "customDescription": "Indicatie testbericht"
+        },
+        "messageId": {
+          "description": "Unique identification of the message. (AFD 2.0 only)",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "Unieke berichtidentificatie"
+        },
+        "party": {
+          "type": "array",
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "minContains": 1,
+              "maxContains": 1,
+              "contains": {
+                "$ref": "#/$defs/partyReceiver"
+              }
+            },
+            {
+              "minContains": 1,
+              "maxContains": 1,
+              "contains": {
+                "$ref": "#/$defs/partySender"
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "entityType",
+        "creationDateTime",
+        "messageId",
+        "party"
+      ]
+    },
+    "partyReceiver": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "receiver"
+        },
+        "refKey": {
+          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)"
+        },
+        "organizationName": {
+          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Naam van de ontvanger(s) (organisatie (s))"
+        },
+        "rsinNumber": {
+          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
+          "type": "string",
+          "maxLength": 9,
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)"
+        }
+      },
+      "required": [
+        "entityType",
+        "refKey",
+        "organizationName"
+      ]
+    },
+    "partySender": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "sender"
+        },
+        "refKey": {
+          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)"
+        },
+        "applicationSenderName": {
+          "description": "Name of the application that sends the data. (NL: Naam van de applicatie die de gegevens verzendt.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Naam van de applicatie die het bericht heeft aangemaakt"
+        },
+        "organizationName": {
+          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Organisatie naam van de afzender"
+        },
+        "rsinNumber": {
+          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
+          "type": "string",
+          "maxLength": 9,
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)"
+        },
+        "party": {
+          "type": "array",
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "minContains": 0,
+              "maxContains": 9,
+              "contains": {
+                "$ref": "#/$defs/partyContact"
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "entityType",
+        "refKey",
+        "organizationName"
+      ]
+    },
+    "partyContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "contact"
+        },
+        "emailWork": {
+          "description": "Work email address. (NL: E-mail adres werk)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Werk emailadres"
+        },
+        "workPhoneNumber": {
+          "description": "Work telephone number. (NL: Telefoonnummer werk)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Werk telefoonnummer"
+        }
+      },
+      "required": [
+        "entityType",
+        "emailWork",
+        "workPhoneNumber"
+      ]
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "default"
+        },
+        "refKey": {
+          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)"
+        },
+        "fileName": {
+          "description": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)"
+        },
+        "fileExtension": {
+          "description": "Extension of the file under which the attachment can be saved. For example &quot;pdf&quot;, &quot;doc&quot;, etc. (NL: Extensienaam van het bestand waaronder de bijlage kan worden opgeslagen. Bijvoorbeeld &quot;PDF&quot;, &quot;DOC&quot;, etc.)",
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "pdf"
+            },
+            {
+              "const": "csv"
+            },
+            {
+              "const": "txt"
+            }
+          ],
+          "customDescription": "Extension of the file under which the attachment can be saved. For example \"pdf\", \"doc\", etc. (NL: Extensienaam van het bestand waaronder de bijlage kan worden opgeslagen. Bijvoorbeeld \"PDF\", \"DOC\", etc.)"
+        }
+      },
+      "required": [
+        "entityType",
+        "refKey",
+        "fileName",
+        "fileExtension"
+      ]
+    },
+    "partyPensionProvider": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "pensionProvider"
+        },
+        "organizationName": {
+          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Naam van de pensioenuitvoerder"
+        },
+        "rsinNumber": {
+          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
+          "type": "string",
+          "maxLength": 9,
+          "customDescription": "Governmental identification number for legal entities and associations (RSIN)"
+        },
+        "puvCode": {
+          "description": "Pension provider (NL: Pensioenuitvoerder)",
+          "codelistName": "AFDIDP",
+          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/AFDIDP.json#/$defs/AFDIDP",
+          "type": "string"
+        },
+        "pension": {
+          "type": "array",
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "minContains": 1,
+              "maxContains": 999,
+              "contains": {
+                "$ref": "#/$defs/pensionScheme"
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "entityType",
+        "organizationName",
+        "puvCode",
+        "pension"
+      ]
+    },
+    "pensionScheme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "scheme"
+        },
+        "refKey": {
+          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "ID van de pensioenregeling / (Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.))"
+        },
+        "pensionSchemeName": {
+          "description": "Name of the pension scheme. (NL: Naam van de pensioenregeling.)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Naam van de pensioenregeling"
+        },
+        "investment": {
+          "type": "array",
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "minContains": 1,
+              "maxContains": 999,
+              "contains": {
+                "$ref": "#/$defs/investmentInvestmentDetails"
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "entityType",
+        "refKey",
+        "pensionSchemeName",
+        "investment"
+      ]
+    },
+    "investmentInvestmentDetails": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "investmentDetails"
+        },
+        "refKey": {
+          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "Identifier (bijvoorbeeld ISIN of interne code)"
+        },
+        "description": {
+          "description": "Description. (NL: Omschrijving)",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "De naam van de belegging / de officiële naam van het fonds / van het instrument"
+        },
+        "investment": {
+          "type": "array",
+          "uniqueItems": true,
+          "allOf": [
+            {
+              "minContains": 1,
+              "maxContains": 99,
+              "contains": {
+                "$ref": "#/$defs/investmentCorporateAction"
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "entityType",
+        "refKey",
+        "description",
+        "investment"
+      ]
+    },
+    "investmentCorporateAction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": {
+          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
+          "type": "string",
+          "const": "corporateAction"
+        },
+        "refKey": {
+          "description": "Sleutel van de Corporate Action.",
+          "type": "string",
+          "maxLength": 70,
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "tradeDate": {
+          "description": "Transactiedatum van de Corporate Action.",
+          "type": "string",
+          "format": "date",
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "instructionDate": {
+          "description": "Instructiedatum van de Corporate Action.",
+          "type": "string",
+          "format": "date",
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "description": {
+          "description": "Omschrijving van de Corporate Action.",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "currencyType": {
+          "description": "Valuta van het contante bedrag.",
+          "codelistName": "ISOVAL",
+          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/ISOVAL.json#/$defs/ISOVAL",
+          "type": "string",
+          "maxLength": 3,
+          "customDescription": "Rebate hergebruikt cash dividend velden."
+        },
+        "paymentDate": {
+          "description": "Betaaldatum van de Corporate Action.",
+          "type": "string",
+          "format": "date",
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "corporateActionType": {
+          "description": "Type Corporate Action.",
+          "codelistName": "AFDCOA",
+          "$ref": "VBPUO-001.00-Bericht_15._Corporate_Actions_(00557)-afdCodelists.json#/$defs/AFDCOA",
+          "type": "string",
+          "customDescription": "Codes AFDCOA: 1 = Cash dividend; 2 = Stock dividend; 3 = Productverandering; 99 = Anders. Rebate wordt tijdelijk vastgelegd met code 99."
+        },
+        "stockDividendPerUnitNumber": {
+          "description": "Aantal stockdividend per eenheid.",
+          "type": "number",
+          "multipleOf": 0.01,
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "cashDividendPerUnitAmount": {
+          "description": "Contant bedrag per eenheid.",
+          "type": "number",
+          "multipleOf": 0.01,
+          "customDescription": "Rebate hergebruikt cash dividend velden."
+        },
+        "stockDividendTotalNumber": {
+          "description": "Totaal aantal stockdividend.",
+          "type": "number",
+          "multipleOf": 0.01,
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "newProductName": {
+          "description": "Naam van het nieuwe product.",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        },
+        "cashDividendTotalAmount": {
+          "description": "Totaal contant bedrag van de Corporate Action.",
+          "type": "number",
+          "multipleOf": 0.01,
+          "customDescription": "Rebate hergebruikt cash dividend velden."
+        },
+        "newProductIdentifier": {
+          "description": "Identificatie van het nieuwe product.",
+          "type": "string",
+          "maxLength": 60,
+          "customDescription": "Basisveld uit AFD2.0 mapping."
+        }
+      },
+      "required": [
+        "entityType",
+        "refKey",
+        "tradeDate",
+        "instructionDate",
+        "description",
+        "paymentDate",
+        "corporateActionType"
+      ]
+    }
   },
   "type": "object",
   "additionalProperties": false,
@@ -78,533 +622,5 @@
     "commonFunctional",
     "commonTechnical",
     "party"
-  ],
-  "$defs": {
-    "chunking": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "default"
-        },
-        "currentChunkId": {
-          "description": "Unique reference (id) of the current chunk. (NL: Unieke referentie van de huidige chunk.)",
-          "type": "string"
-        },
-        "chunkSequenceNumber": {
-          "description": "Sequence number of the current chunk. (NL: Volgnummer van de huidige chunk.)",
-          "type": "integer"
-        },
-        "totalNumberOfChunks": {
-          "description": "Total number of chunks the message has been split into. (NL: Totale aantal chunks waarin het bericht is opgesplitst.)",
-          "type": "integer"
-        },
-        "chunkFragmentPaths": {
-          "description": "Array of JMESPath references to the message fragments used within the current chunk. (NL: Array van JMESPath-verwijzingen naar de berichtdelen die gebruikt zijn binnen deze chunk.)",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "entityType",
-        "currentChunkId",
-        "chunkSequenceNumber",
-        "totalNumberOfChunks",
-        "chunkFragmentPaths"
-      ]
-    },
-    "commonFunctional": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "default"
-        },
-        "afdDefinitionName": {
-          "description": "Name of the AFD-definition. (NL: De AFD definitienaam van o.a. webservices en verzekeringsproducten.)",
-          "type": "string",
-          "maxLength": 80
-        },
-        "afdDefinitionVersion": {
-          "description": "Version of the AFD-definition. (NL: Met AFD definitieversienummer wordt aangegeven over welke versie van de (product)definitie wordt gecommuniceerd.)",
-          "type": "string",
-          "maxLength": 80,
-          "const": "001.05"
-        },
-        "originalMessageId": {
-          "description": "The messageId of the original message, which is replaced by this message. (NL: MessageId van het oorspronkelijke bericht, dat wordt vervangen door dit bericht.)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "function": {
-          "description": "Message function (NL: Berichtfunctie)",
-          "codelistName": "ADNFUN",
-          "type": "string",
-          "oneOf": [
-            {
-              "const": "01"
-            },
-            {
-              "const": "02"
-            },
-            {
-              "const": "09"
-            },
-            {
-              "const": "54"
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "afdDefinitionName",
-        "afdDefinitionVersion",
-        "function"
-      ]
-    },
-    "commonTechnical": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "default"
-        },
-        "creationDateTime": {
-          "description": "Date and time (as timestamp) when the message was created. (NL: Datum en tijd van het aanmaken van het bericht.)",
-          "type": "string",
-          "format": "date-time"
-        },
-        "messageId": {
-          "description": "Unique identification of the message. (AFD 2.0 only)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "testMessage": {
-          "description": "Indication whether the message is a test message. (NL: Indicatie of sprake is van een testbericht.)",
-          "type": "boolean"
-        },
-        "party": {
-          "type": "array",
-          "uniqueItems": true,
-          "allOf": [
-            {
-              "minContains": 1,
-              "maxContains": 1,
-              "contains": {
-                "$ref": "#/$defs/partyReceiver"
-              }
-            },
-            {
-              "minContains": 1,
-              "maxContains": 1,
-              "contains": {
-                "$ref": "#/$defs/partySender"
-              }
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "creationDateTime",
-        "messageId",
-        "party"
-      ]
-    },
-    "partyReceiver": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "receiver"
-        },
-        "refKey": {
-          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "organizationName": {
-          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "rsinNumber": {
-          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
-          "type": "string",
-          "maxLength": 9
-        }
-      },
-      "required": [
-        "entityType",
-        "refKey",
-        "organizationName"
-      ]
-    },
-    "partySender": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "sender"
-        },
-        "refKey": {
-          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "applicationSenderName": {
-          "description": "Name of the application that sends the data. (NL: Naam van de applicatie die de gegevens verzendt.)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "organizationName": {
-          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "rsinNumber": {
-          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
-          "type": "string",
-          "maxLength": 9
-        },
-        "party": {
-          "type": "array",
-          "uniqueItems": true,
-          "allOf": [
-            {
-              "minContains": 0,
-              "maxContains": 9,
-              "contains": {
-                "$ref": "#/$defs/partyContact"
-              }
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "refKey",
-        "organizationName"
-      ]
-    },
-    "partyContact": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "contact"
-        },
-        "workPhoneNumber": {
-          "description": "Work telephone number. (NL: Telefoonnummer werk)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "emailWork": {
-          "description": "Work email address. (NL: E-mail adres werk)",
-          "type": "string",
-          "maxLength": 60
-        }
-      },
-      "required": [
-        "entityType",
-        "workPhoneNumber",
-        "emailWork"
-      ]
-    },
-    "document": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "default"
-        },
-        "refKey": {
-          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "fileName": {
-          "description": "Name of the file under which the attachment can be saved. (NL: Naam van het bestand waaronder de bijlage kan worden opgeslagen.)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "fileExtension": {
-          "description": "File extension under which the attachment can be saved. For example \"pdf\", \"doc\", etc. (NL: Document bestandsextensie.)",
-          "type": "string",
-          "oneOf": [
-            {
-              "const": "pdf"
-            },
-            {
-              "const": "csv"
-            },
-            {
-              "const": "txt"
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "refKey",
-        "fileName",
-        "fileExtension"
-      ]
-    },
-    "partyPensionProvider": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "pensionProvider"
-        },
-        "organizationName": {
-          "description": "Name of professional or branch organization. (NL: Naam beroeps of branche organisatie.)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "rsinNumber": {
-          "description": "Governmental identification number for legal entities and associations. (AFD 2.0 only)",
-          "type": "string",
-          "maxLength": 9
-        },
-        "puvCode": {
-          "description": "Pension provider (NL: Pensioenuitvoerder)",
-          "codelistName": "AFDIDP",
-          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/AFDIDP.json#/$defs/AFDIDP",
-          "type": "string"
-        },
-        "pension": {
-          "type": "array",
-          "uniqueItems": true,
-          "allOf": [
-            {
-              "minContains": 1,
-              "maxContains": 999,
-              "contains": {
-                "$ref": "#/$defs/pensionScheme"
-              }
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "organizationName",
-        "puvCode",
-        "pension"
-      ]
-    },
-    "pensionScheme": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "scheme"
-        },
-        "refKey": {
-          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "pensionSchemeName": {
-          "description": "Name of the pension scheme. (NL: Naam van de pensioenregeling.)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "financialInformation": {
-          "type": "array",
-          "uniqueItems": true,
-          "allOf": [
-            {
-              "minContains": 1,
-              "maxContains": 1,
-              "contains": {
-                "$ref": "#/$defs/financialInformationReportingPeriod"
-              }
-            }
-          ]
-        },
-        "investment": {
-          "type": "array",
-          "uniqueItems": true,
-          "allOf": [
-            {
-              "minContains": 1,
-              "maxContains": 999,
-              "contains": {
-                "$ref": "#/$defs/investmentInvestmentDetails"
-              }
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "refKey",
-        "pensionSchemeName",
-        "financialInformation",
-        "investment"
-      ]
-    },
-    "financialInformationReportingPeriod": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "reportingPeriod"
-        }
-      },
-      "required": [
-        "entityType"
-      ]
-    },
-    "investmentInvestmentDetails": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "investmentDetails"
-        },
-        "refKey": {
-          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "description": {
-          "description": "Description. (NL: Omschrijving)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "investment": {
-          "type": "array",
-          "uniqueItems": true,
-          "allOf": [
-            {
-              "minContains": 1,
-              "maxContains": 99,
-              "contains": {
-                "$ref": "#/$defs/investmentCorporateAction"
-              }
-            }
-          ]
-        }
-      },
-      "required": [
-        "entityType",
-        "refKey",
-        "description",
-        "investment"
-      ]
-    },
-    "investmentCorporateAction": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "entityType": {
-          "description": "Unique identification of an entity. (NL: De unieke identificatie van een entiteit.)",
-          "type": "string",
-          "const": "corporateAction"
-        },
-        "refKey": {
-          "description": "Unique reference key assigned to an entity. (NL: Entiteitsreferentie is een unieke referentie sleutel die aan een entiteit wordt toegekend.)",
-          "type": "string",
-          "maxLength": 70
-        },
-        "description": {
-          "description": "Description. (NL: Omschrijving)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "corporateActionType": {
-          "description": "Corporate action type (NL: Type corporate action)",
-          "codelistName": "AFDCAE",
-          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/AFDCAE.json#/$defs/AFDCAE",
-          "type": "string"
-        },
-        "instructionDate": {
-          "description": "Instruction date (date of the order sent by the pension administration organization). (NL: Instructiedatum (datum van de bestelling verzonden door de PUO.)",
-          "type": "string",
-          "format": "date"
-        },
-        "tradeDate": {
-          "description": "Desired trade date. (NL: Gewenste handelsdatum.)",
-          "type": "string",
-          "format": "date"
-        },
-        "paymentDate": {
-          "description": "Date on which the payment takes or took place. (NL: Datum waarop de betaling plaatsvindt of plaatsvond.)",
-          "type": "string",
-          "format": "date"
-        },
-        "cashDividendTotalAmount": {
-          "description": "Total cash dividend amount across all held units. (NL: Totaal contant dividendbedrag over alle aangehouden eenheden.)",
-          "type": "number"
-        },
-        "cashDividendPerUnitAmount": {
-          "description": "Cash dividend amount paid per held unit. (NL: Contant dividendbedrag per aangehouden eenheid.)",
-          "type": "number"
-        },
-        "currencyType": {
-          "description": "Valuta van het contante bedrag.",
-          "codelistName": "ISOVAL",
-          "$ref": "https://www.sivi.org/afd-online-tool/json/2020-12/ISOVAL.json#/$defs/ISOVAL",
-          "type": "string",
-          "maxLength": 3
-        },
-        "stockDividendPerUnitNumber": {
-          "description": "Number of additional units granted per held unit as stock dividend. (NL: Aantal extra units dat per aangehouden eenheid wordt uitgekeerd als stock dividend.)",
-          "type": "number"
-        },
-        "stockDividendTotalNumber": {
-          "description": "Total number of additional units granted as stock dividend. (NL: Totaal aantal extra units dat wordt uitgekeerd als stock dividend.)",
-          "type": "number"
-        },
-        "newProductName": {
-          "description": "New name of the product after a product name change. (NL: Nieuwe naam van het product na een naamswijziging.)",
-          "type": "string",
-          "maxLength": 60
-        },
-        "newProductIdentifier": {
-          "description": "New identifier of the product after a product name change. (NL: Nieuwe identifier van het product na een naamswijziging van het product.)",
-          "type": "string",
-          "maxLength": 60
-        }
-      },
-      "required": [
-        "entityType",
-        "refKey",
-        "description",
-        "corporateActionType",
-        "instructionDate",
-        "tradeDate",
-        "paymentDate"
-      ]
-    }
-  }
+  ]
 }

@@ -19,7 +19,9 @@ De volledige handleiding (VB-PUO Standaard Datauitwisseling) is online beschikba
 
 | Release | Tag | Status |
 |----------|-----|--------|
-| **Release 2026** | [v1.3.1](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.1) | ✅ **Actueel** |
+| **Release 2027** | [v1.4.0](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.4.0) | ✅ **Actueel** |
+| **Release 2026** (patch) | [v1.3.2](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.2) | 🟡 **Beschikbaar** |
+| **Release 2026** | [v1.3.1](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.1) | 🔁 **Vervangen door v1.3.2** |
 | **Release 2026** (oorspronkelijk) | [v1.3.0](https://github.com/Stichting-SIVI/VBPUOdsk/releases/tag/v1.3.0) | 🔁 **Vervangen door v1.3.1** — zie [#138](https://github.com/Stichting-SIVI/VBPUOdsk/issues/138) |
 | **2024 November** | [v1.2.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.2.0) | 🟡 **Beschikbaar** |
 | **2024 Juli** | [v1.1.0](https://github.com/dma61/VBPUOdsk/releases/tag/v1.1.0) | 🟡 **Beschikbaar** |
@@ -38,6 +40,7 @@ De volledige handleiding (VB-PUO Standaard Datauitwisseling) is online beschikba
   👉 [SIVI – Standaard data-uitwisseling vermogensbeheer en pensioenuitvoering](https://www.sivi.org/pensioen/standaard-data-uitwisseling-vermogensbeheer-en-pensioenuitvoering)
 - **UML class diagrams** (vanaf prerelease 2026):  
   `<code> MessageStructureView </code>`
+- **Voorbeeldberichten** (vanaf release 2027): map [`Voorbeeldberichten/`](Voorbeeldberichten/), per release; main is leidend.
 - Aanvullende toelichting: [Wiki](https://github.com/dma61/VBPUOdsk/wiki)
 - Opmerkingen of verbandscontroles:  
   → [Issues-pagina](https://github.com/dma61/VBPUOdsk/issues)
@@ -71,7 +74,7 @@ mits de standaard **inhoudelijk niet wordt gewijzigd** buiten het formele wijzig
 ---
 
 ![status](https://img.shields.io/badge/status-actueel-success)
-![release](https://img.shields.io/badge/latest_release-2026-blue)
+![release](https://img.shields.io/badge/latest_release-2027-blue)
 ![license](https://img.shields.io/badge/license-SIVI_Governance-blue)
 
 ---

@@ -1,0 +1,114 @@
+{
+  "chunking": [
+    {
+      "entityType": "default",
+      "currentChunkId": "CHUNKID-001-3",
+      "chunkSequenceNumber": 3,
+      "totalNumberOfChunks": 3,
+      "chunkFragmentPaths": [
+        "commonFunctional[0]",
+        "commonTechnical[0]",
+        "party[0]",
+        "party[0].pension[0]",
+        "party[0].pension[0].financialInformation[0]",
+        "party[0].pension[0].financialTransaction[0]",
+        "party[0].pension[0].pension[0]",
+        "party[0].pension[0].pension[0].financialTransaction[0]",
+        "party[0].pension[0].pension[0].financialTransaction[1]"
+      ]
+    }
+  ],
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_3._Pensioenprojectie_(0001c)",
+      "afdDefinitionVersion": "001.05",
+      "function": "01"
+    }
+  ],
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "creationDateTime": "2023-10-27T10:00:00Z",
+      "messageId": "MSGID-SET-001",
+      "testMessage": false,
+      "party": [
+        {
+          "entityType": "receiver",
+          "refKey": "REC001",
+          "organizationName": "Ontvangende Partij NV"
+        },
+        {
+          "entityType": "sender",
+          "refKey": "SND001",
+          "organizationName": "Versturende Partij BV",
+          "applicationSenderName": "MijnPensioenApp",
+          "party": [
+            {
+              "entityType": "contact",
+              "workPhoneNumber": "030-1234567",
+              "emailWork": "contact@verstuurder.nl"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "organizationName": "St Bpf mode- interieur- tapijt- en textielindustr.",
+      "rsinNumber": "123456789",
+      "puvCode": "U0123",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "SCHEME-ABC-001",
+          "pensionSchemeName": "Standaard Pensioenregeling",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "projectionDate": "2023-01-01"
+            }
+          ],
+          "financialTransaction": [
+            {
+              "entityType": "payment",
+              "refKey": "PAYMENT-SCHEME-TEMPLATE-001",
+              "expectedPensionPaymentDate": "2023-01-01",
+              "amount": 0.0,
+              "hedgedExpectedPensionPaymentAmount": 0.0
+            }
+          ],
+          "pension": [
+            {
+              "entityType": "cohort",
+              "refKey": "COHORT-002",
+              "description": "Slapers 40-49 jaar",
+              "reserveIndicator": false,
+              "participationStatus": "20",
+              "startAge": 480,
+              "endAge": 599,
+              "financialTransaction": [
+                {
+                  "entityType": "payment",
+                  "refKey": "PAYMENT-COHORT2-001",
+                  "hedgedExpectedPensionPaymentAmount": 320.0,
+                  "expectedPensionPaymentDate": "2050-05-20",
+                  "amount": 350.0
+                },
+                {
+                  "entityType": "payment",
+                  "refKey": "PAYMENT-COHORT2-002",
+                  "hedgedExpectedPensionPaymentAmount": 325.0,
+                  "expectedPensionPaymentDate": "2050-06-20",
+                  "amount": 350.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

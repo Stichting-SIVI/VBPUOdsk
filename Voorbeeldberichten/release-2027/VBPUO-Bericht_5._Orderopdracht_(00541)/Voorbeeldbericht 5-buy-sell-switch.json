@@ -1,0 +1,133 @@
+{
+  "commonFunctional": [
+    {
+      "entityType": "default",
+      "function": "01",
+      "afdDefinitionName": "VBPUO-001.00-Bericht_5._Orderopdracht_(00541)",
+      "afdDefinitionVersion": "001.05",
+      "originalMessageId": "20240529 1532"
+    }
+  ],
+  "commonTechnical": [
+    {
+      "entityType": "default",
+      "messageId": "67890",
+      "creationDateTime": "2024-10-07T10:00:00Z",
+      "testMessage": false,
+      "party": [
+        {
+          "entityType": "receiver",
+          "refKey": "recv001",
+          "rsinNumber": "123456789",
+          "organizationName": "Pension Fund A"
+        },
+        {
+          "entityType": "sender",
+          "rsinNumber": "876543219",
+          "organizationName": "Investment Firm B",
+          "refKey": "send001",
+          "applicationSenderName": "InvestAppV1"
+        }
+      ]
+    }
+  ],
+  "party": [
+    {
+      "entityType": "pensionProvider",
+      "puvCode": "U0003",
+      "rsinNumber": "112233449",
+      "organizationName": "St. Pf. Openbare Bibliotheken",
+      "pension": [
+        {
+          "entityType": "scheme",
+          "refKey": "schemeXYZ",
+          "pensionSchemeName": "Investment Scheme A",
+          "tradingPortfolioId": "Trade123",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "instructionDate": "2024-01-02"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "investmentDetails",
+              "refKey": "inv001",
+              "description": "Equity Fund",
+              "currencyType": "EUR",
+              "financialTransaction": [
+                {
+                  "entityType": "trade",
+                  "refKey": "trade123",
+                  "buySellId": "buy",
+                  "tradeDate": "2024-01-03",
+                  "tradeAmount": 10000.0
+                },
+                {
+                  "entityType": "trade",
+                  "refKey": "trade124",
+                  "buySellId": "sell",
+                  "tradeDate": "2024-01-04",
+                  "tradeQuantity": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entityType": "scheme",
+          "refKey": "schemeABC",
+          "pensionSchemeName": "Retirement Plan B",
+          "tradingPortfolioId": "Trade456",
+          "financialInformation": [
+            {
+              "entityType": "reportingPeriod",
+              "instructionDate": "2024-01-05"
+            }
+          ],
+          "investment": [
+            {
+              "entityType": "investmentDetails",
+              "refKey": "inv002",
+              "description": "Accumulation phase fund",
+              "currencyType": "EUR",
+              "financialTransaction": [
+                {
+                  "entityType": "trade",
+                  "refKey": "trade125",
+                  "buySellId": "switchfrom",
+                  "tradeDate": "2024-01-06",
+                  "switchType": "1",
+                  "financialInformationRef": [
+                    "trade126",
+                    "inv003"
+                  ],
+                  "tradeQuantity": 20
+                }
+              ]
+            },
+            {
+              "entityType": "investmentDetails",
+              "refKey": "inv003",
+              "description": "CVP fund",
+              "currencyType": "EUR",
+              "financialTransaction": [
+                {
+                  "entityType": "trade",
+                  "refKey": "trade126",
+                  "buySellId": "switchto",
+                  "tradeDate": "2024-01-06",
+                  "financialInformationRef": [
+                    "trade125",
+                    "inv002"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "document": []
+}

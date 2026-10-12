@@ -1,8 +1,11 @@
 {
   "commonFunctional": {
-    "productName": "zzz5",
+    "productName": "VBPUO_1.05_main",
+    "definitionVersion": "001.05",
+    "startDate": "20270101",
     "functionDescription": "Bericht_1._Vermogen_(0001a)",
-    "afdDefinitionChangeLog": "20260715 concept uitlevering (AOS 001.05) - release 2027"
+    "tag": "VBPUO",
+    "afdDefinitionChangeLog": "20261011 1944 uitlevering (AOS 001.05) - RELEASE 2027"
   },
   "rule": []
 }

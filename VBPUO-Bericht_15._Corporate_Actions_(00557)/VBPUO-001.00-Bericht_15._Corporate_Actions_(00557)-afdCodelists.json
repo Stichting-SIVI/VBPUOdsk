@@ -2,48 +2,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "AFD 2.0 codelists",
   "$defs": {
-    "ADNFUN": {
-      "description": "ADNFUN codelist",
-      "codelistName": "ADNFUN",
-      "type": "string",
-      "oneOf": [
-        {
-          "const": "01"
-        },
-        {
-          "const": "02"
-        },
-        {
-          "const": "09"
-        },
-        {
-          "const": "54"
-        }
-      ]
-    },
-    "AFDCAE": {
-      "codelistName": "AFDCAE",
-      "type": "string",
-      "description": "Corporate action type (NL: Type corporate action)",
-      "oneOf": [
-        {
-          "const": "cashDividend",
-          "description": "Cash dividend (NL: Contant dividend)"
-        },
-        {
-          "const": "productChange",
-          "description": "Product change (NL: Productwijziging)"
-        },
-        {
-          "const": "rebate",
-          "description": "Rebate (NL: Retourprovisie / rebate)"
-        },
-        {
-          "const": "stockDividend",
-          "description": "Stock dividend (NL: Stockdividend)"
-        }
-      ]
-    },
     "AFDIDP": {
       "description": "Pension provider (NL: Pensioenuitvoerder)",
       "codelistName": "AFDIDP",
@@ -1068,6 +1026,14 @@
         {
           "description": "Pensioenfonds PNO Media (DC)",
           "const": "U0765"
+        },
+        {
+          "description": "De Nationale APF, Pensioenkring MeerKeuzePensioen",
+          "const": "U0769"
+        },
+        {
+          "description": "De Nationale APF, Pens.kring SamenGeregeldPensioen",
+          "const": "U0770"
         }
       ]
     },
@@ -1695,6 +1661,29 @@
         {
           "description": "Anders",
           "const": "ZZZ"
+        }
+      ]
+    },
+    "AFDCOA": {
+      "description": "Corporate action type (NL: Soort corporate action)",
+      "codelistName": "AFDCOA",
+      "type": "string",
+      "oneOf": [
+        {
+          "description": "Cash dividend",
+          "const": "1"
+        },
+        {
+          "description": "Stock dividend",
+          "const": "2"
+        },
+        {
+          "description": "Productverandering",
+          "const": "3"
+        },
+        {
+          "description": "Anders",
+          "const": "99"
         }
       ]
     }
