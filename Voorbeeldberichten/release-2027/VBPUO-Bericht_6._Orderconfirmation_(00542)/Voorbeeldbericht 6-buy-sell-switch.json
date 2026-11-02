@@ -56,6 +56,7 @@
               "refKey": "inv001",
               "description": "Equity Fund",
               "currencyType": "EUR",
+              "numberOfUnits": 150,
               "financialTransaction": [
                 {
                   "entityType": "trade",
@@ -110,6 +111,7 @@
               "refKey": "inv002",
               "description": "Accumulation phase fund",
               "currencyType": "EUR",
+              "numberOfUnits": 20,
               "financialTransaction": [
                 {
                   "entityType": "trade",
@@ -139,6 +141,7 @@
               "refKey": "inv003",
               "description": "CVP fund",
               "currencyType": "EUR",
+              "numberOfUnits": 50,
               "financialTransaction": [
                 {
                   "entityType": "trade",

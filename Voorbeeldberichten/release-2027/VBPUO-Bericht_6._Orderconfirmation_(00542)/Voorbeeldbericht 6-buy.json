@@ -56,6 +56,7 @@
               "refKey": "inv001",
               "description": "Equity Fund",
               "currencyType": "EUR",
+              "numberOfUnits": 102,
               "financialTransaction": [
                 {
                   "entityType": "trade",
