@@ -140,8 +140,8 @@
               "entityType": "investmentDetails",
               "refKey": "inv003",
               "description": "CVP fund",
-              "numberOfUnits": 50,
               "currencyType": "EUR",
+              "numberOfUnits": 50,
               "financialTransaction": [
                 {
                   "entityType": "trade",
