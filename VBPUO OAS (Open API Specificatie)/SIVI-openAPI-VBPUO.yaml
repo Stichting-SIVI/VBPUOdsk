@@ -8,9 +8,10 @@ info:
     For support, change requests or other issues, please refer to GitHub.\n\n
     We agreed upon:\n
     - A response by the server with http code 202 indicates the client that the request is processed asynchronously, expecting the client to receive the processing result on their /feedback endpoint
-    - Parties have to agree whether to support an asynchronous feedback message.\n
+    - Parties have to agree whether to support an asynchronous feedback message.\n\n
+    Changes in 1.0.12: added the GET /v1/health endpoint (service status, apiVersion and supported message definition versions per message type).\n
     "
-  version: 1.0.11
+  version: 1.0.12
   contact:
     name: SIVI API Support & Issues
     url: https://github.com/Stichting-SIVI/VBPUOdsk/issues
@@ -33,6 +34,7 @@ tags:
   - name: ValueAmountInvestmentPool (FPR)
   - name: PaymentDetailsCreditor (FPR)
   - name: CorporateActions (FPR)
+  - name: Health
 paths:
   '/v1/capital/{puvCode}/new':
     post:
@@ -418,6 +420,57 @@ paths:
           description: 'Unauthorized'
         '403':
           description: 'Forbidden'
+  '/v1/health':
+    get:
+      summary: Health check including the SIVI message versions supported by the asset manager
+      tags:
+        - Health
+      security:
+        - OneWelcomeOAuth2:
+          - https://sivi-vermogensbeheerkoppeling/health.read
+      description: >-
+        Every asset manager (fiduciary manager / investment administrator / asset service provider) MUST offer this endpoint. It reports whether the service is operational and which SIVI VB-PUO message versions (definitionVersion, e.g. 001.05) the asset manager can accept per message type. Senders SHOULD consult this endpoint before delivering a message to verify that the version they intend to send is supported. Only message types the asset manager can receive need to be listed.
+
+        Rate limiting: a sender SHOULD NOT call this endpoint more than once per minute per client (credential) and SHOULD cache the response for the duration given in Cache-Control max-age (default 60 seconds). Calling less often, for example once a day, is sufficient as long as the sender re-checks when a delivery fails because of an unsupported version. The asset manager MAY enforce a stricter or looser limit and announces it through the RateLimit-* response headers. When the limit is exceeded it answers HTTP 429 and the sender MUST wait at least the Retry-After period before retrying.
+      operationId: getHealth
+      responses:
+        '200':
+          description: 'Service is operational; status MUST be UP or DEGRADED'
+          headers:
+            Cache-Control:
+              description: 'How long the response may be cached, e.g. max-age=60'
+              schema:
+                type: string
+              example: max-age=60
+            RateLimit-Limit:
+              $ref: '#/components/headers/RateLimitLimit'
+            RateLimit-Remaining:
+              $ref: '#/components/headers/RateLimitRemaining'
+            RateLimit-Reset:
+              $ref: '#/components/headers/RateLimitReset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthCheck'
+        '401':
+          description: 'Unauthorized'
+        '403':
+          description: 'Forbidden'
+        '429':
+          description: 'Too many requests; retry after the number of seconds given in the Retry-After header'
+          headers:
+            Retry-After:
+              description: 'Number of seconds to wait before calling again'
+              schema:
+                type: integer
+                minimum: 1
+              example: 60
+        '503':
+          description: 'Service is not available; status MUST be DOWN'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthCheck'
 components:
   schemas:
     Capital:
@@ -442,6 +495,74 @@ components:
       $ref: '../VBPUO-Bericht_15._Corporate_Actions_(00557)/VBPUO-001.00-Bericht_15._Corporate_Actions_(00557).json'
     Feedback:
       $ref: '../VBPUO_Feedback_Message/VBPUO_Feedback_Message-001.00-VBPUO_Feedback_Message.json'
+    HealthCheck:
+      type: object
+      required:
+        - status
+        - timestamp
+        - supportedVersions
+      properties:
+        apiVersion:
+          type: string
+          description: 'Major version of this API (the /vN path prefix) the asset manager serves'
+          example: v1
+        status:
+          type: string
+          enum: [UP, DEGRADED, DOWN]
+          description: 'Overall availability of the service. UP and DEGRADED are returned with HTTP 200, DOWN with HTTP 503'
+        timestamp:
+          type: string
+          format: date-time
+          description: 'Moment the health check was produced'
+        supportedVersions:
+          type: array
+          uniqueItems: true
+          description: 'SIVI VB-PUO message versions the asset manager can accept, per message type'
+          items:
+            type: object
+            required:
+              - messageType
+              - definitionVersions
+            properties:
+              messageType:
+                type: string
+                enum: ['0001a', '0001b', '0001c', '00002', '00541', '00542', '00553', '00555b', '00556', '00557']
+                description: 'Message type code, as used in the messageType path parameter'
+                example: 0001a
+              definitionVersions:
+                type: array
+                minItems: 1
+                uniqueItems: true
+                description: 'Accepted definitionVersion values (see commonFunctional.definitionVersion in the message schemas)'
+                items:
+                  type: string
+                  pattern: '^\d{3}\.\d{2}$'
+                  example: '001.05'
+      example:
+        apiVersion: v1
+        status: UP
+        timestamp: '2026-11-06T08:30:00Z'
+        supportedVersions:
+          - messageType: 0001a
+            definitionVersions: ['001.04', '001.05']
+          - messageType: 0001b
+            definitionVersions: ['001.05']
+  headers:
+    RateLimitLimit:
+      description: 'Maximum number of requests allowed in the current window'
+      schema:
+        type: integer
+      example: 1
+    RateLimitRemaining:
+      description: 'Number of requests remaining in the current window'
+      schema:
+        type: integer
+      example: 1
+    RateLimitReset:
+      description: 'Seconds until the current window resets'
+      schema:
+        type: integer
+      example: 60
   parameters:
     puvCode:
       name: puvCode
@@ -487,6 +608,7 @@ components:
             https://sivi-vermogensbeheerkoppeling/paymentDetailsCreditor.write: Write paymentDetailsCreditor information
             https://sivi-vermogensbeheerkoppeling/corporateActions.write: Write corporateActions information
             https://sivi-vermogensbeheerkoppeling/feedback.write: Write processingReport information
+            https://sivi-vermogensbeheerkoppeling/health.read: Read health check and supported versions
   links: {}
   callbacks: {}
 security:
